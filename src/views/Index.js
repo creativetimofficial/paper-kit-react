@@ -46,7 +46,10 @@ class Index extends React.Component {
       <>
         <div
           className=" page-header section-dark"
-          style={{ backgroundImage: "url('./assets/img/antoine-barres.jpg')" }}
+          style={{
+            backgroundImage:
+              "url(" + require("assets/img/antoine-barres.jpg") + ")"
+          }}
         >
           <div className=" filter" />
           <div className=" content-center">
@@ -67,7 +70,9 @@ class Index extends React.Component {
           </div>
           <div
             className=" moving-clouds"
-            style={{ backgroundImage: "url('./assets/img/clouds.png')" }}
+            style={{
+              backgroundImage: "url(" + require("assets/img/clouds.png") + ")"
+            }}
           />
           <h6 className=" category category-absolute">
             Designed and coded by{" "}
@@ -706,7 +711,8 @@ class Index extends React.Component {
               <div
                 className=" navigation-example"
                 style={{
-                  backgroundImage: "url('./assets/img/ilya-yakover.jpg')"
+                  backgroundImage:
+                    "url(" + require("assets/img/ilya-yakover.jpg") + ")"
                 }}
               >
                 <Navbar className=" bg-primary" expand="lg">
@@ -1217,7 +1223,7 @@ class Index extends React.Component {
                         <PaginationLink
                           href="#pablo"
                           onClick={e => e.preventDefault()}
-                          tabindex="-1"
+                          tabIndex="-1"
                         >
                           Previous
                         </PaginationLink>
@@ -1980,7 +1986,10 @@ class Index extends React.Component {
           </div>
           <div
             className=" section section-image section-login"
-            style={{ backgroundImage: "url('./assets/img/login-image.jpg')" }}
+            style={{
+              backgroundImage:
+                "url(" + require("assets/img/login-image.jpg") + ")"
+            }}
           >
             <Container>
               <Row>
@@ -2172,8 +2181,8 @@ class Index extends React.Component {
                 </Col>
                 <Col className=" text-center" lg="8" md="12">
                   <Button
-                    className=" btn-twitter-bg twitter-sharrre btn-round"
-                    color="twitter"
+                    className="twitter-sharrre btn-round"
+                    color="twitter-bg"
                     href="#pablo"
                     id="tooltip3373767"
                     onClick={e => e.preventDefault()}
@@ -2185,8 +2194,8 @@ class Index extends React.Component {
                     Tweet!
                   </UncontrolledTooltip>
                   <Button
-                    className=" btn-google-bg linkedin-sharrre btn-round"
-                    color="google"
+                    className="linkedin-sharrre btn-round"
+                    color="google-bg"
                     href="#pablo"
                     id="tooltip840791273"
                     onClick={e => e.preventDefault()}
@@ -2198,8 +2207,8 @@ class Index extends React.Component {
                     Share!
                   </UncontrolledTooltip>
                   <Button
-                    className=" btn-facebook-bg facebook-sharrre btn-round"
-                    color="facebook"
+                    className="facebook-sharrre btn-round"
+                    color="facebook-bg"
                     href="#pablo"
                     id="tooltip68961360"
                     onClick={e => e.preventDefault()}
@@ -2211,8 +2220,8 @@ class Index extends React.Component {
                     Share!
                   </UncontrolledTooltip>
                   <Button
-                    className=" btn-github-bg sharrre btn-round"
-                    color="github"
+                    className="sharrre btn-round"
+                    color="github-bg"
                     href="https://github.com/creativetimofficial/paper-kit"
                     id="tooltip864353654"
                   >
