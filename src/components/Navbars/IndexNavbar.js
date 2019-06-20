@@ -14,12 +14,12 @@ import {
 function IndexNavbar() {
   return (
     <Navbar
-      className=" fixed-top navbar-transparent"
+      className="fixed-top navbar-transparent"
       color-on-scroll="300"
       expand="lg"
     >
       <Container>
-        <div className=" navbar-translate">
+        <div className="navbar-translate">
           <NavbarBrand
             data-placement="bottom"
             href="https://demos.creative-tim.com/paper-kit/index.html"
@@ -33,19 +33,19 @@ function IndexNavbar() {
             aria-controls="navigation-index"
             aria-expanded={false}
             aria-label="Toggle navigation"
-            className=" navbar-toggler navbar-toggler"
+            className="navbar-toggler navbar-toggler"
             data-target="#navigation"
             data-toggle="collapse"
             id="navigation"
             type="button"
           >
-            <span className=" navbar-toggler-bar bar1" />
-            <span className=" navbar-toggler-bar bar2" />
-            <span className=" navbar-toggler-bar bar3" />
+            <span className="navbar-toggler-bar bar1" />
+            <span className="navbar-toggler-bar bar2" />
+            <span className="navbar-toggler-bar bar3" />
           </button>
         </div>
         <UncontrolledCollapse
-          className=" justify-content-end"
+          className="justify-content-end"
           id="navigation"
           navbar
           toggler="#navigation"
@@ -59,8 +59,8 @@ function IndexNavbar() {
                 target="_blank"
                 title="Follow us on Twitter"
               >
-                <i className=" fa fa-twitter" />
-                <p className=" d-lg-none">Twitter</p>
+                <i className="fa fa-twitter" />
+                <p className="d-lg-none">Twitter</p>
               </NavLink>
             </NavItem>
             <NavItem>
@@ -71,8 +71,8 @@ function IndexNavbar() {
                 target="_blank"
                 title="Like us on Facebook"
               >
-                <i className=" fa fa-facebook-square" />
-                <p className=" d-lg-none">Facebook</p>
+                <i className="fa fa-facebook-square" />
+                <p className="d-lg-none">Facebook</p>
               </NavLink>
             </NavItem>
             <NavItem>
@@ -83,8 +83,8 @@ function IndexNavbar() {
                 target="_blank"
                 title="Follow us on Instagram"
               >
-                <i className=" fa fa-instagram" />
-                <p className=" d-lg-none">Instagram</p>
+                <i className="fa fa-instagram" />
+                <p className="d-lg-none">Instagram</p>
               </NavLink>
             </NavItem>
             <NavItem>
@@ -95,8 +95,8 @@ function IndexNavbar() {
                 target="_blank"
                 title="Star on GitHub"
               >
-                <i className=" fa fa-github" />
-                <p className=" d-lg-none">GitHub</p>
+                <i className="fa fa-github" />
+                <p className="d-lg-none">GitHub</p>
               </NavLink>
             </NavItem>
             <NavItem>
@@ -105,13 +105,13 @@ function IndexNavbar() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <i className=" nc-icon nc-book-bookmark" />
+                <i className="nc-icon nc-book-bookmark" />
                 Documentation
               </NavLink>
             </NavItem>
             <NavItem>
               <Button
-                className=" btn-round"
+                className="btn-round"
                 color="danger"
                 href="https://www.creative-tim.com/product/paper-kit-2-pro?ref=pk2-free-local"
                 rel="noopener noreferrer"

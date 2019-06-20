@@ -5,10 +5,10 @@ import { Row, Container } from "reactstrap";
 
 function DemoFooter() {
   return (
-    <footer className=" footer footer-black footer-white">
+    <footer className="footer footer-black footer-white">
       <Container>
         <Row>
-          <nav className=" footer-nav">
+          <nav className="footer-nav">
             <ul>
               <li>
                 <a
@@ -39,10 +39,10 @@ function DemoFooter() {
               </li>
             </ul>
           </nav>
-          <div className=" credits ml-auto">
-            <span className=" copyright">
+          <div className="credits ml-auto">
+            <span className="copyright">
               © <script>document.write(new Date().getFullYear())</script>, made
-              with <i className=" fa fa-heart heart" />
+              with <i className="fa fa-heart heart" />
               by Creative Tim
             </span>
           </div>

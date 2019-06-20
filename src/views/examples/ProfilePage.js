@@ -21,31 +21,31 @@ class ProfilePage extends React.Component {
     return (
       <>
         <div
-          className=" page-header page-header-xs"
+          className="page-header page-header-xs"
           data-parallax={true}
           style={{ backgroundImage: "url('../assets/img/fabio-mangione.jpg')" }}
         >
-          <div className=" filter" />
+          <div className="filter" />
         </div>
-        <div className=" section profile-content">
+        <div className="section profile-content">
           <Container>
-            <div className=" owner">
-              <div className=" avatar">
+            <div className="owner">
+              <div className="avatar">
                 <img
                   alt="..."
-                  className=" img-circle img-no-padding img-responsive"
+                  className="img-circle img-no-padding img-responsive"
                   src={require("assets/img/faces/joe-gardner-2.jpg")}
                 />
               </div>
-              <div className=" name">
-                <h4 className=" title">
+              <div className="name">
+                <h4 className="title">
                   Jane Faker <br />
                 </h4>
-                <h6 className=" description">Music Producer</h6>
+                <h6 className="description">Music Producer</h6>
               </div>
             </div>
             <Row>
-              <Col className=" ml-auto mr-auto text-center" md="6">
+              <Col className="ml-auto mr-auto text-center" md="6">
                 <p>
                   An artist of considerable range, Jane Faker — the name taken
                   by Melbourne-raised, Brooklyn-based Nick Murphy — writes,
@@ -53,19 +53,19 @@ class ProfilePage extends React.Component {
                   intimate feel with a solid groove structure.
                 </p>
                 <br />
-                <Button className=" btn-round" color="default" outline>
-                  <i className=" fa fa-cog" />
+                <Button className="btn-round" color="default" outline>
+                  <i className="fa fa-cog" />
                   Settings
                 </Button>
               </Col>
             </Row>
             <br />
-            <div className=" nav-tabs-navigation">
-              <div className=" nav-tabs-wrapper">
+            <div className="nav-tabs-navigation">
+              <div className="nav-tabs-wrapper">
                 <Nav role="tablist" tabs>
                   <NavItem>
                     <NavLink
-                      className=" active"
+                      className="active"
                       data-toggle="tab"
                       href="#pablo"
                       onClick={e => e.preventDefault()}
@@ -88,27 +88,27 @@ class ProfilePage extends React.Component {
               </div>
             </div>
             {/* Tab panes */}
-            <TabContent className=" following">
-              <TabPane className=" active" id="follows" role="tabpanel">
+            <TabContent className="following">
+              <TabPane className="active" id="follows" role="tabpanel">
                 <Row>
-                  <Col className=" ml-auto mr-auto" md="6">
-                    <ul className=" list-unstyled follows">
+                  <Col className="ml-auto mr-auto" md="6">
+                    <ul className="list-unstyled follows">
                       <li>
                         <Row>
                           <Col
-                            className=" ml-auto mr-auto"
+                            className="ml-auto mr-auto"
                             lg="2"
                             md="4"
                             xs="4"
                           >
                             <img
                               alt="..."
-                              className=" img-circle img-no-padding img-responsive"
+                              className="img-circle img-no-padding img-responsive"
                               src={require("assets/img/faces/clem-onojeghuo-2.jpg")}
                             />
                           </Col>
                           <Col
-                            className=" ml-auto mr-auto"
+                            className="ml-auto mr-auto"
                             lg="7"
                             md="4"
                             xs="4"
@@ -119,7 +119,7 @@ class ProfilePage extends React.Component {
                             </h6>
                           </Col>
                           <Col
-                            className=" ml-auto mr-auto"
+                            className="ml-auto mr-auto"
                             lg="3"
                             md="4"
                             xs="4"
@@ -131,7 +131,7 @@ class ProfilePage extends React.Component {
                                   defaultValue=""
                                   type="checkbox"
                                 />
-                                <span className=" form-check-sign" />
+                                <span className="form-check-sign" />
                               </Label>
                             </FormGroup>
                           </Col>
@@ -140,10 +140,10 @@ class ProfilePage extends React.Component {
                       <hr />
                       <li>
                         <Row>
-                          <Col className=" mx-auto" lg="2" md="4" xs="4">
+                          <Col className="mx-auto" lg="2" md="4" xs="4">
                             <img
                               alt="..."
-                              className=" img-circle img-no-padding img-responsive"
+                              className="img-circle img-no-padding img-responsive"
                               src={require("assets/img/faces/ayo-ogunseinde-2.jpg")}
                             />
                           </Col>
@@ -157,7 +157,7 @@ class ProfilePage extends React.Component {
                             <FormGroup check>
                               <Label check>
                                 <Input defaultValue="" type="checkbox" />
-                                <span className=" form-check-sign" />
+                                <span className="form-check-sign" />
                               </Label>
                             </FormGroup>
                           </Col>
@@ -167,9 +167,9 @@ class ProfilePage extends React.Component {
                   </Col>
                 </Row>
               </TabPane>
-              <TabPane className=" text-center" id="following" role="tabpanel">
-                <h3 className=" text-muted">Not following anyone yet :(</h3>
-                <Button className=" btn-round" color="warning">
+              <TabPane className="text-center" id="following" role="tabpanel">
+                <h3 className="text-muted">Not following anyone yet :(</h3>
+                <Button className="btn-round" color="warning">
                   Find artists
                 </Button>
               </TabPane>
