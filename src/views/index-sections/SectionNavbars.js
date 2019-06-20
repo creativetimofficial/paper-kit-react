@@ -46,11 +46,7 @@ function SectionNavbars() {
                   <span className="navbar-toggler-bar" />
                   <span className="navbar-toggler-bar" />
                 </button>
-                <UncontrolledCollapse
-                  id="navbar-menu"
-                  navbar
-                  toggler="#navbar-menu"
-                >
+                <UncontrolledCollapse navbar toggler="#navbar-menu">
                   <Nav className="mr-auto" navbar>
                     <NavItem>
                       <NavLink href="#pablo" onClick={e => e.preventDefault()}>
@@ -62,7 +58,7 @@ function SectionNavbars() {
                         Link
                       </NavLink>
                     </NavItem>
-                    <UncontrolledDropdown nav>
+                    <UncontrolledDropdown nav inNavbar>
                       <DropdownToggle
                         aria-expanded={false}
                         aria-haspopup={true}
@@ -81,7 +77,9 @@ function SectionNavbars() {
                         aria-labelledby="dropdownMenuButton"
                         className="dropdown-info"
                       >
-                        <DropdownItem header>Dropdown header</DropdownItem>
+                        <DropdownItem header tag="span">
+                          Dropdown header
+                        </DropdownItem>
                         <DropdownItem
                           href="#pablo"
                           onClick={e => e.preventDefault()}
@@ -139,11 +137,7 @@ function SectionNavbars() {
                   <span className="navbar-toggler-bar" />
                   <span className="navbar-toggler-bar" />
                 </button>
-                <UncontrolledCollapse
-                  id="navbar-menu-icon"
-                  navbar
-                  toggler="#navbar-menu-icon"
-                >
+                <UncontrolledCollapse navbar toggler="#navbar-menu-icon">
                   <Nav className="ml-auto" navbar>
                     <NavItem className="active">
                       <NavLink href="#pablo" onClick={e => e.preventDefault()}>
@@ -158,7 +152,7 @@ function SectionNavbars() {
                         />
                       </NavLink>
                     </NavItem>
-                    <UncontrolledDropdown nav>
+                    <UncontrolledDropdown nav inNavbar>
                       <DropdownToggle
                         aria-expanded={false}
                         aria-haspopup={true}
@@ -176,11 +170,7 @@ function SectionNavbars() {
                         />
                       </DropdownToggle>
                       <DropdownMenu className="dropdown-danger" right>
-                        <DropdownItem
-                          header
-                          href="#pablo"
-                          onClick={e => e.preventDefault()}
-                        >
+                        <DropdownItem header tag="span">
                           Dropdown header
                         </DropdownItem>
                         <DropdownItem

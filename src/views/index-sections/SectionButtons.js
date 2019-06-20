@@ -32,7 +32,7 @@ function SectionButtons() {
       step: 1,
       range: { min: 0, max: 100 }
     });
-  })
+  });
   return (
     <>
       <div className="section section-buttons">
@@ -59,7 +59,11 @@ function SectionButtons() {
                   <i className="fa fa-heart mr-1" />
                   With Icon
                 </Button>
-                <Button className="btn-just-icon ml-1" color="info" type="button">
+                <Button
+                  className="btn-just-icon ml-1"
+                  color="info"
+                  type="button"
+                >
                   <i className="fa fa-heart" />
                 </Button>
                 <Button className="btn-link ml-1" color="info" type="button">
@@ -74,7 +78,13 @@ function SectionButtons() {
             </div>
             <Row>
               <Col md="8">
-                <Button color="danger" outline size="sm" type="button" className="mr-1">
+                <Button
+                  color="danger"
+                  outline
+                  size="sm"
+                  type="button"
+                  className="mr-1"
+                >
                   Small
                 </Button>
                 <Button color="danger" outline type="button" className="mr-1">
@@ -153,29 +163,41 @@ function SectionButtons() {
             <br />
             <Row>
               <Col md="8">
-                <Button className="btn-round mr-1" color="default" type="button">
+                <Button
+                  className="btn-round mr-1"
+                  color="default"
+                  type="button"
+                >
                   Default
                 </Button>
-                <Button className="btn-round mr-1" color="primary" type="button">
+                <Button
+                  className="btn-round mr-1"
+                  color="primary"
+                  type="button"
+                >
                   Primary
                 </Button>
                 <Button className="btn-round mr-1" color="info" type="button">
                   Info
                 </Button>
-                <Button className="btn-round mr-1" color="success" type="button">
+                <Button
+                  className="btn-round mr-1"
+                  color="success"
+                  type="button"
+                >
                   Success
                 </Button>
-                <Button className="btn-round mr-1" color="warning" type="button">
+                <Button
+                  className="btn-round mr-1"
+                  color="warning"
+                  type="button"
+                >
                   Warning
                 </Button>
                 <Button className="btn-round mr-1" color="danger" type="button">
                   Danger
                 </Button>
-                <Button
-                  className="btn-round"
-                  color="neutral"
-                  type="button"
-                >
+                <Button className="btn-round" color="neutral" type="button">
                   Neutral
                 </Button>
               </Col>
