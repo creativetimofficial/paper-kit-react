@@ -2,7 +2,6 @@ import React from "react";
 
 // reactstrap components
 import {
-  Label,
   NavItem,
   NavLink,
   Nav,
@@ -20,6 +19,12 @@ import {
 // core components
 
 function SectionProgress() {
+  const [activeTab, setActiveTab] = React.useState("1");
+  const toggle = tab => {
+    if (activeTab !== tab) {
+      setActiveTab(tab);
+    }
+  };
   return (
     <>
       <div className="section">
@@ -30,23 +35,31 @@ function SectionProgress() {
                 <h3>Progress Bar</h3>
                 <br />
               </div>
-              <Progress max="100" value="25" />
+              <Progress
+                max="100"
+                value="25"
+                barClassName="progress-bar-success"
+              />
               <br />
-              <Progress max="100" value="50" />
+              <Progress max="100" value="50" barClassName="progress-bar-info" />
               <br />
-              <Progress max="100" value="100" />
+              <Progress
+                max="100"
+                value="100"
+                barClassName="progress-bar-danger"
+              />
               <br />
               <Progress multi>
                 <Progress bar max="100" value="15" />
                 <Progress
                   bar
-                  barclassName="progress-bar-success"
+                  barClassName="progress-bar-success"
                   max="100"
                   value="30"
                 />
                 <Progress
                   bar
-                  barclassName="progress-bar-warning"
+                  barClassName="progress-bar-warning"
                   max="100"
                   value="20"
                 />
@@ -196,31 +209,30 @@ function SectionProgress() {
                   <Nav id="tabs" role="tablist" tabs>
                     <NavItem>
                       <NavLink
-                        className="active"
-                        data-toggle="tab"
-                        href="#pablo"
-                        onClick={e => e.preventDefault()}
-                        role="tab"
+                        className={activeTab === "1" ? "active" : ""}
+                        onClick={() => {
+                          toggle("1");
+                        }}
                       >
                         Home
                       </NavLink>
                     </NavItem>
                     <NavItem>
                       <NavLink
-                        data-toggle="tab"
-                        href="#pablo"
-                        onClick={e => e.preventDefault()}
-                        role="tab"
+                        className={activeTab === "2" ? "active" : ""}
+                        onClick={() => {
+                          toggle("2");
+                        }}
                       >
                         Profile
                       </NavLink>
                     </NavItem>
                     <NavItem>
                       <NavLink
-                        data-toggle="tab"
-                        href="#pablo"
-                        onClick={e => e.preventDefault()}
-                        role="tab"
+                        className={activeTab === "3" ? "active" : ""}
+                        onClick={() => {
+                          toggle("3");
+                        }}
                       >
                         Messages
                       </NavLink>
@@ -228,18 +240,18 @@ function SectionProgress() {
                   </Nav>
                 </div>
               </div>
-              <TabContent className="text-center" id="my-tab-content">
-                <TabPane className="active" id="home" role="tabpanel">
+              <TabContent activeTab={activeTab} className="text-center">
+                <TabPane tabId="1">
                   <p>
                     Larger, yet dramatically thinner. More powerful, but
                     remarkably power efficient. With a smooth metal surface that
                     seamlessly meets the new Retina HD display.
                   </p>
                 </TabPane>
-                <TabPane id="profile" role="tabpanel">
+                <TabPane tabId="2">
                   <p>Here is your profile.</p>
                 </TabPane>
-                <TabPane id="messages" role="tabpanel">
+                <TabPane tabId="3">
                   <p>Here are your messages.</p>
                 </TabPane>
               </TabContent>
@@ -248,12 +260,12 @@ function SectionProgress() {
               <div className="title">
                 <h3>Labels</h3>
               </div>
-              <Label className="label-default">Default</Label>
-              <Label className="label-primary">Primary</Label>
-              <Label className="label-info">Info</Label>
-              <Label className="label-success">Success</Label>
-              <Label className="label-warning">Warning</Label>
-              <Label className="label-danger">Danger</Label>
+              <label className="label label-default mr-1">Default</label>
+              <label className="label label-primary mr-1">Primary</label>
+              <label className="label label-info mr-1">Info</label>
+              <label className="label label-success mr-1">Success</label>
+              <label className="label label-warning mr-1">Warning</label>
+              <label className="label label-danger">Danger</label>
             </Col>
           </Row>
         </Container>
