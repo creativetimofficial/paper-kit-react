@@ -1,4 +1,6 @@
 import React from "react";
+// nodejs library that concatenates strings
+import classnames from "classnames";
 // reactstrap components
 import {
   Button,
@@ -12,18 +14,38 @@ import {
 } from "reactstrap";
 
 function IndexNavbar() {
+  const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
+
+  document.documentElement.classList.remove("nav-open");
+
+  React.useEffect(() => {
+    const updateNavbarColor = () => {
+      if (
+        document.documentElement.scrollTop > 299 ||
+        document.body.scrollTop > 299
+      ) {
+        setNavbarColor("");
+      } else if (
+        document.documentElement.scrollTop < 300 ||
+        document.body.scrollTop < 300
+      ) {
+        setNavbarColor("navbar-transparent");
+      }
+    };
+
+    window.addEventListener("scroll", updateNavbarColor);
+    
+    return function cleanup() {
+      window.removeEventListener("scroll", updateNavbarColor);
+    };
+  });
   return (
-    <Navbar
-      className="fixed-top navbar-transparent"
-      color-on-scroll="300"
-      expand="lg"
-    >
+    <Navbar className={classnames("fixed-top", navbarColor)} expand="lg">
       <Container>
         <div className="navbar-translate">
           <NavbarBrand
             data-placement="bottom"
-            href="https://demos.creative-tim.com/paper-kit/index.html"
-            rel="noopener noreferrer"
+            href="/index"
             target="_blank"
             title="Coded by Creative Tim"
           >
@@ -38,6 +60,9 @@ function IndexNavbar() {
             data-toggle="collapse"
             id="navigation"
             type="button"
+            onClick={() =>
+              document.documentElement.classList.toggle("nav-open")
+            }
           >
             <span className="navbar-toggler-bar bar1" />
             <span className="navbar-toggler-bar bar2" />
@@ -46,7 +71,6 @@ function IndexNavbar() {
         </div>
         <UncontrolledCollapse
           className="justify-content-end"
-          id="navigation"
           navbar
           toggler="#navigation"
         >
@@ -105,17 +129,16 @@ function IndexNavbar() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <i className="nc-icon nc-book-bookmark" />
-                Documentation
+                <i className="nc-icon nc-book-bookmark" /> Documentation
               </NavLink>
             </NavItem>
             <NavItem>
               <Button
                 className="btn-round"
                 color="danger"
-                href="https://www.creative-tim.com/product/paper-kit-2-pro?ref=pk2-free-local"
-                rel="noopener noreferrer"
+                href="#pablo"
                 target="_blank"
+                disabled
               >
                 Upgrade to Pro
               </Button>

@@ -88,11 +88,7 @@ class LandingPage extends React.Component {
                         Spend your time generating new ideas. You don't have to
                         think of implementing.
                       </p>
-                      <Button
-                        className="btn-link"
-                        color="danger"
-                        href="#pablo"
-                      >
+                      <Button className="btn-link" color="danger" href="#pablo">
                         See more
                       </Button>
                     </div>
@@ -109,11 +105,7 @@ class LandingPage extends React.Component {
                         Larger, yet dramatically thinner. More powerful, but
                         remarkably power efficient.
                       </p>
-                      <Button
-                        className="btn-link"
-                        color="danger"
-                        href="#pablo"
-                      >
+                      <Button className="btn-link" color="danger" href="#pablo">
                         See more
                       </Button>
                     </div>
@@ -130,11 +122,7 @@ class LandingPage extends React.Component {
                         Choose from a veriety of many colors resembling sugar
                         paper pastels.
                       </p>
-                      <Button
-                        className="btn-link"
-                        color="danger"
-                        href="#pablo"
-                      >
+                      <Button className="btn-link" color="danger" href="#pablo">
                         See more
                       </Button>
                     </div>
@@ -151,11 +139,7 @@ class LandingPage extends React.Component {
                         Find unique and handmade delightful designs related
                         items directly from our sellers.
                       </p>
-                      <Button
-                        className="btn-link"
-                        color="danger"
-                        href="#pablo"
-                      >
+                      <Button className="btn-link" color="danger" href="#pablo">
                         See more
                       </Button>
                     </div>

@@ -95,35 +95,20 @@ class ProfilePage extends React.Component {
                     <ul className="list-unstyled follows">
                       <li>
                         <Row>
-                          <Col
-                            className="ml-auto mr-auto"
-                            lg="2"
-                            md="4"
-                            xs="4"
-                          >
+                          <Col className="ml-auto mr-auto" lg="2" md="4" xs="4">
                             <img
                               alt="..."
                               className="img-circle img-no-padding img-responsive"
                               src={require("assets/img/faces/clem-onojeghuo-2.jpg")}
                             />
                           </Col>
-                          <Col
-                            className="ml-auto mr-auto"
-                            lg="7"
-                            md="4"
-                            xs="4"
-                          >
+                          <Col className="ml-auto mr-auto" lg="7" md="4" xs="4">
                             <h6>
                               Flume <br />
                               <small>Musical Producer</small>
                             </h6>
                           </Col>
-                          <Col
-                            className="ml-auto mr-auto"
-                            lg="3"
-                            md="4"
-                            xs="4"
-                          >
+                          <Col className="ml-auto mr-auto" lg="3" md="4" xs="4">
                             <FormGroup check>
                               <Label check>
                                 <Input
