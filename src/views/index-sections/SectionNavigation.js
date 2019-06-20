@@ -49,11 +49,7 @@ function SectionNavigation() {
                   <span className="navbar-toggler-bar" />
                   <span className="navbar-toggler-bar" />
                 </button>
-                <UncontrolledCollapse
-                  id="navbar-primary"
-                  navbar
-                  toggler="#navbar-primary"
-                >
+                <UncontrolledCollapse navbar toggler="#navbar-primary">
                   <Nav className="ml-auto" navbar>
                     <NavItem>
                       <NavLink href="#pablo" onClick={e => e.preventDefault()}>
@@ -105,11 +101,7 @@ function SectionNavigation() {
                   <span className="navbar-toggler-bar" />
                   <span className="navbar-toggler-bar" />
                 </button>
-                <UncontrolledCollapse
-                  id="navbar-info"
-                  navbar
-                  toggler="#navbar-info"
-                >
+                <UncontrolledCollapse navbar toggler="#navbar-info">
                   <Nav className="ml-auto" navbar>
                     <NavItem>
                       <NavLink href="#pablo" onClick={e => e.preventDefault()}>
@@ -150,8 +142,6 @@ function SectionNavigation() {
                   <span className="navbar-toggler-bar" />
                 </button>
                 <UncontrolledCollapse
-                  className="show"
-                  id="navbar-success"
                   navbar
                   style={{}}
                   toggler="#navbar-success"
@@ -204,11 +194,7 @@ function SectionNavigation() {
                   <span className="navbar-toggler-bar" />
                   <span className="navbar-toggler-bar" />
                 </button>
-                <UncontrolledCollapse
-                  id="navbar-warning"
-                  navbar
-                  toggler="#navbar-warning"
-                >
+                <UncontrolledCollapse navbar toggler="#navbar-warning">
                   <Nav className="ml-auto" navbar>
                     <NavItem>
                       <NavLink href="#pablo" onClick={e => e.preventDefault()}>
@@ -257,8 +243,6 @@ function SectionNavigation() {
                   <span className="navbar-toggler-bar" />
                 </button>
                 <UncontrolledCollapse
-                  className="show"
-                  id="navbar-danger"
                   navbar
                   style={{}}
                   toggler="#navbar-danger"
@@ -308,11 +292,7 @@ function SectionNavigation() {
                   <span className="navbar-toggler-bar" />
                   <span className="navbar-toggler-bar" />
                 </button>
-                <UncontrolledCollapse
-                  id="navbar-transparent"
-                  navbar
-                  toggler="#navbar-transparent"
-                >
+                <UncontrolledCollapse navbar toggler="#navbar-transparent">
                   <Nav className="ml-auto" navbar>
                     <NavItem>
                       <NavLink href="#pablo" onClick={e => e.preventDefault()}>
