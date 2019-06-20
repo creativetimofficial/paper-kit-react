@@ -21,8 +21,7 @@ function ExamplesNavbar() {
         <div className="navbar-translate">
           <NavbarBrand
             data-placement="bottom"
-            href="https://demos.creative-tim.com/paper-kit/index.html"
-            rel="noopener noreferrer"
+            href="/index"
             target="_blank"
             title="Coded by Creative Tim"
           >
@@ -45,7 +44,6 @@ function ExamplesNavbar() {
         </div>
         <UncontrolledCollapse
           className="justify-content-end"
-          id="navigation"
           navbar
           toggler="#navigation"
         >

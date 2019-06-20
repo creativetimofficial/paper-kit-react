@@ -16,8 +16,6 @@ import {
 function IndexNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
 
-  document.documentElement.classList.remove("nav-open");
-
   React.useEffect(() => {
     const updateNavbarColor = () => {
       if (
@@ -34,7 +32,7 @@ function IndexNavbar() {
     };
 
     window.addEventListener("scroll", updateNavbarColor);
-    
+
     return function cleanup() {
       window.removeEventListener("scroll", updateNavbarColor);
     };
@@ -49,7 +47,7 @@ function IndexNavbar() {
             target="_blank"
             title="Coded by Creative Tim"
           >
-            Paper Kit 2
+            Paper Kit React
           </NavbarBrand>
           <button
             aria-controls="navigation-index"
