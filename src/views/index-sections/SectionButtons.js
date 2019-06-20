@@ -1,6 +1,8 @@
 import React from "react";
 // react plugin used to create switch buttons
 import Switch from "react-bootstrap-switch";
+// plugin that creates slider
+import Slider from "nouislider";
 
 // reactstrap components
 import {
@@ -17,6 +19,20 @@ import {
 } from "reactstrap";
 
 function SectionButtons() {
+  React.useEffect(() => {
+    Slider.create(document.getElementById("sliderRegular"), {
+      start: [37.5],
+      connect: [true, false],
+      step: 0.5,
+      range: { min: 0, max: 100 }
+    });
+    Slider.create(document.getElementById("sliderDouble"), {
+      start: [20, 80],
+      connect: [false, true, false],
+      step: 1,
+      range: { min: 0, max: 100 }
+    });
+  })
   return (
     <>
       <div className="section section-buttons">
@@ -36,17 +52,17 @@ function SectionButtons() {
                 <Button color="info" type="button">
                   Default
                 </Button>
-                <Button className="btn-round" color="info" type="button">
+                <Button className="btn-round ml-1" color="info" type="button">
                   Round
                 </Button>
-                <Button className="btn-round" color="info" type="button">
-                  <i className="fa fa-heart" />
+                <Button className="btn-round ml-1" color="info" type="button">
+                  <i className="fa fa-heart mr-1" />
                   With Icon
                 </Button>
-                <Button className="btn-just-icon" color="info" type="button">
+                <Button className="btn-just-icon ml-1" color="info" type="button">
                   <i className="fa fa-heart" />
                 </Button>
-                <Button className="btn-link" color="info" type="button">
+                <Button className="btn-link ml-1" color="info" type="button">
                   Simple
                 </Button>
               </Col>
@@ -58,10 +74,10 @@ function SectionButtons() {
             </div>
             <Row>
               <Col md="8">
-                <Button color="danger" outline size="sm" type="button">
+                <Button color="danger" outline size="sm" type="button" className="mr-1">
                   Small
                 </Button>
-                <Button color="danger" outline type="button">
+                <Button color="danger" outline type="button" className="mr-1">
                   Regular
                 </Button>
                 <Button color="danger" outline size="lg" type="button">
@@ -77,7 +93,7 @@ function SectionButtons() {
             <Row>
               <Col md="8">
                 <Button
-                  className="btn-round"
+                  className="btn-round mr-1"
                   color="default"
                   outline
                   type="button"
@@ -85,7 +101,7 @@ function SectionButtons() {
                   Default
                 </Button>
                 <Button
-                  className="btn-round"
+                  className="btn-round mr-1"
                   color="primary"
                   outline
                   type="button"
@@ -93,7 +109,7 @@ function SectionButtons() {
                   Primary
                 </Button>
                 <Button
-                  className="btn-round"
+                  className="btn-round mr-1"
                   color="info"
                   outline
                   type="button"
@@ -101,7 +117,7 @@ function SectionButtons() {
                   Info
                 </Button>
                 <Button
-                  className="btn-round"
+                  className="btn-round mr-1"
                   color="success"
                   outline
                   type="button"
@@ -109,7 +125,7 @@ function SectionButtons() {
                   Success
                 </Button>
                 <Button
-                  className="btn-round"
+                  className="btn-round mr-1"
                   color="warning"
                   outline
                   type="button"
@@ -117,7 +133,7 @@ function SectionButtons() {
                   Warning
                 </Button>
                 <Button
-                  className="btn-round"
+                  className="btn-round mr-1"
                   color="danger"
                   outline
                   type="button"
@@ -125,8 +141,9 @@ function SectionButtons() {
                   Danger
                 </Button>
                 <Button
-                  className="btn-outline-neutral btn-round"
-                  color="default"
+                  className="btn-round"
+                  outline
+                  color="neutral"
                   type="button"
                 >
                   Neutral
@@ -136,27 +153,27 @@ function SectionButtons() {
             <br />
             <Row>
               <Col md="8">
-                <Button className="btn-round" color="default" type="button">
+                <Button className="btn-round mr-1" color="default" type="button">
                   Default
                 </Button>
-                <Button className="btn-round" color="primary" type="button">
+                <Button className="btn-round mr-1" color="primary" type="button">
                   Primary
                 </Button>
-                <Button className="btn-round" color="info" type="button">
+                <Button className="btn-round mr-1" color="info" type="button">
                   Info
                 </Button>
-                <Button className="btn-round" color="success" type="button">
+                <Button className="btn-round mr-1" color="success" type="button">
                   Success
                 </Button>
-                <Button className="btn-round" color="warning" type="button">
+                <Button className="btn-round mr-1" color="warning" type="button">
                   Warning
                 </Button>
-                <Button className="btn-round" color="danger" type="button">
+                <Button className="btn-round mr-1" color="danger" type="button">
                   Danger
                 </Button>
                 <Button
-                  className="btn-neutral btn-round"
-                  color="default"
+                  className="btn-round"
+                  color="neutral"
                   type="button"
                 >
                   Neutral
@@ -170,15 +187,15 @@ function SectionButtons() {
           <Row>
             <Col md="8">
               <Button
-                className="btn-link"
-                color="default"
+                className="mr-1"
+                color="link"
                 href="#pablo"
                 onClick={e => e.preventDefault()}
               >
                 Default
               </Button>
               <Button
-                className="btn-link"
+                className="btn-link mr-1"
                 color="primary"
                 href="#pablo"
                 onClick={e => e.preventDefault()}
@@ -186,7 +203,7 @@ function SectionButtons() {
                 Primary
               </Button>
               <Button
-                className="btn-link"
+                className="btn-link mr-1"
                 color="success"
                 href="#pablo"
                 onClick={e => e.preventDefault()}
@@ -194,7 +211,7 @@ function SectionButtons() {
                 Success
               </Button>
               <Button
-                className="btn-link"
+                className="btn-link mr-1"
                 color="info"
                 href="#pablo"
                 onClick={e => e.preventDefault()}
@@ -202,7 +219,7 @@ function SectionButtons() {
                 Info
               </Button>
               <Button
-                className="btn-link"
+                className="btn-link mr-1"
                 color="warning"
                 href="#pablo"
                 onClick={e => e.preventDefault()}
@@ -210,7 +227,7 @@ function SectionButtons() {
                 Warning
               </Button>
               <Button
-                className="btn-link"
+                className="btn-link mr-1"
                 color="danger"
                 href="#pablo"
                 onClick={e => e.preventDefault()}
@@ -218,8 +235,8 @@ function SectionButtons() {
                 Danger
               </Button>
               <Button
-                className="btn-neutral"
-                color="link"
+                className="btn-link"
+                color="neutral"
                 href="#pablo"
                 onClick={e => e.preventDefault()}
               >
@@ -365,16 +382,15 @@ function SectionButtons() {
               </div>
               <div id="switches">
                 <label>
-                  <Switch onColor="default" offColor="default" />
+                  <Switch onColor="primary" offColor="primary" />
                 </label>
                 <br />
                 <label>
                   <Switch
                     defaultValue={false}
-                    onColor="default"
-                    offColor="default"
+                    onColor="primary"
+                    offColor="primary"
                   />
-                  <span className="toggle" />
                 </label>
               </div>
             </Col>
