@@ -1,8 +1,6 @@
 import React from "react";
 // react plugin used to create datetimepicker
 import ReactDatetime from "react-datetime";
-// nodejs library that concatenates strings
-import classnames from "classnames";
 
 // reactstrap components
 import {
@@ -189,7 +187,6 @@ function SectionJavaScript() {
                     <InputGroup className="date" id="datetimepicker">
                       <ReactDatetime
                         inputProps={{
-                          className: "form-control",
                           placeholder: "Datetime Picker Here"
                         }}
                       />
