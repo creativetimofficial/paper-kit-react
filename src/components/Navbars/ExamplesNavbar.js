@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 // reactstrap components
 import {
   UncontrolledCollapse,
@@ -49,9 +51,8 @@ function ExamplesNavbar() {
         >
           <Nav navbar>
             <NavItem>
-              <NavLink href="../index.html">
-                <i className="nc-icon nc-layout-11" />
-                Components
+              <NavLink href="/index" tag={Link}>
+                <i className="nc-icon nc-layout-11" /> Components
               </NavLink>
             </NavItem>
             <NavItem>
@@ -60,8 +61,7 @@ function ExamplesNavbar() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <i className="nc-icon nc-book-bookmark" />
-                Documentation
+                <i className="nc-icon nc-book-bookmark" /> Documentation
               </NavLink>
             </NavItem>
             <NavItem>
