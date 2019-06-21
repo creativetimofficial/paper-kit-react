@@ -23,9 +23,9 @@ function SectionDownload() {
               <Button
                 className="btn-round"
                 color="danger"
-                href="http://www.creative-tim.com/product/paper-kit-2"
+                href="http://www.creative-tim.com/product/paper-kit-react"
               >
-                Download free HTML
+                Download free React
               </Button>
             </Col>
           </Row>
@@ -33,27 +33,16 @@ function SectionDownload() {
             <Col className="ml-auto mr-auto" md="8">
               <h2 className="title">Want more?</h2>
               <p className="description">
-                We've just launched{" "}
-                <a
-                  className="text-danger"
-                  href="http://demos.creative-tim.com/paper-kit-2-pro/presentation.html?ref=utp-pk2-demos"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Paper Kit 2 PRO
+                We're going to launch{" "}
+                <a className="text-danger" href="#pablo" disabled>
+                  Paper Kit PRO React in a few weeks
                 </a>
-                . It has a huge number of components, sections and example
+                . It will have a huge number of components, sections and example
                 pages.
               </p>
             </Col>
             <Col className="ml-auto mr-auto" sm="5">
-              <Button
-                className="btn-round"
-                color="info"
-                href="https://www.creative-tim.com/product/paper-kit-2-pro?ref=utp-pk-demos"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
+              <Button className="btn-round" color="info" href="#pablo" disabled>
                 <i aria-hidden={true} className="nc-icon nc-spaceship" />{" "}
                 Upgrade to PRO
               </Button>
