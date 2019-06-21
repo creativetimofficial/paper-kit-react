@@ -24,18 +24,16 @@ function SectionNucleoIcons() {
               <Button
                 className="btn-round"
                 color="danger"
-                href="nucleo-icons.html"
-                rel="noopener noreferrer"
+                href="/nucleo-icons"
                 target="_blank"
               >
                 View Demo Icons
               </Button>
               <Button
-                className="btn-round"
+                className="btn-round ml-1"
                 color="danger"
                 href="https://nucleoapp.com/?ref=1712"
                 outline
-                rel="noopener noreferrer"
                 target="_blank"
               >
                 View All Icons

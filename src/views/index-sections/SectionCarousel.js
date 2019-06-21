@@ -1,11 +1,60 @@
 import React from "react";
 
 // reactstrap components
-import { Card, Container, Row, Col } from "reactstrap";
+import {
+  Card,
+  Container,
+  Row,
+  Col,
+  Carousel,
+  CarouselItem,
+  CarouselIndicators,
+  CarouselCaption
+} from "reactstrap";
 
-// core components;
+// core components
+
+const items = [
+  {
+    src: require("assets/img/soroush-karimi.jpg"),
+    altText: "Somewhere",
+    caption: "Somewhere"
+  },
+  {
+    src: require("assets/img/federico-beccari.jpg"),
+    altText: "Somewhere else",
+    caption: "Somewhere else"
+  },
+  {
+    src: require("assets/img/joshua-stannard.jpg"),
+    altText: "Here it is",
+    caption: "Here it is"
+  }
+];
 
 function SectionCarousel() {
+  const [activeIndex, setActiveIndex] = React.useState(0);
+  const [animating, setAnimating] = React.useState(false);
+  const onExiting = () => {
+    setAnimating(true);
+  };
+  const onExited = () => {
+    setAnimating(false);
+  };
+  const next = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+    setActiveIndex(nextIndex);
+  };
+  const previous = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
+    setActiveIndex(nextIndex);
+  };
+  const goToIndex = newIndex => {
+    if (animating) return;
+    setActiveIndex(newIndex);
+  };
   return (
     <>
       <div className="section pt-o" id="carousel">
@@ -13,63 +62,39 @@ function SectionCarousel() {
           <Row>
             <Col className="ml-auto mr-auto" md="8">
               <Card className="page-carousel">
-                <div
-                  className="carousel slide"
-                  data-ride="carousel"
-                  id="carouselExampleIndicators"
+                <Carousel
+                  activeIndex={activeIndex}
+                  next={next}
+                  previous={previous}
                 >
-                  <ol className="carousel-indicators">
-                    <li
-                      className="active"
-                      data-slide-to="0"
-                      data-target="#carouselExampleIndicators"
-                    />
-                    <li
-                      data-slide-to="1"
-                      data-target="#carouselExampleIndicators"
-                    />
-                    <li
-                      data-slide-to="2"
-                      data-target="#carouselExampleIndicators"
-                    />
-                  </ol>
-                  <div className="carousel-inner" role="listbox">
-                    <div className="carousel-item active">
-                      <img
-                        alt="..."
-                        className="d-block img-fluid"
-                        src={require("assets/img/soroush-karimi.jpg")}
-                      />
-                      <div className="carousel-caption d-none d-md-block">
-                        <p>Somewhere</p>
-                      </div>
-                    </div>
-                    <div className="carousel-item">
-                      <img
-                        alt="..."
-                        className="d-block img-fluid"
-                        src={require("assets/img/federico-beccari.jpg")}
-                      />
-                      <div className="carousel-caption d-none d-md-block">
-                        <p>Somewhere else</p>
-                      </div>
-                    </div>
-                    <div className="carousel-item">
-                      <img
-                        alt="..."
-                        className="d-block img-fluid"
-                        src={require("assets/img/joshua-stannard.jpg")}
-                      />
-                      <div className="carousel-caption d-none d-md-block">
-                        <p>Here it is</p>
-                      </div>
-                    </div>
-                  </div>
+                  <CarouselIndicators
+                    items={items}
+                    activeIndex={activeIndex}
+                    onClickHandler={goToIndex}
+                  />
+                  {items.map(item => {
+                    return (
+                      <CarouselItem
+                        onExiting={onExiting}
+                        onExited={onExited}
+                        key={item.src}
+                      >
+                        <img src={item.src} alt={item.altText} />
+                        <CarouselCaption
+                          captionText={item.caption}
+                          captionHeader=""
+                        />
+                      </CarouselItem>
+                    );
+                  })}
                   <a
                     className="left carousel-control carousel-control-prev"
                     data-slide="prev"
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={e => {
+                      e.preventDefault();
+                      previous();
+                    }}
                     role="button"
                   >
                     <span className="fa fa-angle-left" />
@@ -79,13 +104,16 @@ function SectionCarousel() {
                     className="right carousel-control carousel-control-next"
                     data-slide="next"
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={e => {
+                      e.preventDefault();
+                      next();
+                    }}
                     role="button"
                   >
                     <span className="fa fa-angle-right" />
                     <span className="sr-only">Next</span>
                   </a>
-                </div>
+                </Carousel>
               </Card>
             </Col>
           </Row>
