@@ -3,13 +3,20 @@ import React from "react";
 // reactstrap components
 import { Button, Card, Form, Input, Container, Row, Col } from "reactstrap";
 
+// core components
+import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
+
 class RegisterPage extends React.Component {
   render() {
     return (
       <>
+        <ExamplesNavbar />
         <div
           className="page-header"
-          style={{ backgroundImage: "url('../assets/img/login-image.jpg')" }}
+          style={{
+            backgroundImage:
+              "url(" + require("assets/img/login-image.jpg") + ")"
+          }}
         >
           <div className="filter" />
           <Container>
@@ -68,7 +75,7 @@ class RegisterPage extends React.Component {
           </Container>
           <div className="footer register-footer text-center">
             <h6>
-              © <script>document.write(new Date().getFullYear())</script>, made
+              © {new Date().getFullYear()}, made
               with <i className="fa fa-heart heart" />
               by Creative Tim
             </h6>
