@@ -23,9 +23,10 @@ function ExamplesNavbar() {
         <div className="navbar-translate">
           <NavbarBrand
             data-placement="bottom"
-            href="/index"
+            to="/index"
             target="_blank"
             title="Coded by Creative Tim"
+            tag={Link}
           >
             Paper Kit 2
           </NavbarBrand>
@@ -51,7 +52,7 @@ function ExamplesNavbar() {
         >
           <Nav navbar>
             <NavItem>
-              <NavLink href="/index" tag={Link}>
+              <NavLink to="/index" tag={Link}>
                 <i className="nc-icon nc-layout-11" /> Components
               </NavLink>
             </NavItem>
