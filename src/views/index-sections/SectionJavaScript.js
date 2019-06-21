@@ -1,6 +1,8 @@
 import React from "react";
 // react plugin used to create datetimepicker
 import ReactDatetime from "react-datetime";
+// nodejs library that concatenates strings
+import classnames from "classnames";
 
 // reactstrap components
 import {
@@ -22,6 +24,10 @@ import {
 // core components
 
 function SectionJavaScript() {
+  const [modal, setModal] = React.useState(false);
+  const toggleModal = () => {
+    setModal(!modal);
+  };
   return (
     <>
       <div className="section javascript-components">
@@ -38,21 +44,20 @@ function SectionJavaScript() {
               <Button
                 className="btn-round"
                 color="danger"
-                data-target="#myModal"
-                data-toggle="modal"
                 outline
                 type="button"
+                onClick={toggleModal}
               >
                 Launch demo modal
               </Button>
               {/* Modal */}
-              <Modal>
+              <Modal isOpen={modal} toggle={toggleModal}>
                 <div className="modal-header">
                   <button
                     aria-label="Close"
                     className="close"
-                    data-dismiss="modal"
                     type="button"
+                    onClick={toggleModal}
                   >
                     <span aria-hidden={true}>×</span>
                   </button>
@@ -81,8 +86,8 @@ function SectionJavaScript() {
                     <Button
                       className="btn-link"
                       color="default"
-                      data-dismiss="modal"
                       type="button"
+                      onClick={toggleModal}
                     >
                       Never mind
                     </Button>
@@ -101,54 +106,54 @@ function SectionJavaScript() {
                 <h3>Popovers</h3>
               </div>
               <Button
-                className="btn-round"
+                className="btn-round mr-1"
                 color="danger"
-                data-content="Here will be some very useful information about this popover."
-                data-placement="top"
                 id="tooltip344834141"
                 outline
-                title="Popover on top"
-                type="button"
               >
                 On top
               </Button>
-              <UncontrolledPopover placement="top" target="tooltip344834141">
+              <UncontrolledPopover
+                placement="top"
+                target="tooltip344834141"
+                trigger="focus"
+              >
                 <PopoverHeader>Popover on top</PopoverHeader>
                 <PopoverBody>
                   Here will be some very useful information about this popover.
                 </PopoverBody>
               </UncontrolledPopover>
               <Button
-                className="btn-round"
+                className="btn-round mr-1"
                 color="danger"
-                data-content="Here will be some very useful information about this popover."
-                data-placement="bottom"
                 id="tooltip493417725"
                 outline
-                title="Popover on bottom"
-                type="button"
               >
                 On bottom
               </Button>
-              <UncontrolledPopover placement="bottom" target="tooltip493417725">
+              <UncontrolledPopover
+                placement="bottom"
+                target="tooltip493417725"
+                trigger="focus"
+              >
                 <PopoverHeader>Popover on bottom</PopoverHeader>
                 <PopoverBody>
                   Here will be some very useful information about this popover.
                 </PopoverBody>
               </UncontrolledPopover>
               <Button
-                className="btn-round"
+                className="btn-round mr-1"
                 color="danger"
-                data-content="Here will be some very useful information about this popover."
-                data-placement="left"
                 id="tooltip746845223"
                 outline
-                title="Popover on left"
-                type="button"
               >
                 On left
               </Button>
-              <UncontrolledPopover placement="left" target="tooltip746845223">
+              <UncontrolledPopover
+                placement="left"
+                target="tooltip746845223"
+                trigger="focus"
+              >
                 <PopoverHeader>Popover on left</PopoverHeader>
                 <PopoverBody>
                   Here will be some very useful information about this popover.
@@ -157,16 +162,16 @@ function SectionJavaScript() {
               <Button
                 className="btn-round"
                 color="danger"
-                data-content="Here will be some very useful information about this popover."
-                data-placement="right"
                 id="tooltip909471006"
                 outline
-                title="Popover on right"
-                type="button"
               >
                 On right
               </Button>
-              <UncontrolledPopover placement="right" target="tooltip909471006">
+              <UncontrolledPopover
+                placement="right"
+                target="tooltip909471006"
+                trigger="focus"
+              >
                 <PopoverHeader>Popover on right</PopoverHeader>
                 <PopoverBody>
                   Here will be some very useful information about this popover.
@@ -205,12 +210,10 @@ function SectionJavaScript() {
                 <h3>Tooltips</h3>
               </div>
               <Button
-                className="btn-round"
+                className="btn-round mr-1"
                 color="danger"
-                data-placement="left"
                 id="tooltip392938669"
                 outline
-                type="button"
               >
                 On left
               </Button>
@@ -222,12 +225,10 @@ function SectionJavaScript() {
                 On left
               </UncontrolledTooltip>
               <Button
-                className="btn-round"
+                className="btn-round mr-1"
                 color="danger"
-                data-placement="right"
                 id="tooltip354225297"
                 outline
-                type="button"
               >
                 On right
               </Button>
@@ -239,12 +240,10 @@ function SectionJavaScript() {
                 On right
               </UncontrolledTooltip>
               <Button
-                className="btn-round"
+                className="btn-round mr-1"
                 color="danger"
-                data-placement="top"
                 id="tooltip739061283"
                 outline
-                type="button"
               >
                 On top
               </Button>
@@ -258,10 +257,8 @@ function SectionJavaScript() {
               <Button
                 className="btn-round"
                 color="danger"
-                data-placement="bottom"
                 id="tooltip984013562"
                 outline
-                type="button"
               >
                 On bottom
               </Button>
