@@ -40,7 +40,7 @@ function SectionLogin() {
                     <i className="fa fa-facebook-square" />
                   </Button>
                   <Button
-                    className="btn-neutral btn-just-icon mt-0"
+                    className="btn-neutral btn-just-icon mt-0 ml-1"
                     color="google"
                     href="#pablo"
                     onClick={e => e.preventDefault()}
@@ -48,7 +48,7 @@ function SectionLogin() {
                     <i className="fa fa-google-plus" />
                   </Button>
                   <Button
-                    className="btn-neutral btn-just-icon mt-0"
+                    className="btn-neutral btn-just-icon mt-0 ml-1"
                     color="twitter"
                     href="#pablo"
                     onClick={e => e.preventDefault()}
@@ -75,7 +75,7 @@ function SectionLogin() {
                     </InputGroupAddon>
                     <Input placeholder="Password" type="password" />
                   </InputGroup>
-                  <Button block className="btn-round" color="danger">
+                  <Button block className="btn-round" color="danger" type="button">
                     Register
                   </Button>
                 </Form>
@@ -92,10 +92,10 @@ function SectionLogin() {
               </Card>
               <div className="col text-center">
                 <Button
-                  className="btn-outline-neutral btn-round"
-                  color="default"
+                  className="btn-round"
+                  outline
+                  color="neutral"
                   href="/register-page"
-                  rel="noopener noreferrer"
                   size="lg"
                   target="_blank"
                 >
