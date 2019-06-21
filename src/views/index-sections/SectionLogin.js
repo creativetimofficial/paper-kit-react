@@ -75,7 +75,12 @@ function SectionLogin() {
                     </InputGroupAddon>
                     <Input placeholder="Password" type="password" />
                   </InputGroup>
-                  <Button block className="btn-round" color="danger" type="button">
+                  <Button
+                    block
+                    className="btn-round"
+                    color="danger"
+                    type="button"
+                  >
                     Register
                   </Button>
                 </Form>
