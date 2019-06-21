@@ -54,7 +54,7 @@ function SectionDownload() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <i aria-hidden={true} className="nc-icon nc-spaceship" />
+                <i aria-hidden={true} className="nc-icon nc-spaceship" />{" "}
                 Upgrade to PRO
               </Button>
             </Col>
@@ -71,46 +71,42 @@ function SectionDownload() {
                 id="tooltip3373767"
                 onClick={e => e.preventDefault()}
               >
-                <i className="fa fa-twitter" />
-                Twitter
+                <i className="fa fa-twitter" /> Twitter
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip3373767">
                 Tweet!
               </UncontrolledTooltip>
               <Button
-                className="linkedin-sharrre btn-round"
+                className="linkedin-sharrre btn-round  ml-2"
                 color="google-bg"
                 href="#pablo"
                 id="tooltip840791273"
                 onClick={e => e.preventDefault()}
               >
-                <i className="fa fa-google-plus" />
-                Google
+                <i className="fa fa-google-plus" /> Google
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip840791273">
                 Share!
               </UncontrolledTooltip>
               <Button
-                className="facebook-sharrre btn-round"
+                className="facebook-sharrre btn-round ml-2"
                 color="facebook-bg"
                 href="#pablo"
                 id="tooltip68961360"
                 onClick={e => e.preventDefault()}
               >
-                <i className="fa fa-facebook-square" />
-                Facebook
+                <i className="fa fa-facebook-square" /> Facebook
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip68961360">
                 Share!
               </UncontrolledTooltip>
               <Button
-                className="sharrre btn-round"
+                className="sharrre btn-round ml-2"
                 color="github-bg"
                 href="https://github.com/creativetimofficial/paper-kit"
                 id="tooltip864353654"
               >
-                <i className="fa fa-github" />
-                Star
+                <i className="fa fa-github" /> Star
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip864353654">
                 Star on Github
