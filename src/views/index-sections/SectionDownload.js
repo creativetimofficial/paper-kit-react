@@ -24,6 +24,7 @@ function SectionDownload() {
                 className="btn-round"
                 color="danger"
                 href="http://www.creative-tim.com/product/paper-kit-react"
+                target="_blank"
               >
                 Download free React
               </Button>
