@@ -4,7 +4,7 @@ import classnames from "classnames";
 // reactstrap components
 import {
   Button,
-  UncontrolledCollapse,
+  Collapse,
   NavbarBrand,
   Navbar,
   NavItem,
@@ -15,6 +15,12 @@ import {
 
 function IndexNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
+  const [navbarCollapse, setNavbarCollapse] = React.useState(false);
+
+  const toggleNavbarCollapse = () => {
+    setNavbarCollapse(!navbarCollapse);
+    document.documentElement.classList.toggle("nav-open");
+  };
 
   React.useEffect(() => {
     const updateNavbarColor = () => {
@@ -50,27 +56,21 @@ function IndexNavbar() {
             Paper Kit React
           </NavbarBrand>
           <button
-            aria-controls="navigation-index"
-            aria-expanded={false}
-            aria-label="Toggle navigation"
-            className="navbar-toggler navbar-toggler"
-            data-target="#navigation"
-            data-toggle="collapse"
-            id="navigation"
-            type="button"
-            onClick={() =>
-              document.documentElement.classList.toggle("nav-open")
-            }
+            aria-expanded={navbarCollapse}
+            className={classnames("navbar-toggler navbar-toggler", {
+              toggled: navbarCollapse
+            })}
+            onClick={toggleNavbarCollapse}
           >
             <span className="navbar-toggler-bar bar1" />
             <span className="navbar-toggler-bar bar2" />
             <span className="navbar-toggler-bar bar3" />
           </button>
         </div>
-        <UncontrolledCollapse
+        <Collapse
           className="justify-content-end"
           navbar
-          toggler="#navigation"
+          isOpen={navbarCollapse}
         >
           <Nav navbar>
             <NavItem>
@@ -142,7 +142,7 @@ function IndexNavbar() {
               </Button>
             </NavItem>
           </Nav>
-        </UncontrolledCollapse>
+        </Collapse>
       </Container>
     </Navbar>
   );
