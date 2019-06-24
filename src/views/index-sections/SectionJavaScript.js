@@ -108,6 +108,7 @@ function SectionJavaScript() {
                 color="danger"
                 id="tooltip344834141"
                 outline
+                onClick={e => e.target.focus()}
               >
                 On top
               </Button>
@@ -126,6 +127,7 @@ function SectionJavaScript() {
                 color="danger"
                 id="tooltip493417725"
                 outline
+                onClick={e => e.target.focus()}
               >
                 On bottom
               </Button>
@@ -144,6 +146,7 @@ function SectionJavaScript() {
                 color="danger"
                 id="tooltip746845223"
                 outline
+                onClick={e => e.target.focus()}
               >
                 On left
               </Button>
@@ -162,6 +165,7 @@ function SectionJavaScript() {
                 color="danger"
                 id="tooltip909471006"
                 outline
+                onClick={e => e.target.focus()}
               >
                 On right
               </Button>
