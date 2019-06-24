@@ -12,11 +12,7 @@ function SectionExamples() {
         <Container>
           <Row className="example-page">
             <Col className="text-center" md="6">
-              <a
-                href="examples/landing.html"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
+              <a href="examples/landing.html" target="_blank">
                 <img
                   alt="..."
                   className="img-rounded img-responsive"
@@ -28,18 +24,13 @@ function SectionExamples() {
                 className="btn-outline-neutral btn-round"
                 color="default"
                 href="/landing-page"
-                rel="noopener noreferrer"
                 target="_blank"
               >
                 Landing Page
               </Button>
             </Col>
             <Col className="text-center" md="6">
-              <a
-                href="examples/profile.html"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
+              <a href="examples/profile.html" target="_blank">
                 <img
                   alt="..."
                   className="img-rounded img-responsive"
@@ -51,7 +42,6 @@ function SectionExamples() {
                 className="btn-outline-neutral btn-round"
                 color="default"
                 href="/profile-page"
-                rel="noopener noreferrer"
                 target="_blank"
               >
                 Profile Page

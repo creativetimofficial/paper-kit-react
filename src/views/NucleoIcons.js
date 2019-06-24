@@ -8,7 +8,7 @@ class NucleoIcons extends React.Component {
           <h1>Paper Kit React Icons</h1>
           <p>
             Built with{" "}
-            <a href="https://nucleoapp.com/?ref=1712">nucleoapp.com</a>
+            <a href="https://nucleoapp.com/?ref=1712" target="_blank">nucleoapp.com</a>
           </p>
         </header>
         <div id="icons-wrapper">

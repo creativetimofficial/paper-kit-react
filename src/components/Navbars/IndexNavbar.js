@@ -76,8 +76,7 @@ function IndexNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://twitter.com/CreativeTim"
-                rel="noopener noreferrer"
+                href="https://twitter.com/CreativeTim?ref=creativetim"
                 target="_blank"
                 title="Follow us on Twitter"
               >
@@ -88,8 +87,7 @@ function IndexNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.facebook.com/CreativeTim"
-                rel="noopener noreferrer"
+                href="https://www.facebook.com/CreativeTim?ref=creativetim"
                 target="_blank"
                 title="Like us on Facebook"
               >
@@ -100,8 +98,7 @@ function IndexNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.instagram.com/CreativeTimOfficial"
-                rel="noopener noreferrer"
+                href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
                 target="_blank"
                 title="Follow us on Instagram"
               >
@@ -112,8 +109,7 @@ function IndexNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.github.com/CreativeTimOfficial/paper-kit"
-                rel="noopener noreferrer"
+                href="https://www.github.com/CreativeTimOfficial/paper-kit-react?ref=creativetim"
                 target="_blank"
                 title="Star on GitHub"
               >
@@ -123,8 +119,7 @@ function IndexNavbar() {
             </NavItem>
             <NavItem>
               <NavLink
-                href="https://demos.creative-tim.com/paper-kit-2/docs/1.0/getting-started/introduction.html"
-                rel="noopener noreferrer"
+                href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-index-navbar"
                 target="_blank"
               >
                 <i className="nc-icon nc-book-bookmark" /> Documentation

@@ -11,29 +11,17 @@ function DemoFooter() {
           <nav className="footer-nav">
             <ul>
               <li>
-                <a
-                  href="https://www.creative-tim.com"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
+                <a href="https://www.creative-tim.com?ref=pkr-footer" target="_blank">
                   Creative Tim
                 </a>
               </li>
               <li>
-                <a
-                  href="http://blog.creative-tim.com/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
+                <a href="http://blog.creative-tim.com/?ref=pkr-footer" target="_blank">
                   Blog
                 </a>
               </li>
               <li>
-                <a
-                  href="https://www.creative-tim.com/license"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
+                <a href="https://www.creative-tim.com/license?ref=pkr-footer" target="_blank">
                   Licenses
                 </a>
               </li>
