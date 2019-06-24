@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React from "react";
 
 // reactstrap components
@@ -40,7 +41,10 @@ function IndexHeader() {
         />
         <h6 className="category category-absolute">
           Designed and coded by{" "}
-          <a href="https://www.creative-tim.com?ref=pkr-index-page" target="_blank">
+          <a
+            href="https://www.creative-tim.com?ref=pkr-index-page"
+            target="_blank"
+          >
             <img
               alt="..."
               className="creative-tim-logo"
