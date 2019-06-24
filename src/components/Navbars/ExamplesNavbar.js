@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+// nodejs library that concatenates strings
+import classnames from "classnames";
 
 // reactstrap components
 import {
@@ -13,9 +15,31 @@ import {
 } from "reactstrap";
 
 function ExamplesNavbar() {
+  const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
+  React.useEffect(() => {
+    const updateNavbarColor = () => {
+      if (
+        document.documentElement.scrollTop > 299 ||
+        document.body.scrollTop > 299
+      ) {
+        setNavbarColor("");
+      } else if (
+        document.documentElement.scrollTop < 300 ||
+        document.body.scrollTop < 300
+      ) {
+        setNavbarColor("navbar-transparent");
+      }
+    };
+
+    window.addEventListener("scroll", updateNavbarColor);
+
+    return function cleanup() {
+      window.removeEventListener("scroll", updateNavbarColor);
+    };
+  });
   return (
     <Navbar
-      className="fixed-top navbar-transparent"
+      className={classnames("fixed-top", navbarColor)}
       color-on-scroll="300"
       expand="lg"
     >

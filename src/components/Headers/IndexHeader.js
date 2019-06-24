@@ -28,7 +28,7 @@ function IndexHeader() {
               </div>
             </div>
             <h2 className="presentation-subtitle text-center">
-              Make your mark with a Free Bootstrap 4 UI Kit!
+              Make your mark with a Free Bootstrap 4 (Reactstrap) UI Kit!
             </h2>
           </Container>
         </div>
