@@ -13,7 +13,9 @@ class Introduction extends React.Component {
         <h1 className="bd-title" id="content">
           Introduction
         </h1>
-        <p className="bd-lead">Paper Kit React is a freeby Bootstrap 4, React and Reactstrap UI Kit.</p>
+        <p className="bd-lead">
+          Paper Kit React is a freeby Bootstrap 4, React and Reactstrap UI Kit.
+        </p>
         <h2 id="quick-start">Quick start</h2>
         <p>
           To start using the UI Kit you will need to import some files in your
@@ -22,9 +24,9 @@ class Introduction extends React.Component {
         </p>
         <h3 id="css">CSS</h3>
         <p>
-          Copy-paste the stylesheet{" "}
-          into your <code className="highlighter-rouge">index.js</code> file
-          before all other stylesheets to load our CSS.
+          Copy-paste the stylesheet into your{" "}
+          <code className="highlighter-rouge">index.js</code> file before all
+          other stylesheets to load our CSS.
         </p>
         <SyntaxHighlighter language="jsx" style={prism}>
           {`// styles\nimport "assets/css/bootstrap.min.css";\nimport "assets/css/paper-kit.css";\n// import "assets/css/paper-kit.min.css";\n// import "assets/css/paper-kit.css.map";\nimport "assets/demo/demo.css";`}
@@ -36,7 +38,10 @@ class Introduction extends React.Component {
         <h3 id="fonts-and-icons">Fonts and Icons</h3>
         <p>
           Copy-paste the stylesheet{" "}
-          <code className="highlighter-rouge">{`<link>`}</code> into your <code className="highlighter-rouge">{`<head>`}</code> before all other stylesheets to load the Fonts and Icons (inside your <code className="highlighter-rouge">index.html</code> file).
+          <code className="highlighter-rouge">{`<link>`}</code> into your{" "}
+          <code className="highlighter-rouge">{`<head>`}</code> before all other
+          stylesheets to load the Fonts and Icons (inside your{" "}
+          <code className="highlighter-rouge">index.html</code> file).
         </p>
         <SyntaxHighlighter language="html" style={prism}>
           {`<!--     Fonts and icons     -->\n<link\n  href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200"\n  rel="stylesheet"\n/>\n<link\n  href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"\n  rel="stylesheet"\n/>`}
@@ -71,8 +76,8 @@ class Introduction extends React.Component {
             (be sure to be logged into your account)
           </li>
           <li>
-            Press the download button near <b>Paper Kit React</b> product
-            (this will download onto your computer a zip file)
+            Press the download button near <b>Paper Kit React</b> product (this
+            will download onto your computer a zip file)
           </li>
           <li>Unzip the downloaded file to a folder in your computer</li>
           <li>Open Terminal</li>

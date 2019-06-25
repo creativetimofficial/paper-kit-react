@@ -12,8 +12,8 @@ class BuildTools extends React.Component {
           <div className="avatar-group mt-3" />
         </div>
         <p className="bd-lead">
-          Learn how to use Paper Kit React to build your theme, compile
-          SCSS, change brand-colors and more
+          Learn how to use Paper Kit React to build your theme, compile SCSS,
+          change brand-colors and more
         </p>
         <hr />
         <h2 id="available-commands">Available commands</h2>

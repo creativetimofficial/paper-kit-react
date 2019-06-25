@@ -71,7 +71,7 @@ const files = `paper-kit-react-master
             ├── SectionNotifications.js
             ├── SectionNucleoIcons.js
             ├── SectionProgress.js
-            └── SectionTypography.js`
+            └── SectionTypography.js`;
 
 class FileStructure extends React.Component {
   render() {
@@ -80,7 +80,9 @@ class FileStructure extends React.Component {
         <h1 className="bd-title" id="content">
           File Structure
         </h1>
-        <p className="bd-lead">Paper Kit React is a freeby Bootstrap 4, React and Reactstrap UI Kit.</p>
+        <p className="bd-lead">
+          Paper Kit React is a freeby Bootstrap 4, React and Reactstrap UI Kit.
+        </p>
         <h2 id="paper-kit-react-structure">Paper Kit React Structure</h2>
         <p>
           Once you have downloaded the archive and opened it, you will find the
