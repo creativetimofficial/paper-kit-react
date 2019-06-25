@@ -1,61 +1,146 @@
 import React from "react";
-// react plugin used to create datetimepicker
-import ReactDatetime from "react-datetime";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/styles/prism";
+import Datetime from "react-datetime";
+import {
+  CardBody,
+  CardTitle,
+  Card,
+  CardHeader,
+  FormGroup,
+  Row,
+  Col
+} from "reactstrap";
 
-// reactstrap components
-import { FormGroup } from "reactstrap";
+const codeExample = `<Row>
+    <Col xs={12} md={4}>
+        <Card>
+            <CardHeader><CardTitle>Datetime Picker</CardTitle></CardHeader>
+            <CardBody>
+                <FormGroup>
+                    <Datetime
+                        inputProps={{placeholder:"Datetime Picker Here"}}
+                    />
+                </FormGroup>
+            </CardBody>
+        </Card>
+    </Col>
+    <Col xs={12} md={4}>
+        <Card>
+            <CardHeader><CardTitle>Date Picker</CardTitle></CardHeader>
+            <CardBody>
+                <FormGroup>
+                    <Datetime
+                        timeFormat={false}
+                        inputProps={{placeholder:"Datetime Picker Here"}}
+                    />
+                </FormGroup>
+            </CardBody>
+        </Card>
+    </Col>
+    <Col xs={12} md={4}>
+        <Card>
+            <CardHeader><CardTitle>Time Picker</CardTitle></CardHeader>
+            <CardBody>
+                <FormGroup>
+                    <Datetime
+                        dateFormat={false}
+                        inputProps={{placeholder:"Datetime Picker Here"}}
+                    />
+                </FormGroup>
+            </CardBody>
+        </Card>
+    </Col>
+</Row>`;
 
-class Datetimepicker extends React.Component {
+class DateTimePicker extends React.Component {
   render() {
     return (
-      <>
+      <div>
         <h1 className="bd-title" id="content">
-          DateTimePicker v4.17.47
+          React Datetime v2.16.3
         </h1>
-        <p className="bd-lead" />
-        <p>
-          We have created the design of the date-time picker made by{" "}
-          <strong>
-            <a
-              href="https://github.com/Eonasdan"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Eonasdan
-            </a>
-          </strong>
-          . We have changed the colors, typography and buttons, so it can look
-          like the rest of the dashboard.
+        <p className="bd-lead">
+          We've used{" "}
+          <a
+            href="https://github.com/YouCanBookMe/react-datetime"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            react-datetime
+          </a>{" "}
+          for this component and we've restyled it to match our theme.
         </p>
-        <p>
-          For more information please check{" "}
-          <strong>
-            <a
-              href="https://eonasdan.github.io/bootstrap-datetimepicker/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Full Github Documentation
-            </a>
-          </strong>
-          .
-        </p>
-        <p>Here is a coded example:</p>
-        <div className="bd-example" data-example-id="">
-          {/* input with datetimepicker */}
-          <FormGroup>
-            <label className="label-control">DateTimePicker</label>
-            <ReactDatetime
-              inputProps={{
-                className: "form-control",
-                placeholder: "Datetime Picker Here"
-              }}
-            />
-          </FormGroup>
+        <h2>Example</h2>
+        <div className="bd-example">
+          <Row>
+            <Col xs={12} md={4}>
+              <Card>
+                <CardHeader>
+                  <CardTitle>Datetime Picker</CardTitle>
+                </CardHeader>
+                <CardBody>
+                  <FormGroup>
+                    <Datetime
+                      inputProps={{ placeholder: "Datetime Picker Here" }}
+                    />
+                  </FormGroup>
+                </CardBody>
+              </Card>
+            </Col>
+            <Col xs={12} md={4}>
+              <Card>
+                <CardHeader>
+                  <CardTitle>Date Picker</CardTitle>
+                </CardHeader>
+                <CardBody>
+                  <FormGroup>
+                    <Datetime
+                      timeFormat={false}
+                      inputProps={{ placeholder: "Datetime Picker Here" }}
+                    />
+                  </FormGroup>
+                </CardBody>
+              </Card>
+            </Col>
+            <Col xs={12} md={4}>
+              <Card>
+                <CardHeader>
+                  <CardTitle>Time Picker</CardTitle>
+                </CardHeader>
+                <CardBody>
+                  <FormGroup>
+                    <Datetime
+                      dateFormat={false}
+                      inputProps={{ placeholder: "Datetime Picker Here" }}
+                    />
+                  </FormGroup>
+                </CardBody>
+              </Card>
+            </Col>
+          </Row>
         </div>
-      </>
+        <SyntaxHighlighter
+          language="jsx"
+          style={prism}
+        >{`import Datetime from 'react-datetime';`}</SyntaxHighlighter>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeExample}
+        </SyntaxHighlighter>
+        <h2>Props</h2>
+        <p>
+          For props, please refer to{" "}
+          <a
+            href="https://github.com/YouCanBookMe/react-datetime"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            react-datetime's documentation
+          </a>.
+        </p>
+      </div>
     );
   }
 }
 
-export default Datetimepicker;
+export default DateTimePicker;
