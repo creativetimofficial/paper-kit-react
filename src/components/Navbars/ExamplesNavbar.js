@@ -85,11 +85,7 @@ function ExamplesNavbar() {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink
-                to="/documentation"
-                target="_blank"
-                tag={Link}
-              >
+              <NavLink to="/documentation" target="_blank" tag={Link}>
                 <i className="nc-icon nc-book-bookmark" /> Documentation
               </NavLink>
             </NavItem>

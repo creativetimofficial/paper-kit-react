@@ -1,10 +1,7 @@
 import React from "react";
 
 // reactstrap components
-import {
-  Breadcrumb,
-  BreadcrumbItem
-} from "reactstrap";
+import { Breadcrumb, BreadcrumbItem } from "reactstrap";
 
 class BreadcrumbDocs extends React.Component {
   render() {

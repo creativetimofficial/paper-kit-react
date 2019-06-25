@@ -1,5 +1,6 @@
 // getting started
 import Introduction from "views/docs/Sections/getting-started/Introduction.js";
+import BuildTools from "views/docs/Sections/getting-started/BuildTools.js";
 import License from "views/docs/Sections/getting-started/License.js";
 import FileStructure from "views/docs/Sections/getting-started/FileStructure.js";
 // core components
@@ -8,22 +9,22 @@ import Headers from "views/docs/Sections/core-components/Headers.js";
 import Navbars from "views/docs/Sections/core-components/Navbars.js";
 import Parallax from "views/docs/Sections/core-components/Parallax.js";
 // components
-import Alerts from "views/docs/Sections/components/Alerts.js";
-import Badge from "views/docs/Sections/components/Badge.js";
-import Breadcrumb from "views/docs/Sections/components/Breadcrumb.js";
-import Buttons from "views/docs/Sections/components/Buttons.js";
-import Card from "views/docs/Sections/components/Card.js";
-import Carousel from "views/docs/Sections/components/Carousel.js";
-import Colors from "views/docs/Sections/components/Colors.js";
-import Dropdowns from "views/docs/Sections/components/Dropdowns.js";
-import Forms from "views/docs/Sections/components/Forms.js";
-import Modal from "views/docs/Sections/components/Modal.js";
-import Navbar from "views/docs/Sections/components/Navbar.js";
-import Pagination from "views/docs/Sections/components/Pagination.js";
-import Popovers from "views/docs/Sections/components/Popovers.js";
-import Progress from "views/docs/Sections/components/Progress.js";
-import Tooltips from "views/docs/Sections/components/Tooltips.js";
-import Typography from "views/docs/Sections/components/Typography.js";
+import Alerts from "views/docs/Sections/restyled-components/Alerts.js";
+import Badge from "views/docs/Sections/restyled-components/Badge.js";
+import Breadcrumb from "views/docs/Sections/restyled-components/Breadcrumb.js";
+import Buttons from "views/docs/Sections/restyled-components/Buttons.js";
+import Card from "views/docs/Sections/restyled-components/Card.js";
+import Carousel from "views/docs/Sections/restyled-components/Carousel.js";
+import Colors from "views/docs/Sections/restyled-components/Colors.js";
+import Dropdowns from "views/docs/Sections/restyled-components/Dropdowns.js";
+import Forms from "views/docs/Sections/restyled-components/Forms.js";
+import Modal from "views/docs/Sections/restyled-components/Modal.js";
+import Navbar from "views/docs/Sections/restyled-components/Navbar.js";
+import Pagination from "views/docs/Sections/restyled-components/Pagination.js";
+import Popovers from "views/docs/Sections/restyled-components/Popovers.js";
+import Progress from "views/docs/Sections/restyled-components/Progress.js";
+import Tooltips from "views/docs/Sections/restyled-components/Tooltips.js";
+import Typography from "views/docs/Sections/restyled-components/Typography.js";
 // plugins
 import Nouislider from "views/docs/Sections/plugins/Nouislider.js";
 import NucleoIcons from "views/docs/Sections/plugins/NucleoIcons.js";
@@ -40,6 +41,11 @@ const routes = [
         path: "/documentation/introduction",
         component: Introduction,
         name: "Introduction"
+      },
+      {
+        path: "/documentation/build-tools",
+        component: BuildTools,
+        name: "BuildTools"
       },
       {
         path: "/documentation/license",
@@ -196,7 +202,11 @@ const routes = [
       }
     ]
   },
-  { redirect: true, path: "/documentation", pathTo: "/documentation/introduction" }
+  {
+    redirect: true,
+    path: "/documentation",
+    pathTo: "/documentation/introduction"
+  }
 ];
 
 export default routes;
