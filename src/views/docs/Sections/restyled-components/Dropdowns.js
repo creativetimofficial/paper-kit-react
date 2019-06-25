@@ -1,4 +1,18 @@
+/*eslint-disable*/
 import React from "react";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/styles/prism";
+// reactstrap components
+import {
+  Button,
+  ButtonGroup,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  UncontrolledDropdown
+} from "reactstrap";
+
+const codeSingleButton = `import React from "react";
 
 // reactstrap components
 import {
@@ -9,6 +23,498 @@ import {
   DropdownItem,
   UncontrolledDropdown
 } from "reactstrap";
+
+function Example(){
+  return (
+    <>
+      <UncontrolledDropdown>
+        <DropdownToggle
+          aria-expanded={false}
+          aria-haspopup={true}
+          caret
+          color="secondary"
+          data-toggle="dropdown"
+          id="dropdownMenuButton"
+          type="button"
+        >
+          Dropdown button
+        </DropdownToggle>
+        <DropdownMenu aria-labelledby="dropdownMenuButton">
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Action
+          </DropdownItem>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Another action
+          </DropdownItem>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Something else here
+          </DropdownItem>
+        </DropdownMenu>
+      </UncontrolledDropdown>
+    </>
+  );
+}
+
+export default Example;`;
+
+const codeA = `import React from "react";
+
+// reactstrap components
+import {
+  Button,
+  ButtonGroup,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  UncontrolledDropdown
+} from "reactstrap";
+
+function Example(){
+  return (
+    <>
+      <UncontrolledDropdown>
+        <DropdownToggle
+          aria-expanded={false}
+          aria-haspopup={true}
+          caret
+          color="secondary"
+          data-toggle="dropdown"
+          href="#pablo"
+          id="dropdownMenuLink"
+          onClick={e => e.preventDefault()}
+          role="button"
+        >
+          Dropdown link
+        </DropdownToggle>
+        <DropdownMenu aria-labelledby="dropdownMenuLink">
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Action
+          </DropdownItem>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Another action
+          </DropdownItem>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Something else here
+          </DropdownItem>
+        </DropdownMenu>
+      </UncontrolledDropdown>
+    </>
+  );
+}
+
+export default Example;`;
+
+const codeTheBestPart = `import React from "react";
+
+// reactstrap components
+import {
+  Button,
+  ButtonGroup,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  UncontrolledDropdown
+} from "reactstrap";
+
+function Example(){
+  return (
+    <>
+      <UncontrolledDropdown className="btn-group">
+        <DropdownToggle
+          aria-expanded={false}
+          aria-haspopup={true}
+          caret
+          color="primary"
+          data-toggle="dropdown"
+          type="button"
+        >
+          Primary
+        </DropdownToggle>
+        <DropdownMenu>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Action
+          </DropdownItem>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Another action
+          </DropdownItem>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Something else here
+          </DropdownItem>
+          <DropdownItem divider />
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Separated link
+          </DropdownItem>
+        </DropdownMenu>
+      </UncontrolledDropdown>
+      {/* /btn-group */}
+      <UncontrolledDropdown className="btn-group">
+        <DropdownToggle
+          aria-expanded={false}
+          aria-haspopup={true}
+          caret
+          color="secondary"
+          data-toggle="dropdown"
+          type="button"
+        >
+          Secondary
+        </DropdownToggle>
+        <DropdownMenu>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Action
+          </DropdownItem>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Another action
+          </DropdownItem>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Something else here
+          </DropdownItem>
+          <DropdownItem divider />
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Separated link
+          </DropdownItem>
+        </DropdownMenu>
+      </UncontrolledDropdown>
+      {/* /btn-group */}
+      <UncontrolledDropdown className="btn-group">
+        <DropdownToggle
+          aria-expanded={false}
+          aria-haspopup={true}
+          caret
+          color="success"
+          data-toggle="dropdown"
+          type="button"
+        >
+          Success
+        </DropdownToggle>
+        <DropdownMenu>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Action
+          </DropdownItem>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Another action
+          </DropdownItem>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Something else here
+          </DropdownItem>
+          <DropdownItem divider />
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Separated link
+          </DropdownItem>
+        </DropdownMenu>
+      </UncontrolledDropdown>
+      {/* /btn-group */}
+      <UncontrolledDropdown className="btn-group">
+        <DropdownToggle
+          aria-expanded={false}
+          aria-haspopup={true}
+          caret
+          color="info"
+          data-toggle="dropdown"
+          type="button"
+        >
+          Info
+        </DropdownToggle>
+        <DropdownMenu>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Action
+          </DropdownItem>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Another action
+          </DropdownItem>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Something else here
+          </DropdownItem>
+          <DropdownItem divider />
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Separated link
+          </DropdownItem>
+        </DropdownMenu>
+      </UncontrolledDropdown>
+      {/* /btn-group */}
+      <UncontrolledDropdown className="btn-group">
+        <DropdownToggle
+          aria-expanded={false}
+          aria-haspopup={true}
+          caret
+          color="warning"
+          data-toggle="dropdown"
+          type="button"
+        >
+          Warning
+        </DropdownToggle>
+        <DropdownMenu>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Action
+          </DropdownItem>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Another action
+          </DropdownItem>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Something else here
+          </DropdownItem>
+          <DropdownItem divider />
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Separated link
+          </DropdownItem>
+        </DropdownMenu>
+      </UncontrolledDropdown>
+      {/* /btn-group */}
+      <UncontrolledDropdown className="btn-group">
+        <DropdownToggle
+          aria-expanded={false}
+          aria-haspopup={true}
+          caret
+          color="danger"
+          data-toggle="dropdown"
+          type="button"
+        >
+          Danger
+        </DropdownToggle>
+        <DropdownMenu>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Action
+          </DropdownItem>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Another action
+          </DropdownItem>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Something else here
+          </DropdownItem>
+          <DropdownItem divider />
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Separated link
+          </DropdownItem>
+        </DropdownMenu>
+      </UncontrolledDropdown>
+    </>
+  );
+}
+
+export default Example;`;
+
+const codeSplitButton = `import React from "react";
+
+// reactstrap components
+import {
+  Button,
+  ButtonGroup,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  UncontrolledDropdown
+} from "reactstrap";
+
+function Example(){
+  return (
+    <>
+      <UncontrolledDropdown>
+        <ButtonGroup>
+          <Button color="primary" type="button">
+            Primary
+          </Button>
+          <DropdownToggle
+            aria-expanded={false}
+            aria-haspopup={true}
+            caret
+            className="dropdown-toggle-split"
+            color="primary"
+            data-toggle="dropdown"
+            type="button"
+          >
+            <span className="sr-only">Toggle Dropdown</span>
+          </DropdownToggle>
+        </ButtonGroup>
+        <DropdownMenu>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Action
+          </DropdownItem>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Another action
+          </DropdownItem>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Something else here
+          </DropdownItem>
+          <DropdownItem divider />
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Separated link
+          </DropdownItem>
+        </DropdownMenu>
+      </UncontrolledDropdown>
+      {/* /btn-group */}
+      <UncontrolledDropdown>
+        <ButtonGroup>
+          <Button color="secondary" type="button">
+            Secondary
+          </Button>
+          <DropdownToggle
+            aria-expanded={false}
+            aria-haspopup={true}
+            caret
+            className="dropdown-toggle-split"
+            color="secondary"
+            data-toggle="dropdown"
+            type="button"
+          >
+            <span className="sr-only">Toggle Dropdown</span>
+          </DropdownToggle>
+        </ButtonGroup>
+        <DropdownMenu>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Action
+          </DropdownItem>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Another action
+          </DropdownItem>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Something else here
+          </DropdownItem>
+          <DropdownItem divider />
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Separated link
+          </DropdownItem>
+        </DropdownMenu>
+      </UncontrolledDropdown>
+      {/* /btn-group */}
+      <UncontrolledDropdown>
+        <ButtonGroup>
+          <Button color="success" type="button">
+            Success
+          </Button>
+          <DropdownToggle
+            aria-expanded={false}
+            aria-haspopup={true}
+            caret
+            className="dropdown-toggle-split"
+            color="success"
+            data-toggle="dropdown"
+            type="button"
+          >
+            <span className="sr-only">Toggle Dropdown</span>
+          </DropdownToggle>
+        </ButtonGroup>
+        <DropdownMenu>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Action
+          </DropdownItem>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Another action
+          </DropdownItem>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Something else here
+          </DropdownItem>
+          <DropdownItem divider />
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Separated link
+          </DropdownItem>
+        </DropdownMenu>
+      </UncontrolledDropdown>
+      {/* /btn-group */}
+      <UncontrolledDropdown>
+        <ButtonGroup>
+          <Button color="info" type="button">
+            Info
+          </Button>
+          <DropdownToggle
+            aria-expanded={false}
+            aria-haspopup={true}
+            caret
+            className="dropdown-toggle-split"
+            color="info"
+            data-toggle="dropdown"
+            type="button"
+          >
+            <span className="sr-only">Toggle Dropdown</span>
+          </DropdownToggle>
+        </ButtonGroup>
+        <DropdownMenu>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Action
+          </DropdownItem>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Another action
+          </DropdownItem>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Something else here
+          </DropdownItem>
+          <DropdownItem divider />
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Separated link
+          </DropdownItem>
+        </DropdownMenu>
+      </UncontrolledDropdown>
+      {/* /btn-group */}
+      <UncontrolledDropdown>
+        <ButtonGroup>
+          <Button color="warning" type="button">
+            Warning
+          </Button>
+          <DropdownToggle
+            aria-expanded={false}
+            aria-haspopup={true}
+            caret
+            className="dropdown-toggle-split"
+            color="warning"
+            data-toggle="dropdown"
+            type="button"
+          >
+            <span className="sr-only">Toggle Dropdown</span>
+          </DropdownToggle>
+        </ButtonGroup>
+        <DropdownMenu>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Action
+          </DropdownItem>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Another action
+          </DropdownItem>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Something else here
+          </DropdownItem>
+          <DropdownItem divider />
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Separated link
+          </DropdownItem>
+        </DropdownMenu>
+      </UncontrolledDropdown>
+      {/* /btn-group */}
+      <UncontrolledDropdown>
+        <ButtonGroup>
+          <Button color="danger" type="button">
+            Danger
+          </Button>
+          <DropdownToggle
+            aria-expanded={false}
+            aria-haspopup={true}
+            caret
+            className="dropdown-toggle-split"
+            color="danger"
+            data-toggle="dropdown"
+            type="button"
+          >
+            <span className="sr-only">Toggle Dropdown</span>
+          </DropdownToggle>
+        </ButtonGroup>
+        <DropdownMenu>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Action
+          </DropdownItem>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Another action
+          </DropdownItem>
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Something else here
+          </DropdownItem>
+          <DropdownItem divider />
+          <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+            Separated link
+          </DropdownItem>
+        </DropdownMenu>
+      </UncontrolledDropdown>
+    </>
+  );
+}
+
+export default Example;`;
 
 class Dropdowns extends React.Component {
   render() {
@@ -23,23 +529,19 @@ class Dropdowns extends React.Component {
         </p>
         <h2 id="examples">Examples</h2>
         <p>
-          Wrap the dropdown’s toggle (your button or link) and the dropdown menu
-          within <code className="highlighter-rouge">.dropdown</code>, or
-          another element that declares{" "}
-          <code className="highlighter-rouge">position: relative;</code>.
-          Dropdowns can be triggered from{" "}
-          <code className="highlighter-rouge">{`<a>`}</code>
-          or <code className="highlighter-rouge">{`<button>`}</code>
-          elements to better fit your potential needs.
+          The <code>Dropdown</code> component is used to pass the{" "}
+          <code>isOpen</code> &amp; <code>toggle</code> props via context to the
+          following components: <code>DropdownToggle</code>,{" "}
+          <code>DropdownMenu</code>. The <code>DropdownToggle</code> uses the{" "}
+          <code>Button</code> component internally, meaning it also accepts all
+          the props the <a href="#/documentation/buttons/">Button component</a>{" "}
+          accepts.
+        </p>
+        <p>
+          You can either use a controlled or a uncontrolled dropdown. In our
+          examples we are going to use uncontrolled dropdowns.
         </p>
         <h3 id="single-button-dropdowns">Single button dropdowns</h3>
-        <p>
-          Any single <code className="highlighter-rouge">.btn</code>
-          can be turned into a dropdown toggle with some markup changes. Here’s
-          how you can put them to work with either{" "}
-          <code className="highlighter-rouge">{`<button>`}</code>
-          elements:
-        </p>
         <div className="bd-example" data-example-id="">
           <UncontrolledDropdown>
             <DropdownToggle
@@ -66,12 +568,14 @@ class Dropdowns extends React.Component {
             </DropdownMenu>
           </UncontrolledDropdown>
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeSingleButton}
+        </SyntaxHighlighter>
         <p>
-          And with <code className="highlighter-rouge">{`<a>`}</code>
-          elements:
+          And with <code className="highlighter-rouge">{`<a>`}</code> elements:
         </p>
         <div className="bd-example" data-example-id="">
-          <UncontrolledDropdown className="show">
+          <UncontrolledDropdown>
             <DropdownToggle
               aria-expanded={false}
               aria-haspopup={true}
@@ -98,9 +602,12 @@ class Dropdowns extends React.Component {
             </DropdownMenu>
           </UncontrolledDropdown>
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeA}
+        </SyntaxHighlighter>
         <p>The best part is you can do this with any button variant, too:</p>
         <div className="bd-example">
-          <ButtonGroup className="dropdown">
+          <UncontrolledDropdown className="btn-group">
             <DropdownToggle
               aria-expanded={false}
               aria-haspopup={true}
@@ -126,9 +633,9 @@ class Dropdowns extends React.Component {
                 Separated link
               </DropdownItem>
             </DropdownMenu>
-          </ButtonGroup>
+          </UncontrolledDropdown>
           {/* /btn-group */}
-          <ButtonGroup className="dropdown">
+          <UncontrolledDropdown className="btn-group">
             <DropdownToggle
               aria-expanded={false}
               aria-haspopup={true}
@@ -154,9 +661,9 @@ class Dropdowns extends React.Component {
                 Separated link
               </DropdownItem>
             </DropdownMenu>
-          </ButtonGroup>
+          </UncontrolledDropdown>
           {/* /btn-group */}
-          <ButtonGroup className="dropdown">
+          <UncontrolledDropdown className="btn-group">
             <DropdownToggle
               aria-expanded={false}
               aria-haspopup={true}
@@ -182,9 +689,9 @@ class Dropdowns extends React.Component {
                 Separated link
               </DropdownItem>
             </DropdownMenu>
-          </ButtonGroup>
+          </UncontrolledDropdown>
           {/* /btn-group */}
-          <ButtonGroup className="dropdown">
+          <UncontrolledDropdown className="btn-group">
             <DropdownToggle
               aria-expanded={false}
               aria-haspopup={true}
@@ -210,9 +717,9 @@ class Dropdowns extends React.Component {
                 Separated link
               </DropdownItem>
             </DropdownMenu>
-          </ButtonGroup>
+          </UncontrolledDropdown>
           {/* /btn-group */}
-          <ButtonGroup className="dropdown">
+          <UncontrolledDropdown className="btn-group">
             <DropdownToggle
               aria-expanded={false}
               aria-haspopup={true}
@@ -238,9 +745,9 @@ class Dropdowns extends React.Component {
                 Separated link
               </DropdownItem>
             </DropdownMenu>
-          </ButtonGroup>
+          </UncontrolledDropdown>
           {/* /btn-group */}
-          <ButtonGroup className="dropdown">
+          <UncontrolledDropdown className="btn-group">
             <DropdownToggle
               aria-expanded={false}
               aria-haspopup={true}
@@ -266,41 +773,31 @@ class Dropdowns extends React.Component {
                 Separated link
               </DropdownItem>
             </DropdownMenu>
-          </ButtonGroup>
+          </UncontrolledDropdown>
           {/* /btn-group */}
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeTheBestPart}
+        </SyntaxHighlighter>
         <h3 id="split-button-dropdowns">Split button dropdowns</h3>
-        <p>
-          Similarly, create split button dropdowns with virtually the same
-          markup as single button dropdowns, but with the addition of{" "}
-          <code className="highlighter-rouge">.dropdown-toggle-split</code>
-          for proper spacing around the dropdown caret.
-        </p>
-        <p>
-          We use this extra class to reduce the horizontal{" "}
-          <code className="highlighter-rouge">padding</code>
-          on either side of the caret by 25% and remove the{" "}
-          <code className="highlighter-rouge">margin-left</code>
-          that’s added for regular button dropdowns. Those extra changes keep
-          the caret centered in the split button and provide a more
-          appropriately sized hit area next to the main button.
-        </p>
         <div className="bd-example">
-          <ButtonGroup>
-            <Button color="primary" type="button">
-              Primary
-            </Button>
-            <DropdownToggle
-              aria-expanded={false}
-              aria-haspopup={true}
-              caret
-              className="dropdown-toggle-split"
-              color="primary"
-              data-toggle="dropdown"
-              type="button"
-            >
-              <span className="sr-only">Toggle Dropdown</span>
-            </DropdownToggle>
+          <UncontrolledDropdown>
+            <ButtonGroup>
+              <Button color="primary" type="button">
+                Primary
+              </Button>
+              <DropdownToggle
+                aria-expanded={false}
+                aria-haspopup={true}
+                caret
+                className="dropdown-toggle-split"
+                color="primary"
+                data-toggle="dropdown"
+                type="button"
+              >
+                <span className="sr-only">Toggle Dropdown</span>
+              </DropdownToggle>
+            </ButtonGroup>
             <DropdownMenu>
               <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
                 Action
@@ -316,23 +813,25 @@ class Dropdowns extends React.Component {
                 Separated link
               </DropdownItem>
             </DropdownMenu>
-          </ButtonGroup>
+          </UncontrolledDropdown>
           {/* /btn-group */}
-          <ButtonGroup>
-            <Button color="secondary" type="button">
-              Secondary
-            </Button>
-            <DropdownToggle
-              aria-expanded={false}
-              aria-haspopup={true}
-              caret
-              className="dropdown-toggle-split"
-              color="secondary"
-              data-toggle="dropdown"
-              type="button"
-            >
-              <span className="sr-only">Toggle Dropdown</span>
-            </DropdownToggle>
+          <UncontrolledDropdown>
+            <ButtonGroup>
+              <Button color="secondary" type="button">
+                Secondary
+              </Button>
+              <DropdownToggle
+                aria-expanded={false}
+                aria-haspopup={true}
+                caret
+                className="dropdown-toggle-split"
+                color="secondary"
+                data-toggle="dropdown"
+                type="button"
+              >
+                <span className="sr-only">Toggle Dropdown</span>
+              </DropdownToggle>
+            </ButtonGroup>
             <DropdownMenu>
               <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
                 Action
@@ -348,23 +847,25 @@ class Dropdowns extends React.Component {
                 Separated link
               </DropdownItem>
             </DropdownMenu>
-          </ButtonGroup>
+          </UncontrolledDropdown>
           {/* /btn-group */}
-          <ButtonGroup>
-            <Button color="success" type="button">
-              Success
-            </Button>
-            <DropdownToggle
-              aria-expanded={false}
-              aria-haspopup={true}
-              caret
-              className="dropdown-toggle-split"
-              color="success"
-              data-toggle="dropdown"
-              type="button"
-            >
-              <span className="sr-only">Toggle Dropdown</span>
-            </DropdownToggle>
+          <UncontrolledDropdown>
+            <ButtonGroup>
+              <Button color="success" type="button">
+                Success
+              </Button>
+              <DropdownToggle
+                aria-expanded={false}
+                aria-haspopup={true}
+                caret
+                className="dropdown-toggle-split"
+                color="success"
+                data-toggle="dropdown"
+                type="button"
+              >
+                <span className="sr-only">Toggle Dropdown</span>
+              </DropdownToggle>
+            </ButtonGroup>
             <DropdownMenu>
               <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
                 Action
@@ -380,23 +881,25 @@ class Dropdowns extends React.Component {
                 Separated link
               </DropdownItem>
             </DropdownMenu>
-          </ButtonGroup>
+          </UncontrolledDropdown>
           {/* /btn-group */}
-          <ButtonGroup>
-            <Button color="info" type="button">
-              Info
-            </Button>
-            <DropdownToggle
-              aria-expanded={false}
-              aria-haspopup={true}
-              caret
-              className="dropdown-toggle-split"
-              color="info"
-              data-toggle="dropdown"
-              type="button"
-            >
-              <span className="sr-only">Toggle Dropdown</span>
-            </DropdownToggle>
+          <UncontrolledDropdown>
+            <ButtonGroup>
+              <Button color="info" type="button">
+                Info
+              </Button>
+              <DropdownToggle
+                aria-expanded={false}
+                aria-haspopup={true}
+                caret
+                className="dropdown-toggle-split"
+                color="info"
+                data-toggle="dropdown"
+                type="button"
+              >
+                <span className="sr-only">Toggle Dropdown</span>
+              </DropdownToggle>
+            </ButtonGroup>
             <DropdownMenu>
               <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
                 Action
@@ -412,23 +915,25 @@ class Dropdowns extends React.Component {
                 Separated link
               </DropdownItem>
             </DropdownMenu>
-          </ButtonGroup>
+          </UncontrolledDropdown>
           {/* /btn-group */}
-          <ButtonGroup>
-            <Button color="warning" type="button">
-              Warning
-            </Button>
-            <DropdownToggle
-              aria-expanded={false}
-              aria-haspopup={true}
-              caret
-              className="dropdown-toggle-split"
-              color="warning"
-              data-toggle="dropdown"
-              type="button"
-            >
-              <span className="sr-only">Toggle Dropdown</span>
-            </DropdownToggle>
+          <UncontrolledDropdown>
+            <ButtonGroup>
+              <Button color="warning" type="button">
+                Warning
+              </Button>
+              <DropdownToggle
+                aria-expanded={false}
+                aria-haspopup={true}
+                caret
+                className="dropdown-toggle-split"
+                color="warning"
+                data-toggle="dropdown"
+                type="button"
+              >
+                <span className="sr-only">Toggle Dropdown</span>
+              </DropdownToggle>
+            </ButtonGroup>
             <DropdownMenu>
               <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
                 Action
@@ -444,23 +949,25 @@ class Dropdowns extends React.Component {
                 Separated link
               </DropdownItem>
             </DropdownMenu>
-          </ButtonGroup>
+          </UncontrolledDropdown>
           {/* /btn-group */}
-          <ButtonGroup>
-            <Button color="danger" type="button">
-              Danger
-            </Button>
-            <DropdownToggle
-              aria-expanded={false}
-              aria-haspopup={true}
-              caret
-              className="dropdown-toggle-split"
-              color="danger"
-              data-toggle="dropdown"
-              type="button"
-            >
-              <span className="sr-only">Toggle Dropdown</span>
-            </DropdownToggle>
+          <UncontrolledDropdown>
+            <ButtonGroup>
+              <Button color="danger" type="button">
+                Danger
+              </Button>
+              <DropdownToggle
+                aria-expanded={false}
+                aria-haspopup={true}
+                caret
+                className="dropdown-toggle-split"
+                color="danger"
+                data-toggle="dropdown"
+                type="button"
+              >
+                <span className="sr-only">Toggle Dropdown</span>
+              </DropdownToggle>
+            </ButtonGroup>
             <DropdownMenu>
               <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
                 Action
@@ -476,21 +983,21 @@ class Dropdowns extends React.Component {
                 Separated link
               </DropdownItem>
             </DropdownMenu>
-          </ButtonGroup>
+          </UncontrolledDropdown>
           {/* /btn-group */}
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeSplitButton}
+        </SyntaxHighlighter>
+        <h2>Props</h2>
         <p>
-          If you want to see more examples and properties please check the
-          official{" "}
-          <strong>
-            <a
-              href="https://getbootstrap.com/docs/4.3/components/dropdowns/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Bootstrap Documentation
-            </a>
-          </strong>
+          Please refer to{" "}
+          <a
+            href="https://reactstrap.github.io/components/dropdowns/"
+            target="_blank"
+          >
+            reactstrap dropdowns documentation
+          </a>
           .
         </p>
       </>
