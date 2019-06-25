@@ -11,7 +11,7 @@ class Introduction extends React.Component {
         <h1 className="bd-title" id="content">
           Introduction
         </h1>
-        <p className="bd-lead">Paper Kit 2 is a freeby Bootstrap 4 UI Kit.</p>
+        <p className="bd-lead">Paper Kit React is a freeby Bootstrap 4, React and Reactstrap UI Kit.</p>
         <h2 id="quick-start">Quick start</h2>
         <p>
           To start using the UI Kit you will need to import some files in your
@@ -22,20 +22,8 @@ class Introduction extends React.Component {
         <p>
           Copy-paste the stylesheet{" "}
           <code className="highlighter-rouge">{`<link>`}</code>
-          into your <code className="highlighter-rouge">{`<head>`}</code>
+          into your <code className="highlighter-rouge">index.js</code> file 
           before all other stylesheets to load our CSS.
-        </p>
-        <h3 id="js">JS</h3>
-        <p>
-          Many of our components require the use of JavaScript to function.
-          Specifically, they require <a href="https://jquery.com">jQuery</a>,{" "}
-          <a href="https://popper.js.org/">Popper.js</a>, and our own JavaScript
-          plugins. Place the following{" "}
-          <code className="highlighter-rouge">{`<script>`}</code>s near the end
-          of your pages, right before the closing{" "}
-          <code className="highlighter-rouge">{`</body>`}</code>
-          tag, to enable them. jQuery must come first, then Popper.js, and then
-          our JavaScript plugins.
         </p>
         <h3 id="fonts-and-icons">Fonts and Icons</h3>
         <p>
