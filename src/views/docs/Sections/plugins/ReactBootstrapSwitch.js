@@ -1,59 +1,133 @@
 import React from "react";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/styles/prism";
+import Switch from "react-bootstrap-switch";
+import { Col, CardSubtitle } from "reactstrap";
 
-// reactstrap components
-// import {
-// } from "reactstrap";
+const codeSwitchExample = `<Col xs={12} md={4}>
+    <CardSubtitle>Default</CardSubtitle>
+    <Switch onColor="default" offColor="default" />{" "}
+    <Switch
+      defaultValue={false}
+      onColor="default"
+      offColor="default"
+    />
+</Col>
+<Col xs={12} md={4}>
+    <CardSubtitle>Plain</CardSubtitle>
+    <Switch
+      offColor="primary"
+      offText=""
+      onColor="primary"
+      onText=""
+    />{" "}
+    <Switch
+      defaultValue={false}
+      offColor="primary"
+      offText=""
+      onColor="primary"
+      onText=""
+    />
+</Col>
+<Col xs={12} md={4}>
+    <CardSubtitle>With Icons</CardSubtitle>
+    <Switch
+      offColor="success"
+      offText={<i className="nc-icon nc-simple-remove" />}
+      onColor="success"
+      onText={<i className="nc-icon nc-check-2" />}
+    />{" "}
+    <Switch
+      defaultValue={false}
+      offColor="success"
+      offText={<i className="nc-icon nc-simple-remove" />}
+      onColor="success"
+      onText={<i className="nc-icon nc-check-2" />}
+    />
+</Col>`;
 
-class BootstrapSwitch extends React.Component {
+class Switches extends React.Component {
   render() {
     return (
-      <>
+      <div>
         <h1 className="bd-title" id="content">
-          Bootstrap Switch v3.3.2
+          React Bootstrap Switch v15.5.3
         </h1>
-        <p className="bd-lead" />
-        <p>
-          We added a new design for the switches to look like the rest of the
-          dashboard.
+        <p className="bd-lead">
+          For this component, we've used{" "}
+          <a
+            href="https://github.com/Julusian/react-bootstrap-switch"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            react-bootstrap-switch
+          </a>.
         </p>
-        <p>
-          For more information please check{" "}
-          <strong>
-            <a
-              href="https://github.com/Bttstrp/bootstrap-switch/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Full Documentation
-            </a>
-          </strong>
-        </p>
-        <div className="bd-example" data-example-id="">
-          {/* markup */}
-          <label>
-            <input
-              data-off-color="primary"
-              data-on-color="primary"
-              data-toggle="switch"
-              defaultChecked
-              type="checkbox"
+        <p>To use it, you'll need the following import:</p>
+        <SyntaxHighlighter
+          language="jsx"
+          style={prism}
+        >{`import Switch from 'react-bootstrap-switch';`}</SyntaxHighlighter>
+        <h2>Example</h2>
+        <div className="bd-example">
+          <Col xs={12} md={4}>
+            <CardSubtitle>Default</CardSubtitle>
+            <Switch onColor="default" offColor="default" />{" "}
+            <Switch
+              defaultValue={false}
+              onColor="default"
+              offColor="default"
             />
-            <span className="toggle" />
-          </label>
-          <br />
-          <label>
-            <input
-              data-off-color="primary"
-              data-on-color="primary"
-              data-toggle="switch"
-              type="checkbox"
+          </Col>
+          <Col xs={12} md={4}>
+            <CardSubtitle>Plain</CardSubtitle>
+            <Switch
+              offColor="primary"
+              offText=""
+              onColor="primary"
+              onText=""
+            />{" "}
+            <Switch
+              defaultValue={false}
+              offColor="primary"
+              offText=""
+              onColor="primary"
+              onText=""
             />
-            <span className="toggle" />
-          </label>
+          </Col>
+          <Col xs={12} md={4}>
+            <CardSubtitle>With Icons</CardSubtitle>
+            <Switch
+              offColor="success"
+              offText={<i className="nc-icon nc-simple-remove" />}
+              onColor="success"
+              onText={<i className="nc-icon nc-check-2" />}
+            />{" "}
+            <Switch
+              defaultValue={false}
+              offColor="success"
+              offText={<i className="nc-icon nc-simple-remove" />}
+              onColor="success"
+              onText={<i className="nc-icon nc-check-2" />}
+            />
+          </Col>
         </div>
-      </>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeSwitchExample}
+        </SyntaxHighlighter>
+        <p>
+          For props please refer to{" "}
+          <a
+            href="https://github.com/Julusian/react-bootstrap-switch"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            official react-bootstrap-switch documentation
+          </a>.
+        </p>
+      </div>
     );
   }
 }
 
-export default BootstrapSwitch;
+export default Switches;
