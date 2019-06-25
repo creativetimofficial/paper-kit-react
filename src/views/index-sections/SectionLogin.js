@@ -100,7 +100,7 @@ function SectionLogin() {
                   className="btn-round"
                   outline
                   color="neutral"
-                  href="/paper-kit-react/register-page"
+                  href="/paper-kit-react/#/register-page"
                   size="lg"
                   target="_blank"
                 >
