@@ -12,7 +12,7 @@ class BuildTools extends React.Component {
           <div className="avatar-group mt-3" />
         </div>
         <p className="bd-lead">
-          Learn how to use Paper Dashboard React to build your theme, compile
+          Learn how to use Paper Kit React to build your theme, compile
           SCSS, change brand-colors and more
         </p>
         <hr />
@@ -172,7 +172,7 @@ class BuildTools extends React.Component {
                   </code>{" "}
                   into{" "}
                   <code className="highlighter-rouge">
-                    src/assets/css/paper-dashoard.css
+                    src/assets/css/paper-kit.css
                   </code>
                   .
                 </td>
@@ -201,7 +201,7 @@ class BuildTools extends React.Component {
                   </code>{" "}
                   into{" "}
                   <code className="highlighter-rouge">
-                    src/assets/css/paper-dashoard.min.css
+                    src/assets/css/paper-kit.min.css
                   </code>
                   .
                 </td>
@@ -230,7 +230,7 @@ class BuildTools extends React.Component {
                   </code>{" "}
                   into{" "}
                   <code className="highlighter-rouge">
-                    src/assets/css/paper-dashoard.css.map
+                    src/assets/css/paper-kit.css.map
                   </code>
                   .
                 </td>
