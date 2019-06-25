@@ -3,21 +3,7 @@ import React from "react";
 // reactstrap components
 import {
   Breadcrumb,
-  BreadcrumbItem,
-  Button,
-  UncontrolledCollapse,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
-  NavbarBrand,
-  Navbar,
-  NavItem,
-  NavLink,
-  Nav,
-  Container,
-  Row,
-  Col
+  BreadcrumbItem
 } from "reactstrap";
 
 class BreadcrumbDocs extends React.Component {
