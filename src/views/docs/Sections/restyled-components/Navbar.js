@@ -545,14 +545,14 @@ class NavbarDocs extends React.Component {
                     </NavItem>
                     <NavItem>
                       <NavLink href="#pablo" onClick={e => e.preventDefault()}>
-                        <i aria-hidden={true} className="fa fa-twitter" /> 
-                        Twitter
+                        <i aria-hidden={true} className="fa fa-twitter" />
+                          Twitter
                       </NavLink>
                     </NavItem>
                     <NavItem>
                       <NavLink href="#pablo" onClick={e => e.preventDefault()}>
-                        <i aria-hidden={true} className="fa fa-instagram" /> 
-                        Instagram
+                        <i aria-hidden={true} className="fa fa-instagram" />
+                          Instagram
                       </NavLink>
                     </NavItem>
                   </Nav>
