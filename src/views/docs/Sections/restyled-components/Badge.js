@@ -8,25 +8,25 @@ const codeExamples = `<Button color="primary">
     Notifications <Badge color="default">4</Badge>
 </Button>`;
 
-const codeContextual = `<Badge color="primary">Primary</Badge>
-<Badge color="info">Info</Badge>
-<Badge color="success">Success</Badge>
-<Badge color="danger">Danger</Badge>
-<Badge color="warning">Warning</Badge>
+const codeContextual = `<Badge color="primary">Primary</Badge>{" "}
+<Badge color="info">Info</Badge>{" "}
+<Badge color="success">Success</Badge>{" "}
+<Badge color="danger">Danger</Badge>{" "}
+<Badge color="warning">Warning</Badge>{" "}
 <Badge color="default">Default</Badge>`;
 
-const codePills = `<Badge color="primary" pill>Primary</Badge>
-<Badge color="info" pill>Info</Badge>
-<Badge color="success" pill>Success</Badge>
-<Badge color="danger" pill>Danger</Badge>
-<Badge color="warning" pill>Warning</Badge>
+const codePills = `<Badge color="primary" pill>Primary</Badge>{" "}
+<Badge color="info" pill>Info</Badge>{" "}
+<Badge color="success" pill>Success</Badge>{" "}
+<Badge color="danger" pill>Danger</Badge>{" "}
+<Badge color="warning" pill>Warning</Badge>{" "}
 <Badge color="default" pill>Default</Badge>`;
 
-const codeLinks = `<Badge href="#" color="primary">Primary</Badge>
-<Badge href="#" color="info">Info</Badge>
-<Badge href="#" color="success">Success</Badge>
-<Badge href="#" color="danger">Danger</Badge>
-<Badge href="#" color="warning">Warning</Badge>
+const codeLinks = `<Badge href="#" color="primary">Primary</Badge>{" "}
+<Badge href="#" color="info">Info</Badge>{" "}
+<Badge href="#" color="success">Success</Badge>{" "}
+<Badge href="#" color="danger">Danger</Badge>{" "}
+<Badge href="#" color="warning">Warning</Badge>{" "}
 <Badge href="#" color="default">Default</Badge>`;
 
 class Badges extends React.Component {
@@ -59,11 +59,11 @@ class Badges extends React.Component {
           appearance of a badge.
         </p>
         <div className="bd-example">
-          <Badge color="primary">Primary</Badge>
-          <Badge color="info">Info</Badge>
-          <Badge color="success">Success</Badge>
-          <Badge color="danger">Danger</Badge>
-          <Badge color="warning">Warning</Badge>
+          <Badge color="primary">Primary</Badge>{" "}
+          <Badge color="info">Info</Badge>{" "}
+          <Badge color="success">Success</Badge>{" "}
+          <Badge color="danger">Danger</Badge>{" "}
+          <Badge color="warning">Warning</Badge>{" "}
           <Badge color="default">Default</Badge>
         </div>
         <SyntaxHighlighter language="jsx" style={prism}>
@@ -79,19 +79,19 @@ class Badges extends React.Component {
         <div className="bd-example">
           <Badge color="primary" pill>
             Primary
-          </Badge>
+          </Badge>{" "}
           <Badge color="info" pill>
             Info
-          </Badge>
+          </Badge>{" "}
           <Badge color="success" pill>
             Success
-          </Badge>
+          </Badge>{" "}
           <Badge color="danger" pill>
             Danger
-          </Badge>
+          </Badge>{" "}
           <Badge color="warning" pill>
             Warning
-          </Badge>
+          </Badge>{" "}
           <Badge color="default" pill>
             Default
           </Badge>
@@ -107,19 +107,19 @@ class Badges extends React.Component {
         <div className="bd-example">
           <Badge href="#" color="primary" onClick={e => e.preventDefault()}>
             Primary
-          </Badge>
+          </Badge>{" "}
           <Badge href="#" color="info" onClick={e => e.preventDefault()}>
             Info
-          </Badge>
+          </Badge>{" "}
           <Badge href="#" color="success" onClick={e => e.preventDefault()}>
             Success
-          </Badge>
+          </Badge>{" "}
           <Badge href="#" color="danger" onClick={e => e.preventDefault()}>
             Danger
-          </Badge>
+          </Badge>{" "}
           <Badge href="#" color="warning" onClick={e => e.preventDefault()}>
             Warning
-          </Badge>
+          </Badge>{" "}
           <Badge href="#" color="default" onClick={e => e.preventDefault()}>
             Default
           </Badge>
