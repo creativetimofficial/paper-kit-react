@@ -40,6 +40,7 @@ ReactDOM.render(
         render={props => <Documentation {...props} />}
       />
       <Redirect to="/index" />
+      <Redirect from="/" to="/index" />
     </Switch>
   </HashRouter>,
   document.getElementById("root")
