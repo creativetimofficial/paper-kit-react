@@ -151,7 +151,7 @@ function SectionJavaScript() {
                 On left
               </Button>
               <UncontrolledPopover
-                placement={window.innerWidth < 768 ? "top":"left"}
+                placement={window.innerWidth < 768 ? "top" : "left"}
                 target="tooltip746845223"
                 trigger="focus"
               >
@@ -170,7 +170,7 @@ function SectionJavaScript() {
                 On right
               </Button>
               <UncontrolledPopover
-                placement={window.innerWidth < 768 ? "top":"right"}
+                placement={window.innerWidth < 768 ? "top" : "right"}
                 target="tooltip909471006"
                 trigger="focus"
               >

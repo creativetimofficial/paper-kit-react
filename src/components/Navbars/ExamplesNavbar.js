@@ -86,8 +86,9 @@ function ExamplesNavbar() {
             </NavItem>
             <NavItem>
               <NavLink
-                href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-examples-navbar"
+                to="/documentation"
                 target="_blank"
+                tag={Link}
               >
                 <i className="nc-icon nc-book-bookmark" /> Documentation
               </NavLink>

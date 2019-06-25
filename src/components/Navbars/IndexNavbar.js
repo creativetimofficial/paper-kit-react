@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // nodejs library that concatenates strings
 import classnames from "classnames";
 // reactstrap components
@@ -119,8 +120,9 @@ function IndexNavbar() {
             </NavItem>
             <NavItem>
               <NavLink
-                href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-index-navbar"
+                to="/documentation"
                 target="_blank"
+                tag={Link}
               >
                 <i className="nc-icon nc-book-bookmark" /> Documentation
               </NavLink>
