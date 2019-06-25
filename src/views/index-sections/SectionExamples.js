@@ -12,7 +12,7 @@ function SectionExamples() {
         <Container>
           <Row className="example-page">
             <Col className="text-center" md="6">
-              <a href="examples/landing.html" target="_blank">
+              <a href="/paper-kit-react/landing-page" target="_blank">
                 <img
                   alt="..."
                   className="img-rounded img-responsive"
@@ -23,14 +23,14 @@ function SectionExamples() {
               <Button
                 className="btn-outline-neutral btn-round"
                 color="default"
-                href="/landing-page"
+                href="/paper-kit-react/landing-page"
                 target="_blank"
               >
                 Landing Page
               </Button>
             </Col>
             <Col className="text-center" md="6">
-              <a href="examples/profile.html" target="_blank">
+              <a href="/paper-kit-react/profile-page" target="_blank">
                 <img
                   alt="..."
                   className="img-rounded img-responsive"
@@ -41,7 +41,7 @@ function SectionExamples() {
               <Button
                 className="btn-outline-neutral btn-round"
                 color="default"
-                href="/profile-page"
+                href="/paper-kit-react/profile-page"
                 target="_blank"
               >
                 Profile Page
