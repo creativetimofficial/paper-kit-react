@@ -11,8 +11,8 @@ class FileStructure extends React.Component {
         <h1 className="bd-title" id="content">
           File Structure
         </h1>
-        <p className="bd-lead">Paper Kit 2 is a freeby Bootstrap 4 UI Kit.</p>
-        <h2 id="paper-kit-2-structure">Paper Kit 2 Structure</h2>
+        <p className="bd-lead">Paper Kit React is a freeby Bootstrap 4, React and Reactstrap UI Kit.</p>
+        <h2 id="paper-kit-react-structure">Paper Kit React Structure</h2>
         <p>
           Once you have downloaded the archive and opened it, you will find the
           following structure:
@@ -50,7 +50,7 @@ class FileStructure extends React.Component {
           <li>Checkboxes</li>
           <li>Radio Buttons</li>
           <li>Sliders</li>
-          <li>Datetimepicker</li>
+          <li>Datetime</li>
         </ul>
       </>
     );
