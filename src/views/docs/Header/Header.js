@@ -12,12 +12,12 @@ class Header extends React.Component {
         tag="header"
       >
         <Link to="/" className="navbar-brand mr-0 mr-md-2 navbar-absolute-logo">
-          Paper Dashboard - React
+          Paper Kit - React
         </Link>
         <Nav className="flex-row d-none d-md-flex" navbar>
           <NavItem>
             <NavLink href="#" className="p-2">
-              1.1.0
+              1.0.0
             </NavLink>
           </NavItem>
           <NavItem>
@@ -26,12 +26,12 @@ class Header extends React.Component {
               className="p-2"
               target="_blank"
             >
-              <i className="fab fa-github" />
+              <i className="fa fa-github" />
             </NavLink>
           </NavItem>
           <NavItem>
             <NavLink href="https://twitter.com/CreativeTim" className="p-2">
-              <i className="fab fa-twitter" />
+              <i className="fa fa-twitter" />
             </NavLink>
           </NavItem>
         </Nav>
