@@ -394,7 +394,64 @@ function Example() {
   const [smallModal, setSmallModal] = React.useState(false);
   return(
     <>
-
+      <Button
+        color="primary"
+        type="button"
+        onClick={() => setLargeModal(true)}
+      >
+        Large modal
+      </Button>
+      <Button
+        color="primary"
+        type="button"
+        onClick={() => setSmallModal(true)}
+      >
+        Small modal
+      </Button>
+      <Modal
+        isOpen={largeModal}
+        className="modal-lg"
+        modalClassName="bd-example-modal-lg"
+        toggle={() => setLargeModal(false)}
+      >
+        <div className="modal-header">
+          <h4 className="modal-title" id="myLargeModalLabel">
+            Large modal
+          </h4>
+          <button
+            aria-label="Close"
+            className="close"
+            data-dismiss="modal"
+            type="button"
+            onClick={() => setLargeModal(false)}
+          >
+            <span aria-hidden={true}>×</span>
+          </button>
+        </div>
+        <div className="modal-body">...</div>
+      </Modal>
+      <Modal
+        isOpen={smallModal}
+        className="modal-sm"
+        modalClassName="bd-example-modal-sm"
+        toggle={() => setSmallModal(false)}
+      >
+        <div className="modal-header">
+          <h4 className="modal-title" id="mySmallModalLabel">
+            Small modal
+          </h4>
+          <button
+            aria-label="Close"
+            className="close"
+            data-dismiss="modal"
+            type="button"
+            onClick={() => setSmallModal(false)}
+          >
+            <span aria-hidden={true}>×</span>
+          </button>
+        </div>
+        <div className="modal-body">...</div>
+      </Modal>
     </>
   );
 }
@@ -781,14 +838,27 @@ function ModalDocs() {
         scrollbars on narrower viewports.
       </p>
       <div className="bd-example">
-        <Button color="primary" type="button">
+        <Button
+          color="primary"
+          type="button"
+          onClick={() => setLargeModal(true)}
+        >
           Large modal
         </Button>
-        <Button color="primary" type="button">
+        <Button
+          color="primary"
+          type="button"
+          onClick={() => setSmallModal(true)}
+        >
           Small modal
         </Button>
       </div>
-      <Modal className="modal-lg" modalClassName="bd-example-modal-lg">
+      <Modal
+        isOpen={largeModal}
+        className="modal-lg"
+        modalClassName="bd-example-modal-lg"
+        toggle={() => setLargeModal(false)}
+      >
         <div className="modal-header">
           <h4 className="modal-title" id="myLargeModalLabel">
             Large modal
@@ -798,13 +868,19 @@ function ModalDocs() {
             className="close"
             data-dismiss="modal"
             type="button"
+            onClick={() => setLargeModal(false)}
           >
             <span aria-hidden={true}>×</span>
           </button>
         </div>
         <div className="modal-body">...</div>
       </Modal>
-      <Modal className="modal-sm" modalClassName="bd-example-modal-sm">
+      <Modal
+        isOpen={smallModal}
+        className="modal-sm"
+        modalClassName="bd-example-modal-sm"
+        toggle={() => setSmallModal(false)}
+      >
         <div className="modal-header">
           <h4 className="modal-title" id="mySmallModalLabel">
             Small modal
@@ -814,6 +890,7 @@ function ModalDocs() {
             className="close"
             data-dismiss="modal"
             type="button"
+            onClick={() => setSmallModal(false)}
           >
             <span aria-hidden={true}>×</span>
           </button>
