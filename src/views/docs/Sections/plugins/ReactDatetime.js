@@ -136,7 +136,8 @@ class DateTimePicker extends React.Component {
             rel="noopener noreferrer"
           >
             react-datetime's documentation
-          </a>.
+          </a>
+          .
         </p>
       </div>
     );

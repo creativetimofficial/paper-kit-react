@@ -61,7 +61,8 @@ class Switches extends React.Component {
             rel="noopener noreferrer"
           >
             react-bootstrap-switch
-          </a>.
+          </a>
+          .
         </p>
         <p>To use it, you'll need the following import:</p>
         <SyntaxHighlighter
@@ -73,11 +74,7 @@ class Switches extends React.Component {
           <Col xs={12} md={4}>
             <CardSubtitle>Default</CardSubtitle>
             <Switch onColor="default" offColor="default" />{" "}
-            <Switch
-              defaultValue={false}
-              onColor="default"
-              offColor="default"
-            />
+            <Switch defaultValue={false} onColor="default" offColor="default" />
           </Col>
           <Col xs={12} md={4}>
             <CardSubtitle>Plain</CardSubtitle>
@@ -123,7 +120,8 @@ class Switches extends React.Component {
             rel="noopener noreferrer"
           >
             official react-bootstrap-switch documentation
-          </a>.
+          </a>
+          .
         </p>
       </div>
     );
