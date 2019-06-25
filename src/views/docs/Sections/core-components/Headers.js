@@ -43,6 +43,9 @@ function Headers() {
         </Link>{" "}
         pages.
       </p>
+      <p>
+        They come with a title and a subtitle, over an image that fits the entire screen.
+      </p>
     </>
   );
 }
