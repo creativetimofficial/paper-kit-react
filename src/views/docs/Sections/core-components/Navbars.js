@@ -41,8 +41,13 @@ function Navbars() {
         </Link>{" "}
         page.
       </p>
-      <p>They have a product brand text on the left and some buttons and social buttons on the right.</p>
-      <p>They are static componnets, i.e. they do not accept any kind of props.</p>
+      <p>
+        They have a product brand text on the left and some buttons and social
+        buttons on the right.
+      </p>
+      <p>
+        They are static componnets, i.e. they do not accept any kind of props.
+      </p>
       <p>You can go ahead and modify them as you wish.</p>
     </>
   );

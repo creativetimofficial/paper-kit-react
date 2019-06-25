@@ -57,24 +57,25 @@ class Parallax extends React.Component {
         </h1>
         <p className="bd-lead" />
         <p>
-          The parallax scrolling effect can be activated using the following code:
+          The parallax scrolling effect can be activated using the following
+          code:
         </p>
         <SyntaxHighlighter language="jsx" style={prism}>
           {codeParallax}
         </SyntaxHighlighter>
         <p>You can check it out in these components:</p>
-          <ul>
-            <li>
-              <code className="highlighter-rouge">
-                src/components/Headers/LandingPageHeader.js
-              </code>
-            </li>
-            <li>
-              <code className="highlighter-rouge">
-                src/components/Headers/ProfilePageHeader.js
-              </code>
-            </li>
-          </ul>
+        <ul>
+          <li>
+            <code className="highlighter-rouge">
+              src/components/Headers/LandingPageHeader.js
+            </code>
+          </li>
+          <li>
+            <code className="highlighter-rouge">
+              src/components/Headers/ProfilePageHeader.js
+            </code>
+          </li>
+        </ul>
       </>
     );
   }

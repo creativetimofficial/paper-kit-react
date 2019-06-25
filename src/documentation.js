@@ -30,7 +30,6 @@ import Nouislider from "views/docs/Sections/plugins/Nouislider.js";
 import NucleoIcons from "views/docs/Sections/plugins/NucleoIcons.js";
 import ReactBootstrapSwitch from "views/docs/Sections/plugins/ReactBootstrapSwitch.js";
 import ReactDatetime from "views/docs/Sections/plugins/ReactDatetime.js";
-import ReactGoogleMaps from "views/docs/Sections/plugins/ReactGoogleMaps.js";
 
 const routes = [
   {
@@ -194,11 +193,6 @@ const routes = [
         path: "/documentation/react-datetime",
         component: ReactDatetime,
         name: "React Datetime"
-      },
-      {
-        path: "/documentation/react-google-maps",
-        component: ReactGoogleMaps,
-        name: "React Google Maps"
       }
     ]
   },
