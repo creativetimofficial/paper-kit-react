@@ -50,7 +50,7 @@ function LandingPage() {
                 <br />
                 <Button
                   className="btn-round"
-                  color="danger"
+                  color="info"
                   href="#pablo"
                   onClick={e => e.preventDefault()}
                 >
@@ -63,7 +63,7 @@ function LandingPage() {
             <Row>
               <Col md="3">
                 <div className="info">
-                  <div className="icon icon-danger">
+                  <div className="icon icon-info">
                     <i className="nc-icon nc-album-2" />
                   </div>
                   <div className="description">
@@ -72,7 +72,7 @@ function LandingPage() {
                       Spend your time generating new ideas. You don't have to
                       think of implementing.
                     </p>
-                    <Button className="btn-link" color="danger" href="#pablo">
+                    <Button className="btn-link" color="info" href="#pablo">
                       See more
                     </Button>
                   </div>
@@ -80,7 +80,7 @@ function LandingPage() {
               </Col>
               <Col md="3">
                 <div className="info">
-                  <div className="icon icon-danger">
+                  <div className="icon icon-info">
                     <i className="nc-icon nc-bulb-63" />
                   </div>
                   <div className="description">
@@ -89,7 +89,7 @@ function LandingPage() {
                       Larger, yet dramatically thinner. More powerful, but
                       remarkably power efficient.
                     </p>
-                    <Button className="btn-link" color="danger" href="#pablo">
+                    <Button className="btn-link" color="info" href="#pablo">
                       See more
                     </Button>
                   </div>
@@ -97,7 +97,7 @@ function LandingPage() {
               </Col>
               <Col md="3">
                 <div className="info">
-                  <div className="icon icon-danger">
+                  <div className="icon icon-info">
                     <i className="nc-icon nc-chart-bar-32" />
                   </div>
                   <div className="description">
@@ -106,7 +106,7 @@ function LandingPage() {
                       Choose from a veriety of many colors resembling sugar
                       paper pastels.
                     </p>
-                    <Button className="btn-link" color="danger" href="#pablo">
+                    <Button className="btn-link" color="info" href="#pablo">
                       See more
                     </Button>
                   </div>
@@ -114,7 +114,7 @@ function LandingPage() {
               </Col>
               <Col md="3">
                 <div className="info">
-                  <div className="icon icon-danger">
+                  <div className="icon icon-info">
                     <i className="nc-icon nc-sun-fog-29" />
                   </div>
                   <div className="description">
@@ -123,7 +123,7 @@ function LandingPage() {
                       Find unique and handmade delightful designs related items
                       directly from our sellers.
                     </p>
-                    <Button className="btn-link" color="danger" href="#pablo">
+                    <Button className="btn-link" color="info" href="#pablo">
                       See more
                     </Button>
                   </div>
