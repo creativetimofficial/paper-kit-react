@@ -380,7 +380,8 @@ class Popovers extends React.Component {
             rel="noopener noreferrer"
           >
             reactstrap's popover documentation
-          </a>.
+          </a>
+          .
         </p>
       </>
     );
