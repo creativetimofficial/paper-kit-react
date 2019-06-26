@@ -1,6 +1,8 @@
 /*eslint-disable*/
 import React from "react";
 import { Link } from "react-router-dom";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // reactstrap components
 import {
   Button,
@@ -528,6 +530,9 @@ function ModalDocs() {
           </div>
         </div>
       </Modal>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeLiveDemo}
+      </SyntaxHighlighter>
       <h3 id="scrolling-long-content">Scrolling long content</h3>
       <p>
         When modals become too long for the user’s viewport or device, they
@@ -678,6 +683,9 @@ function ModalDocs() {
           </div>
         </div>
       </Modal>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeScrollingLongContent}
+      </SyntaxHighlighter>
       <h3 id="login-modal">Login modal</h3>
       <div className="bd-example">
         <Button
@@ -731,6 +739,9 @@ function ModalDocs() {
           </span>
         </div>
       </Modal>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeLoginModal}
+      </SyntaxHighlighter>
       <h3 id="tooltips-and-popovers">Tooltips and popovers</h3>
       <p>
         <Link to="/documentation/tooltips">Tooltips</Link> and{" "}
@@ -821,6 +832,9 @@ function ModalDocs() {
           </div>
         </div>
       </Modal>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeTooltipsAndPopovers}
+      </SyntaxHighlighter>
       <h3 id="embedding-youtube-videos">Embedding YouTube videos</h3>
       <p>
         Embedding YouTube videos in modals requires additional JavaScript not in
@@ -897,6 +911,9 @@ function ModalDocs() {
         </div>
         <div className="modal-body">...</div>
       </Modal>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeOptionalSizes}
+      </SyntaxHighlighter>
       <h2>Props</h2>
       <p>
         For props please refer to{" "}
