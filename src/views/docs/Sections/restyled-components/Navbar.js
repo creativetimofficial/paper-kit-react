@@ -1432,7 +1432,10 @@ function NavbarDocs() {
         <strong>
           <code class="highlighter-rouge">.sticky-top</code> uses{" "}
           <code class="highlighter-rouge">position: sticky</code>, which{" "}
-          <a href="https://caniuse.com/#feat=css-sticky?ref=creativetim" target="_blank">
+          <a
+            href="https://caniuse.com/#feat=css-sticky?ref=creativetim"
+            target="_blank"
+          >
             isn’t fully supported in every browser
           </a>
         </strong>

@@ -57,9 +57,9 @@ function SectionDownload() {
               <Button
                 className="twitter-sharrre btn-round"
                 color="twitter-bg"
-                href="#pablo"
+                href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdemos.creative-tim.com%2Fpaper-kit-react%2F%23%2Findex&text=Paper%20Kit%20React%20-%20Free%20Bootstrap%204%2C%20React%2C%20React%20Hooks%20and%20Reactstrap%20UI%20Kit&original_referer=http%3A%2F%2Flocalhost%3A3001%2F&via=creativetim&hashtags=react%2Cpaper%2Creacthooks%2Chooks%2Creactstrap%2Cbootstrap%2Cbootstrap4"
                 id="tooltip3373767"
-                onClick={e => e.preventDefault()}
+                target="_blank"
               >
                 <i className="fa fa-twitter" /> Twitter
               </Button>
@@ -69,9 +69,9 @@ function SectionDownload() {
               <Button
                 className="linkedin-sharrre btn-round  ml-2"
                 color="google-bg"
-                href="#pablo"
+                href="https://plus.google.com/up/?continue=https://plus.google.com/share?url%3Dhttps://demos.creative-tim.com/paper-kit-react/#/index"
                 id="tooltip840791273"
-                onClick={e => e.preventDefault()}
+                target="_blank"
               >
                 <i className="fa fa-google-plus" /> Google
               </Button>
@@ -81,9 +81,9 @@ function SectionDownload() {
               <Button
                 className="facebook-sharrre btn-round ml-2"
                 color="facebook-bg"
-                href="#pablo"
+                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdemos.creative-tim.com%2Fpaper-kit-react%2F%23%2Findex"
                 id="tooltip68961360"
-                onClick={e => e.preventDefault()}
+                target="_blank"
               >
                 <i className="fa fa-facebook-square" /> Facebook
               </Button>

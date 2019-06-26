@@ -24,6 +24,67 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <!-- Extra details for Live View on GitHub Pages -->
+    <!-- Canonical SEO -->
+    <link
+      rel="canonical"
+      href="https://www.creative-tim.com/product/paper-kit-react"
+    />
+
+    <!--  Social tags      -->
+    <meta
+      name="keywords"
+      content="creative tim, creativetim, bootstrap 4, reactstrap, react, hooks, react hooks, bootstrap 4 uit kit, reactstrap ui kit, reactstrap kit, react ui kit, react kit, react hooks ui kit, react hooks kit, bootstrap 4 kit, paper, paper kit, paper kit react, paper hooks, html kit, html css template, react css template, reactstrap css template, react template, reactstrap template, react hooks template, web template, bootstrap, css3 template, frontend, responsive bootstrap template, responsive react template, responsive react hooks template, responsive reactstrap template, bootstrap ui kit, responsive ui kit"
+    />
+    <meta
+      name="description"
+      content="Paper Kit React is a responsive Bootstrap 4, React, React Hooks and Reactstrap kit provided for free by Invision and Creative Tim. It is a beautiful cross-platform UI kit featuring over 50 elements and 3 templates."
+    />
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Paper Kit React by Creative Tim" />
+    <meta
+      itemprop="description"
+      content="Paper Kit React is a responsive Bootstrap 4, React, React Hooks and Reactstrap kit provided for free by Invision and Creative Tim. It is a beautiful cross-platform UI kit featuring over 50 elements and 3 templates."
+    />
+
+    <meta
+      itemprop="image"
+      content="https://s3.amazonaws.com/creativetim_bucket/products/165/original/opt_pk_react_thumbnail.jpg"
+    />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="product" />
+    <meta name="twitter:site" content="@creativetim" />
+    <meta name="twitter:title" content="Now Ui Dashboard PRO by Creative Tim" />
+
+    <meta
+      name="twitter:description"
+      content="Paper Kit React is a responsive Bootstrap 4, React, React Hooks and Reactstrap kit provided for free by Invision and Creative Tim. It is a beautiful cross-platform UI kit featuring over 50 elements and 3 templates."
+    />
+    <meta name="twitter:creator" content="@creativetim" />
+    <meta
+      name="twitter:image"
+      content="https://s3.amazonaws.com/creativetim_bucket/products/165/original/opt_pk_react_thumbnail.jpg"
+    />
+
+    <!-- Open Graph data -->
+    <meta property="fb:app_id" content="655968634437471" />
+    <meta property="og:title" content="Now Ui Dashboard PRO by Creative Tim" />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://demos.creative-tim.com/paper-kit-react/#/index"
+    />
+    <meta
+      property="og:image"
+      content="https://s3.amazonaws.com/creativetim_bucket/products/165/original/opt_pk_react_thumbnail.jpg"
+    />
+    <meta
+      property="og:description"
+      content="Paper Kit React is a responsive Bootstrap 4, React, React Hooks and Reactstrap kit provided for free by Invision and Creative Tim. It is a beautiful cross-platform UI kit featuring over 50 elements and 3 templates."
+    />
+    <meta property="og:site_name" content="Creative Tim" />
     <!--     Fonts and icons     -->
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200"
@@ -34,8 +95,32 @@
       rel="stylesheet"
     />
     <title>Paper Kit React by Creative Tim</title>
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NKDMSK6");
+    </script>
+    <!-- End Google Tag Manager -->
   </head>
   <body class="sidebar-collapse">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -48,5 +133,44 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <img
+      height="1"
+      width="1"
+      style="display:none"
+      src="https://www.facebook.com/tr?id=111649226022273&ev=PageView&noscript=1"
+    />
+    <script type="text/javascript">
+      // Facebook Pixel Code Don't Delete
+      !(function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "//connect.facebook.net/en_US/fbevents.js"
+      );
+
+      try {
+        fbq("init", "111649226022273");
+        fbq("track", "PageView");
+      } catch (err) {
+        console.log("Facebook Track Error:", err);
+      }
+    </script>
   </body>
 </html>

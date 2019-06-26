@@ -30,7 +30,11 @@ class Header extends React.Component {
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="https://twitter.com/CreativeTim?ref=creativetim" className="p-2" target="_blank">
+            <NavLink
+              href="https://twitter.com/CreativeTim?ref=creativetim"
+              className="p-2"
+              target="_blank"
+            >
               <i className="fa fa-twitter" />
             </NavLink>
           </NavItem>

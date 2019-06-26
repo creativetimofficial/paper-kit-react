@@ -19,7 +19,10 @@ class Colors extends React.Component {
           <li>Download the project’s zip</li>
           <li>
             Make sure you have node.js ({" "}
-            <a href="https://nodejs.org/en/?ref=creativetim" target="_blank">nodejs</a>) installed
+            <a href="https://nodejs.org/en/?ref=creativetim" target="_blank">
+              nodejs
+            </a>
+            ) installed
           </li>
           <li>
             Type <code className="highlighter-rouge">npm install</code> in

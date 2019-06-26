@@ -378,7 +378,6 @@ class Popovers extends React.Component {
           <a
             href="https://reactstrap.github.io/components/popovers/?ref=creativetim"
             target="_blank"
-
           >
             reactstrap's popover documentation
           </a>

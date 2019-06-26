@@ -92,7 +92,10 @@ function Sliders() {
       <h2>Props</h2>
       <p>
         For props please refer to{" "}
-        <a href="https://refreshless.com/nouislider/?ref=creativetim" target="_blank">
+        <a
+          href="https://refreshless.com/nouislider/?ref=creativetim"
+          target="_blank"
+        >
           noUiSlider
         </a>
         .
