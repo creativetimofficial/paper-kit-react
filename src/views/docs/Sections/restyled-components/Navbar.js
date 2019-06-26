@@ -146,22 +146,17 @@ function NavbarDocs() {
               Navbar
             </NavbarBrand>
             <button
-              aria-controls="navbarNavDropdown"
-              aria-expanded={false}
-              aria-label="Toggle navigation"
               className="navbar-toggler"
-              data-target="#navbarNavDropdown"
-              data-toggle="collapse"
               id="navbarNavDropdown"
               type="button"
+              onClick={() => {
+                document.documentElement.classList.toggle("nav-open");
+                setBodyClick(true);
+              }}
             >
               <span className="navbar-toggler-icon" />
             </button>
-            <UncontrolledCollapse
-              id="navbarNavDropdown"
-              navbar
-              toggler="#navbarNavDropdown"
-            >
+            <UncontrolledCollapse navbar toggler="#navbarNavDropdown">
               <Nav navbar>
                 <NavItem className="active">
                   <NavLink href="#pablo" onClick={e => e.preventDefault()}>
@@ -180,7 +175,6 @@ function NavbarDocs() {
                 </NavItem>
                 <UncontrolledDropdown nav>
                   <DropdownToggle
-                    aria-expanded={false}
                     aria-haspopup={true}
                     caret
                     color="default"
@@ -239,25 +233,20 @@ function NavbarDocs() {
                 Primary color
               </NavbarBrand>
               <button
-                aria-controls="navbarSupportedContent"
-                aria-expanded={false}
-                aria-label="Toggle navigation"
                 className="navbar-toggler"
-                data-target="#example-navbar-primary"
-                data-toggle="collapse"
                 id="example-navbar-primary"
                 type="button"
+                onClick={() => {
+                  document.documentElement.classList.toggle("nav-open");
+                  setBodyClick(true);
+                }}
               >
                 <span className="navbar-toggler-bar bar1" />
                 <span className="navbar-toggler-bar bar2" />
                 <span className="navbar-toggler-bar bar3" />
               </button>
             </div>
-            <UncontrolledCollapse
-              id="example-navbar-primary"
-              navbar
-              toggler="#example-navbar-primary"
-            >
+            <UncontrolledCollapse navbar toggler="#example-navbar-primary">
               <Nav className="ml-auto" navbar>
                 <NavItem className="active">
                   <NavLink href="#pablo" onClick={e => e.preventDefault()}>
@@ -288,14 +277,13 @@ function NavbarDocs() {
                 Info color
               </NavbarBrand>
               <button
-                aria-controls="navbarSupportedContent"
-                aria-expanded={false}
-                aria-label="Toggle navigation"
                 className="navbar-toggler"
-                data-target="#example-navbar-primary"
-                data-toggle="collapse"
-                id="example-navbar-primary"
+                id="example-navbar-info"
                 type="button"
+                onClick={() => {
+                  document.documentElement.classList.toggle("nav-open");
+                  setBodyClick(true);
+                }}
               >
                 <span className="navbar-toggler-bar bar1" />
                 <span className="navbar-toggler-bar bar2" />
@@ -303,9 +291,8 @@ function NavbarDocs() {
               </button>
             </div>
             <UncontrolledCollapse
-              id="example-navbar-primary"
               navbar
-              toggler="#example-navbar-primary"
+              toggler="#example-navbar-info"
             >
               <Nav className="ml-auto" navbar>
                 <NavItem className="active">
@@ -337,14 +324,13 @@ function NavbarDocs() {
                 Success color
               </NavbarBrand>
               <button
-                aria-controls="navbarSupportedContent"
-                aria-expanded={false}
-                aria-label="Toggle navigation"
                 className="navbar-toggler"
-                data-target="#example-navbar-primary"
-                data-toggle="collapse"
-                id="example-navbar-primary"
+                id="example-navbar-success"
                 type="button"
+                onClick={() => {
+                  document.documentElement.classList.toggle("nav-open");
+                  setBodyClick(true);
+                }}
               >
                 <span className="navbar-toggler-bar bar1" />
                 <span className="navbar-toggler-bar bar2" />
@@ -352,9 +338,8 @@ function NavbarDocs() {
               </button>
             </div>
             <UncontrolledCollapse
-              id="example-navbar-primary"
               navbar
-              toggler="#example-navbar-primary"
+              toggler="#example-navbar-success"
             >
               <Nav className="ml-auto" navbar>
                 <NavItem className="active">
@@ -386,14 +371,13 @@ function NavbarDocs() {
                 Warning color
               </NavbarBrand>
               <button
-                aria-controls="navbarSupportedContent"
-                aria-expanded={false}
-                aria-label="Toggle navigation"
                 className="navbar-toggler"
-                data-target="#example-navbar-primary"
-                data-toggle="collapse"
-                id="example-navbar-primary"
+                id="example-navbar-warning"
                 type="button"
+                onClick={() => {
+                  document.documentElement.classList.toggle("nav-open");
+                  setBodyClick(true);
+                }}
               >
                 <span className="navbar-toggler-bar bar1" />
                 <span className="navbar-toggler-bar bar2" />
@@ -401,9 +385,8 @@ function NavbarDocs() {
               </button>
             </div>
             <UncontrolledCollapse
-              id="example-navbar-primary"
               navbar
-              toggler="#example-navbar-primary"
+              toggler="#example-navbar-warning"
             >
               <Nav className="ml-auto" navbar>
                 <NavItem className="active">
@@ -435,14 +418,13 @@ function NavbarDocs() {
                 Danger color
               </NavbarBrand>
               <button
-                aria-controls="navbarSupportedContent"
-                aria-expanded={false}
-                aria-label="Toggle navigation"
                 className="navbar-toggler"
-                data-target="#example-navbar-primary"
-                data-toggle="collapse"
-                id="example-navbar-primary"
+                id="example-navbar-danger"
                 type="button"
+                onClick={() => {
+                  document.documentElement.classList.toggle("nav-open");
+                  setBodyClick(true);
+                }}
               >
                 <span className="navbar-toggler-bar bar1" />
                 <span className="navbar-toggler-bar bar2" />
@@ -450,9 +432,8 @@ function NavbarDocs() {
               </button>
             </div>
             <UncontrolledCollapse
-              id="example-navbar-primary"
               navbar
-              toggler="#example-navbar-primary"
+              toggler="#example-navbar-danger"
             >
               <Nav className="ml-auto" navbar>
                 <NavItem className="active">
@@ -490,21 +471,19 @@ function NavbarDocs() {
                 Transparent
               </NavbarBrand>
               <button
-                aria-controls="navbarNav"
-                aria-expanded={false}
-                aria-label="Toggle navigation"
                 className="navbar-toggler navbar-toggler-right"
-                data-target="#navbar-transparent"
-                data-toggle="collapse"
                 id="navbar-transparent"
                 type="button"
+                onClick={() => {
+                  document.documentElement.classList.toggle("nav-open");
+                  setBodyClick(true);
+                }}
               >
                 <span className="navbar-toggler-bar" />
                 <span className="navbar-toggler-bar" />
                 <span className="navbar-toggler-bar" />
               </button>
               <UncontrolledCollapse
-                id="navbar-transparent"
                 navbar
                 toggler="#navbar-transparent"
               >
@@ -520,14 +499,14 @@ function NavbarDocs() {
                   </NavItem>
                   <NavItem>
                     <NavLink href="#pablo" onClick={e => e.preventDefault()}>
-                      <i aria-hidden={true} className="fa fa-twitter" />
-                        Twitter
+                      <i aria-hidden={true} className="fa fa-twitter" /> 
+                      Twitter
                     </NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink href="#pablo" onClick={e => e.preventDefault()}>
-                      <i aria-hidden={true} className="fa fa-instagram" />
-                        Instagram
+                      <i aria-hidden={true} className="fa fa-instagram" /> 
+                      Instagram
                     </NavLink>
                   </NavItem>
                 </Nav>
@@ -651,21 +630,19 @@ function NavbarDocs() {
         <Navbar className="bg-primary" expand="lg">
           <Container>
             <button
-              aria-controls="navbarSupportedContent"
-              aria-expanded={false}
-              aria-label="Toggle navigation"
               className="navbar-toggler"
-              data-target="#example-navbar"
-              data-toggle="collapse"
-              id="example-navbar"
+              id="navbarTogglerDemo01"
               type="button"
+              onClick={() => {
+                document.documentElement.classList.toggle("nav-open");
+                setBodyClick(true);
+              }}
             >
               <span className="navbar-toggler-bar bar1" />
               <span className="navbar-toggler-bar bar2" />
               <span className="navbar-toggler-bar bar3" />
             </button>
             <UncontrolledCollapse
-              id="navbarTogglerDemo01"
               navbar
               toggler="#navbarTogglerDemo01"
             >
@@ -710,21 +687,19 @@ function NavbarDocs() {
               Navbar
             </NavbarBrand>
             <button
-              aria-controls="navbarSupportedContent"
-              aria-expanded={false}
-              aria-label="Toggle navigation"
               className="navbar-toggler"
-              data-target="#example-navbar"
-              data-toggle="collapse"
-              id="example-navbar"
+              id="navbarTogglerDemo02"
               type="button"
+              onClick={() => {
+                document.documentElement.classList.toggle("nav-open");
+                setBodyClick(true);
+              }}
             >
               <span className="navbar-toggler-bar bar1" />
               <span className="navbar-toggler-bar bar2" />
               <span className="navbar-toggler-bar bar3" />
             </button>
             <UncontrolledCollapse
-              id="navbarTogglerDemo02"
               navbar
               toggler="#navbarTogglerDemo02"
             >
