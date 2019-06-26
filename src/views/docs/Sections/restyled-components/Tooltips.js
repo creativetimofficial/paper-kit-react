@@ -1,237 +1,201 @@
+/*eslint-disable*/
 import React from "react";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/styles/prism";
+import { UncontrolledTooltip, Button } from "reactstrap";
 
-// reactstrap components
-import { Button, UncontrolledTooltip } from "reactstrap";
+const codeImport = `import { UncontrolledTooltip } from 'reactstrap';`;
 
-class Tooltips extends React.Component {
+const codeImportControlled = `import { Tooltip } from 'reactstrap';`;
+
+const codeExample = `import React from 'react';
+import { UncontrolledTooltip, Button } from 'reactstrap';
+
+class Example extends React.Component{
+    render(){
+        return (
+            <Button color="secondary" id="top">
+                Tooltip on top
+            </Button>{\` \`}
+            <UncontrolledTooltip placement="top" target="top" delay={0}>
+                Tooltip on top
+            </UncontrolledTooltip>
+            <Button color="secondary" id="right">
+                Tooltip on right
+            </Button>{\` \`}
+            <UncontrolledTooltip placement="right" target="right" delay={0}>
+                Tooltip on right
+            </UncontrolledTooltip>
+            <Button color="secondary" id="bottom">
+                Tooltip on bottom
+            </Button>{\` \`}
+            <UncontrolledTooltip placement="bottom" target="bottom" delay={0}>
+                Tooltip on bottom
+            </UncontrolledTooltip>
+            <Button color="secondary" id="left">
+                Tooltip on left
+            </Button>{\` \`}
+            <UncontrolledTooltip placement="left" target="left" delay={0}>
+                Tooltip on left
+            </UncontrolledTooltip>
+            <Button color="secondary" id="html">
+                Tooltip with HTML
+            </Button>{\` \`}
+            <UncontrolledTooltip placement="top" target="#html" delay={0}>
+                <em>Tooltip</em> <u>with</u> <b>HTML</b>
+            </UncontrolledTooltip>
+        );
+    }
+}`;
+
+class TooltipSection extends React.Component {
   render() {
     return (
-      <>
+      <div>
         <h1 className="bd-title" id="content">
           Tooltips
         </h1>
         <p className="bd-lead">
-          Documentation and examples for adding custom Bootstrap tooltips with
-          CSS and JavaScript using CSS3 for animations and data-attributes for
-          local title storage.
+          To use this component you need to import it from reactstrap like this:
         </p>
-        <h2 id="examples">Examples</h2>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeImport}
+        </SyntaxHighlighter>
+        <p>
+          or if you want a controlled one (you'll have to add a{" "}
+          <code>state</code> and a <code>function</code> for controlling the
+          tooltip to your component):
+        </p>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeImportControlled}
+        </SyntaxHighlighter>
+        <h2>Example</h2>
         <p>Hover over the links below to see tooltips:</p>
         <div className="bd-example tooltip-demo">
           <p className="muted">
             Tight pants next level keffiyeh{" "}
-            <a
-              href="#pablo"
-              id="tooltip771566719"
-              onClick={e => e.preventDefault()}
-            >
+            <a href="#pablo" id="probably">
               you probably
-            </a>
-            <UncontrolledTooltip delay={0} target="tooltip771566719">
-              Default tooltip
-            </UncontrolledTooltip>
+            </a>{" "}
             haven't heard of them. Photo booth beard raw denim letterpress vegan
             messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie
             sustainable quinoa 8-bit american apparel{" "}
-            <a
-              href="#pablo"
-              id="tooltip962688388"
-              onClick={e => e.preventDefault()}
-            >
+            <a href="#pablo" id="have">
               have a
-            </a>
-            <UncontrolledTooltip delay={0} target="tooltip962688388">
-              Another tooltip
-            </UncontrolledTooltip>
+            </a>{" "}
             terry richardson vinyl chambray. Beard stumptown, cardigans banh mi
             lomo thundercats. Tofu biodiesel williamsburg marfa, four loko
             mcsweeney's cleanse vegan chambray. A really ironic artisan{" "}
-            <a
-              href="#pablo"
-              id="tooltip278118192"
-              onClick={e => e.preventDefault()}
-            >
+            <a href="#pablo" id="whatever">
               whatever keytar
             </a>
-            <UncontrolledTooltip delay={0} target="tooltip278118192">
-              Another one here too
-            </UncontrolledTooltip>
             , scenester farm-to-table banksy Austin{" "}
-            <a
-              href="#pablo"
-              id="tooltip782014484"
-              onClick={e => e.preventDefault()}
-            >
+            <a href="#pablo" id="twitter">
               twitter handle
-            </a>
-            <UncontrolledTooltip delay={0} target="tooltip782014484">
-              The last tip!
-            </UncontrolledTooltip>
+            </a>{" "}
             freegan cred raw denim single-origin coffee viral.
+            <UncontrolledTooltip placement="top" target="probably" delay={0}>
+              Default Tooltip
+            </UncontrolledTooltip>
+            <UncontrolledTooltip placement="top" target="have" delay={0}>
+              Another Tooltip
+            </UncontrolledTooltip>
+            <UncontrolledTooltip placement="top" target="whatever" delay={0}>
+              Another one here
+            </UncontrolledTooltip>
+            <UncontrolledTooltip placement="top" target="twitter" delay={0}>
+              Last Tooltip
+            </UncontrolledTooltip>
           </p>
         </div>
-        <h3 id="static-demo">Static demo</h3>
+        <h3>Static demo</h3>
         <p>Four options are available: top, right, bottom, and left aligned.</p>
-        <div className="bd-example bd-example-tooltip-static">
+        <div class="bd-example bd-example-tooltip-static">
           <div
-            className="tooltip bs-tooltip-top bs-tooltip-top-docs"
+            class="tooltip bs-tooltip-top bs-tooltip-top-docs"
             role="tooltip"
           >
-            <div className="arrow" />
-            <div className="tooltip-inner">Tooltip on the top</div>
+            <div class="arrow" />
+            <div class="tooltip-inner">Tooltip on the top</div>
           </div>
           <div
-            className="tooltip bs-tooltip-right bs-tooltip-right-docs"
+            class="tooltip bs-tooltip-right bs-tooltip-right-docs"
             role="tooltip"
           >
-            <div className="arrow" />
-            <div className="tooltip-inner">Tooltip on the right</div>
+            <div class="arrow" />
+            <div class="tooltip-inner">Tooltip on the right</div>
           </div>
           <div
-            className="tooltip bs-tooltip-bottom bs-tooltip-bottom-docs"
+            class="tooltip bs-tooltip-bottom bs-tooltip-bottom-docs"
             role="tooltip"
           >
-            <div className="arrow" />
-            <div className="tooltip-inner">Tooltip on the bottom</div>
+            <div class="arrow" />
+            <div class="tooltip-inner">Tooltip on the bottom</div>
           </div>
           <div
-            className="tooltip bs-tooltip-left bs-tooltip-left-docs"
+            class="tooltip bs-tooltip-left bs-tooltip-left-docs"
             role="tooltip"
           >
-            <div className="arrow" />
-            <div className="tooltip-inner">Tooltip on the left</div>
+            <div class="arrow" />
+            <div class="tooltip-inner">Tooltip on the left</div>
           </div>
         </div>
-        <h3 id="interactive-demo">Interactive demo</h3>
+        <h3>Interactive demo</h3>
         <p>Hover over the buttons below to see their tooltips.</p>
         <div className="bd-example tooltip-demo">
-          <div className="bd-example-tooltips">
-            <Button
-              color="secondary"
-              data-placement="top"
-              id="tooltip59698453"
-              type="button"
-            >
-              Tooltip on top
-            </Button>
-            <UncontrolledTooltip
-              delay={0}
-              placement="top"
-              target="tooltip59698453"
-            >
-              Tooltip on top
-            </UncontrolledTooltip>
-            <Button
-              color="secondary"
-              data-placement="right"
-              id="tooltip526202628"
-              type="button"
-            >
-              Tooltip on right
-            </Button>
-            <UncontrolledTooltip
-              delay={0}
-              placement="right"
-              target="tooltip526202628"
-            >
-              Tooltip on right
-            </UncontrolledTooltip>
-            <Button
-              color="secondary"
-              data-placement="bottom"
-              id="tooltip835987786"
-              type="button"
-            >
-              Tooltip on bottom
-            </Button>
-            <UncontrolledTooltip
-              delay={0}
-              placement="bottom"
-              target="tooltip835987786"
-            >
-              Tooltip on bottom
-            </UncontrolledTooltip>
-            <Button
-              color="secondary"
-              data-placement="left"
-              id="tooltip632602936"
-              type="button"
-            >
-              Tooltip on left
-            </Button>
-            <UncontrolledTooltip
-              delay={0}
-              placement="left"
-              target="tooltip632602936"
-            >
-              Tooltip on left
-            </UncontrolledTooltip>
-            <Button
-              color="secondary"
-              data-html={true}
-              id="tooltip223467496"
-              type="button"
-            >
-              Tooltip with HTML
-            </Button>
-            <UncontrolledTooltip delay={0} target="tooltip223467496">
-              <em>Tooltip</em> <u>with</u> <b>HTML</b>
-            </UncontrolledTooltip>
-          </div>
+          <Button color="secondary" id="top">
+            Tooltip on top
+          </Button>
+          {` `}
+          <UncontrolledTooltip placement="top" target="top" delay={0}>
+            Tooltip on top
+          </UncontrolledTooltip>
+          <Button color="secondary" id="right">
+            Tooltip on right
+          </Button>
+          {` `}
+          <UncontrolledTooltip placement="right" target="right" delay={0}>
+            Tooltip on right
+          </UncontrolledTooltip>
+          <Button color="secondary" id="bottom">
+            Tooltip on bottom
+          </Button>
+          {` `}
+          <UncontrolledTooltip placement="bottom" target="bottom" delay={0}>
+            Tooltip on bottom
+          </UncontrolledTooltip>
+          <Button color="secondary" id="left">
+            Tooltip on left
+          </Button>
+          {` `}
+          <UncontrolledTooltip placement="left" target="left" delay={0}>
+            Tooltip on left
+          </UncontrolledTooltip>
+          <Button color="secondary" id="html">
+            Tooltip with HTML
+          </Button>
+          {` `}
+          <UncontrolledTooltip placement="top" target="#html" delay={0}>
+            <em>Tooltip</em> <u>with</u> <b>HTML</b>
+          </UncontrolledTooltip>
         </div>
-        <p>And with custom HTML added:</p>
-        <h2 id="usage">Usage</h2>
-        <p>
-          The tooltip plugin generates content and markup on demand, and by
-          default places tooltips after their trigger element.
-        </p>
-        <p>Trigger the tooltip via JavaScript:</p>
-        <h3 id="markup">Markup</h3>
-        <p>
-          The required markup for a tooltip is only a{" "}
-          <code className="highlighter-rouge">data</code>
-          attribute and <code className="highlighter-rouge">title</code>
-          on the HTML element you wish to have a tooltip. The generated markup
-          of a tooltip is rather simple, though it does require a position (by
-          default, set to <code className="highlighter-rouge">top</code>
-          by the plugin).
-        </p>
-        <div className="bd-callout bd-callout-warning">
-          <h4 id="making-tooltips-work-for-keyboard-and-assistive-technology-users">
-            Making tooltips work for keyboard and assistive technology users
-          </h4>
-          <p>
-            You should only add tooltips to HTML elements that are traditionally
-            keyboard-focusable and interactive (such as links or form controls).
-            Although arbitrary HTML elements (such as{" "}
-            <code className="highlighter-rouge">{`<span>`}</code>
-            s) can be made focusable by adding the{" "}
-            <code className="highlighter-rouge">tabindex="0"</code>
-            attribute, this will add potentially annoying and confusing tab
-            stops on non-interactive elements for keyboard users. In addition,
-            most assistive technologies currently do not announce the tooltip in
-            this situation.
-          </p>
-        </div>
-        <div className="bd-callout bd-callout-info">
-          <h4 id="data-attributes-for-individual-tooltips">
-            Data attributes for individual tooltips
-          </h4>
-          <p>
-            Options for individual tooltips can alternatively be specified
-            through the use of data attributes, as explained above.
-          </p>
-        </div>
-        <p>
-          If you want to see more examples and properties please check the
-          official{" "}
-          <a href="https://getbootstrap.com/docs/4.3/components/tooltips/">
-            Bootstrap Documentation
-          </a>
-        </p>
-      </>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {codeExample}
+        </SyntaxHighlighter>
+        <h2>Props</h2>
+        In this examples we have used <code>{`<a>`}</code> elements for the
+        tooltips to appear over. You can use different elements. For more
+        information about tooltips and how to use them, please refer to{" "}
+        <a
+          href="https://reactstrap.github.io/components/tooltips/"
+          target="_blank"
+        >
+          reactstrap documentation
+        </a>
+        .
+      </div>
     );
   }
 }
 
-export default Tooltips;
+export default TooltipSection;
