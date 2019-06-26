@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
@@ -1064,11 +1065,7 @@ const Forms = () => {
       <p>
         If you want to see more examples and properties please check the
         official{" "}
-        <a
-          href="https://reactstrap.github.io/components/form/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://reactstrap.github.io/components/form/" target="_blank">
           reactstrap documentation
         </a>
         .

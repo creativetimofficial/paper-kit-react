@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React from "react";
 import Slider from "nouislider";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
@@ -91,11 +92,7 @@ function Sliders() {
       <h2>Props</h2>
       <p>
         For props please refer to{" "}
-        <a
-          href="https://refreshless.com/nouislider/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://refreshless.com/nouislider/" target="_blank">
           noUiSlider
         </a>
         .

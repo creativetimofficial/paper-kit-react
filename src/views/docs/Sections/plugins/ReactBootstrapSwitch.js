@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
@@ -58,7 +59,6 @@ class Switches extends React.Component {
           <a
             href="https://github.com/Julusian/react-bootstrap-switch"
             target="_blank"
-            rel="noopener noreferrer"
           >
             react-bootstrap-switch
           </a>
@@ -117,7 +117,6 @@ class Switches extends React.Component {
           <a
             href="https://github.com/Julusian/react-bootstrap-switch"
             target="_blank"
-            rel="noopener noreferrer"
           >
             official react-bootstrap-switch documentation
           </a>

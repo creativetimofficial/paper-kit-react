@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
@@ -374,7 +375,6 @@ class Cards extends React.Component {
           <a
             href="https://reactstrap.github.io/components/navs/"
             target="_blank"
-            rel="noopener noreferrer"
           >
             reactstrap's nav components
           </a>
@@ -555,7 +555,6 @@ class Cards extends React.Component {
           <a
             href="https://reactstrap.github.io/components/card/"
             target="_blank"
-            rel="noopener noreferrer"
           >
             official reactstrap documentation
           </a>

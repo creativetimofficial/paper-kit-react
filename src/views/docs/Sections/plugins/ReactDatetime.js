@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
@@ -65,7 +66,6 @@ class DateTimePicker extends React.Component {
           <a
             href="https://github.com/YouCanBookMe/react-datetime"
             target="_blank"
-            rel="noopener noreferrer"
           >
             react-datetime
           </a>{" "}
@@ -133,7 +133,6 @@ class DateTimePicker extends React.Component {
           <a
             href="https://github.com/YouCanBookMe/react-datetime"
             target="_blank"
-            rel="noopener noreferrer"
           >
             react-datetime's documentation
           </a>

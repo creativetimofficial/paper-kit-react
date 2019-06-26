@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
@@ -1629,7 +1630,6 @@ function NavbarDocs() {
         <a
           href="https://reactstrap.github.io/components/navbar/"
           target="_blank"
-          rel="noopener noreferrer"
         >
           reactstrap navbar documentation
         </a>

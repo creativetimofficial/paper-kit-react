@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React from "react";
 
 // reactstrap components
@@ -49,23 +50,9 @@ class PaginationDocs extends React.Component {
         <h2 id="disabled-and-active-states">Disabled and active states</h2>
         <p>
           Pagination links are customizable for different circumstances. Use{" "}
-          <code className="highlighter-rouge">.disabled</code>
-          for links that appear un-clickable and{" "}
-          <code className="highlighter-rouge">.active</code>
-          to indicate the current page.
-        </p>
-        <p>
-          While the <code className="highlighter-rouge">.disabled</code>
-          class uses{" "}
-          <code className="highlighter-rouge">pointer-events: none</code>
-          to <em>try</em>
-          to disable the link functionality of{" "}
-          <code className="highlighter-rouge">{`<a>`}</code>
-          s, that CSS property is not yet standardized and doesn’t account for
-          keyboard navigation. As such, you should always add{" "}
-          <code className="highlighter-rouge">tabindex="-1"</code>
-          on disabled links and use custom JavaScript to fully disable their
-          functionality.
+          <code class="highlighter-rouge">disabled</code> for links that appear
+          un-clickable and <code class="highlighter-rouge">active</code> to
+          indicate the current page.
         </p>
         <div className="bd-example" data-example-id="">
           <nav aria-label="...">
@@ -104,7 +91,7 @@ class PaginationDocs extends React.Component {
         </div>
         <p>
           You can optionally swap out active or disabled anchors for{" "}
-          <code className="highlighter-rouge">{`<span>`}</code>, or omit the
+          <code class="highlighter-rouge">&lt;span&gt;</code>, or omit the
           anchor in the case of the prev/next arrows, to remove click
           functionality and prevent keyboard focus while retaining intended
           styles.
@@ -141,7 +128,7 @@ class PaginationDocs extends React.Component {
         <h2 id="alignment">Alignment</h2>
         <p>
           Change the alignment of pagination components with{" "}
-          <a href="/docs/1.0/utilities/flex/">flexbox utilities</a>.
+          <code>flexbox utilities</code>.
         </p>
         <div className="bd-example" data-example-id="">
           <nav aria-label="Page navigation example">
@@ -219,6 +206,17 @@ class PaginationDocs extends React.Component {
             </Pagination>
           </nav>
         </div>
+        <h2>Props</h2>
+        <p>
+          For props please refer to{" "}
+          <a
+            href="https://reactstrap.github.io/components/pagination/"
+            target="_blank"
+          >
+            reactstrap's pagination documentation
+          </a>
+          .
+        </p>
       </>
     );
   }
