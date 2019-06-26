@@ -187,7 +187,7 @@ class TooltipSection extends React.Component {
         tooltips to appear over. You can use different elements. For more
         information about tooltips and how to use them, please refer to{" "}
         <a
-          href="https://reactstrap.github.io/components/tooltips/"
+          href="https://reactstrap.github.io/components/tooltips/?ref=creativetim"
           target="_blank"
         >
           reactstrap documentation

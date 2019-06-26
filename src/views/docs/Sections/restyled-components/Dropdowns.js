@@ -993,7 +993,7 @@ class Dropdowns extends React.Component {
         <p>
           Please refer to{" "}
           <a
-            href="https://reactstrap.github.io/components/dropdowns/"
+            href="https://reactstrap.github.io/components/dropdowns/?ref=creativetim"
             target="_blank"
           >
             reactstrap dropdowns documentation

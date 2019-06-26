@@ -1432,7 +1432,7 @@ function NavbarDocs() {
         <strong>
           <code class="highlighter-rouge">.sticky-top</code> uses{" "}
           <code class="highlighter-rouge">position: sticky</code>, which{" "}
-          <a href="https://caniuse.com/#feat=css-sticky">
+          <a href="https://caniuse.com/#feat=css-sticky?ref=creativetim" target="_blank">
             isn’t fully supported in every browser
           </a>
         </strong>
@@ -1627,7 +1627,7 @@ function NavbarDocs() {
       <p>
         Please refer to{" "}
         <a
-          href="https://reactstrap.github.io/components/navbar/"
+          href="https://reactstrap.github.io/components/navbar/?ref=creativetim"
           target="_blank"
         >
           reactstrap navbar documentation

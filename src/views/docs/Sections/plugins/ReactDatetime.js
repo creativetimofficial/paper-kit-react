@@ -64,7 +64,7 @@ class DateTimePicker extends React.Component {
         <p className="bd-lead">
           We've used{" "}
           <a
-            href="https://github.com/YouCanBookMe/react-datetime"
+            href="https://github.com/YouCanBookMe/react-datetime?ref=creativetim"
             target="_blank"
           >
             react-datetime
@@ -131,7 +131,7 @@ class DateTimePicker extends React.Component {
         <p>
           For props, please refer to{" "}
           <a
-            href="https://github.com/YouCanBookMe/react-datetime"
+            href="https://github.com/YouCanBookMe/react-datetime?ref=creativetim"
             target="_blank"
           >
             react-datetime's documentation

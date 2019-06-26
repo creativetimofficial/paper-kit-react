@@ -132,7 +132,7 @@ class Badges extends React.Component {
         <p>
           Please refer to{" "}
           <a
-            href="https://reactstrap.github.io/components/badge/"
+            href="https://reactstrap.github.io/components/badge/?ref=creativetim"
             target="_blank"
           >
             reactstrap badge documentation

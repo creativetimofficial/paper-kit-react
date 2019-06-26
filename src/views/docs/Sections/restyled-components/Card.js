@@ -373,7 +373,7 @@ class Cards extends React.Component {
         <p>
           Add some navigation to a card’s header (or block) with{" "}
           <a
-            href="https://reactstrap.github.io/components/navs/"
+            href="https://reactstrap.github.io/components/navs/?ref=creativetim"
             target="_blank"
           >
             reactstrap's nav components
@@ -553,7 +553,7 @@ class Cards extends React.Component {
         <p>
           For props, please read the{" "}
           <a
-            href="https://reactstrap.github.io/components/card/"
+            href="https://reactstrap.github.io/components/card/?ref=creativetim"
             target="_blank"
           >
             official reactstrap documentation

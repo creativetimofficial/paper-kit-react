@@ -150,7 +150,7 @@ class Buttons extends React.Component {
         <p>
           You can refer to{" "}
           <a
-            href="https://reactstrap.github.io/components/buttons/"
+            href="https://reactstrap.github.io/components/buttons/?ref=creativetim"
             target="_blank"
           >
             reactstrap documentation

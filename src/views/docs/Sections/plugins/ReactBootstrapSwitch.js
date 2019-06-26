@@ -57,7 +57,7 @@ class Switches extends React.Component {
         <p className="bd-lead">
           For this component, we've used{" "}
           <a
-            href="https://github.com/Julusian/react-bootstrap-switch"
+            href="https://github.com/Julusian/react-bootstrap-switch?ref=creativetim"
             target="_blank"
           >
             react-bootstrap-switch
@@ -115,7 +115,7 @@ class Switches extends React.Component {
         <p>
           For props please refer to{" "}
           <a
-            href="https://github.com/Julusian/react-bootstrap-switch"
+            href="https://github.com/Julusian/react-bootstrap-switch?ref=creativetim"
             target="_blank"
           >
             official react-bootstrap-switch documentation

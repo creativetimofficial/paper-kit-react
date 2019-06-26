@@ -9,16 +9,16 @@ class Footer extends React.Component {
           <nav>
             <ul>
               <li>
-                <a href="https://www.creative-tim.com">Creative Tim</a>
+                <a href="https://www.creative-tim.com?ref=pkr-docs-footer" target="_blank">Creative Tim</a>
               </li>
               <li>
-                <a href="https://presentation.creative-tim.com">About Us</a>
+                <a href="https://presentation.creative-tim.com?ref=pkr-docs-footer" target="_blank">About Us</a>
               </li>
               <li>
-                <a href="https://blog.creative-tim.com">Blog</a>
+                <a href="https://blog.creative-tim.com?ref=pkr-docs-footer" target="_blank">Blog</a>
               </li>
               <li>
-                <a href="https://github.com/creativetimofficial/now-ui-dashboard-pro-react/blob/master/LICENSE.md">
+                <a href="https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md?ref=creativetim" target="_blank">
                   MIT License
                 </a>
               </li>
@@ -26,11 +26,11 @@ class Footer extends React.Component {
           </nav>
           <div className="copyright">
             &copy; {new Date().getFullYear()}, Designed by{" "}
-            <a href="https://www.invisionapp.com" target="_blank">
+            <a href="https://www.invisionapp.com?ref=creativetim" target="_blank">
               Invision
             </a>
             . Coded by{" "}
-            <a href="https://www.creative-tim.com" target="_blank">
+            <a href="https://www.creative-tim.com?ref=pkr-docs-footer" target="_blank">
               Creative Tim
             </a>
             .

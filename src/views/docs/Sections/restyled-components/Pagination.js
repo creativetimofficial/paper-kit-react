@@ -467,7 +467,7 @@ class PaginationDocs extends React.Component {
         <p>
           For props please refer to{" "}
           <a
-            href="https://reactstrap.github.io/components/pagination/"
+            href="https://reactstrap.github.io/components/pagination/?ref=creativetim"
             target="_blank"
           >
             reactstrap's pagination documentation

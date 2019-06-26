@@ -17,7 +17,7 @@ class NucleoIcons extends React.Component {
           Through most of the examples in this kit, we have used 100 Nucleo
           Icons for the Paper Kit. View all the{" "}
           <a
-            href="https://demos.creative-tim.com/paper-kit-react/#/nucleo-icons"
+            href="https://demos.creative-tim.com/paper-kit-react/#/nucleo-icons?ref=creativetim"
             target="_blank"
           >
             example icons

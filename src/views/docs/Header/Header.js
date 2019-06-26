@@ -22,7 +22,7 @@ class Header extends React.Component {
           </NavItem>
           <NavItem>
             <NavLink
-              href="https://github.com/creativetimofficial/paper-dashboard-react"
+              href="https://github.com/creativetimofficial/paper-kit-react?ref=pkr-docs-navbar"
               className="p-2"
               target="_blank"
             >
@@ -30,7 +30,7 @@ class Header extends React.Component {
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="https://twitter.com/CreativeTim" className="p-2">
+            <NavLink href="https://twitter.com/CreativeTim?ref=creativetim" className="p-2" target="_blank">
               <i className="fa fa-twitter" />
             </NavLink>
           </NavItem>
@@ -49,7 +49,7 @@ class Header extends React.Component {
             </NavItem>
             <NavItem>
               <NavLink
-                href="https://github.com/creativetimofficial/paper-dashboard-react/issues"
+                href="https://github.com/creativetimofficial/paper-kit-react/issues?ref=creativetim"
                 target="_blank"
               >
                 <i className="nc-icon nc-delivery-fast" /> Report issue

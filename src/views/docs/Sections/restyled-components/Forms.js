@@ -1065,7 +1065,7 @@ const Forms = () => {
       <p>
         If you want to see more examples and properties please check the
         official{" "}
-        <a href="https://reactstrap.github.io/components/form/" target="_blank">
+        <a href="https://reactstrap.github.io/components/form/?ref=creativetim" target="_blank">
           reactstrap documentation
         </a>
         .

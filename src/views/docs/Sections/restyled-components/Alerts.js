@@ -247,7 +247,7 @@ class Alerts extends React.Component {
         <p>
           Please refer to{" "}
           <a
-            href="https://reactstrap.github.io/components/alerts/"
+            href="https://reactstrap.github.io/components/alerts/?ref=creativetim"
             target="_blank"
           >
             reactstrap alerts documentation

@@ -233,7 +233,7 @@ class ProgressDocs extends React.Component {
         <p>
           For props please refer to{" "}
           <a
-            href="https://reactstrap.github.io/components/progress/"
+            href="https://reactstrap.github.io/components/progress/?ref=creativetim"
             target="_blank"
           >
             reactstrap documentation
