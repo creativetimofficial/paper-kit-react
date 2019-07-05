@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/paper-kit-react/precache-manifest.32f3810d950f5a14c458c3e8d5db3ca6.js"
+  "/paper-kit-react/precache-manifest.96663875de903ef865058d616c812ac2.js"
 );
 
 self.addEventListener('message', (event) => {
