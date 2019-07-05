@@ -19,6 +19,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { HashRouter, Route, Redirect, Switch } from "react-router-dom";
+import ReactPixel from "react-facebook-pixel";
 
 // styles
 import "assets/css/bootstrap.min.css";
@@ -32,6 +33,9 @@ import ProfilePage from "views/examples/ProfilePage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
 import Documentation from "views/docs/Documentation.js";
 // others
+ReactPixel.init("111649226022273");
+ReactPixel.pageView();
+ReactPixel.fbq("track", "PageView");
 
 ReactDOM.render(
   <HashRouter>
