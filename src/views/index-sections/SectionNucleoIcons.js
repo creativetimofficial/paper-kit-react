@@ -17,7 +17,7 @@
 
 */
 import React from "react";
-
+import { Link } from "react-router-dom";
 // reactstrap components
 import { Button, Container, Row, Col } from "reactstrap";
 
@@ -42,8 +42,9 @@ function SectionNucleoIcons() {
               <Button
                 className="btn-round"
                 color="danger"
-                href="/nucleo-icons"
+                to="/nucleo-icons"
                 target="_blank"
+                tag={Link}
               >
                 View Demo Icons
               </Button>
