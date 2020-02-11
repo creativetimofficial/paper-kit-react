@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5dd0c47cb7ed56a44237202135fddd78",
+    "revision": "b2b96ade38d8117aca5ad0b83873f532",
     "url": "/paper-kit-react/index.html"
   },
   {
-    "revision": "34c8d9924dcae915fba2",
-    "url": "/paper-kit-react/static/css/main.24c40099.chunk.css"
+    "revision": "206582502567b739652b",
+    "url": "/paper-kit-react/static/css/main.eb51c3bb.chunk.css"
   },
   {
-    "revision": "1fb3dc6e5106efb07f3e",
-    "url": "/paper-kit-react/static/js/2.5b9c1f8a.chunk.js"
+    "revision": "6d83e9863f77b4a524da",
+    "url": "/paper-kit-react/static/js/2.acd0666b.chunk.js"
   },
   {
-    "revision": "34c8d9924dcae915fba2",
-    "url": "/paper-kit-react/static/js/main.528d8fb7.chunk.js"
+    "revision": "206582502567b739652b",
+    "url": "/paper-kit-react/static/js/main.3933f95b.chunk.js"
   },
   {
     "revision": "b53975df7de33c05106c",
