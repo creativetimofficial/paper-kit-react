@@ -18,7 +18,7 @@
 */
 import React from "react";
 import { Link } from "react-router-dom";
-import { Navbar, Nav, NavItem, NavLink } from "reactstrap";
+import { Button, Navbar, Nav, NavItem, NavLink } from "reactstrap";
 
 class Header extends React.Component {
   render() {
@@ -59,6 +59,15 @@ class Header extends React.Component {
         </Nav>
         <div className="navbar-nav-scroll ml-md-auto">
           <Nav className="bd-navbar-nav flex-row" navbar>
+            <NavItem>
+              <Button
+                className="btn-round"
+                color="danger"
+                href="https://www.creative-tim.com/product/paper-kit-pro-react?ref=pkr-examples-navbar-upgrade-pro" target="_blank"
+              >
+                <i className="nc-icon nc-spaceship" /> Upgrade to PRO
+              </Button>
+            </NavItem>
             <NavItem>
               <Link to="/documentation" className="nav-link">
                 <i className="nc-icon nc-paper" /> Documentation
