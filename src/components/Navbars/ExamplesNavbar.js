@@ -23,6 +23,7 @@ import classnames from "classnames";
 
 // reactstrap components
 import {
+  Button,
   Collapse,
   NavbarBrand,
   Navbar,
@@ -97,6 +98,15 @@ function ExamplesNavbar() {
           isOpen={navbarCollapse}
         >
           <Nav navbar>
+            <NavItem>
+              <Button
+                className="btn-round"
+                color="danger"
+                href="https://www.creative-tim.com/product/paper-kit-pro-react?ref=pkr-examples-navbar-upgrade-pro" target="_blank"
+              >
+                <i className="nc-icon nc-spaceship" /> Upgrade to PRO
+              </Button>
+            </NavItem>
             <NavItem>
               <NavLink to="/index" tag={Link}>
                 <i className="nc-icon nc-layout-11" /> Components
