@@ -44,7 +44,7 @@ function LandingPageHeader() {
     <>
       <div
         style={{
-          backgroundImage: "url(" + require("assets/img/daniel-olahh.jpg") + ")"
+          backgroundImage: "url(" + require("assets/img/background_image.jpg") + ")"
         }}
         className="page-header"
         data-parallax={true}
@@ -53,8 +53,8 @@ function LandingPageHeader() {
         <div className="filter" />
         <Container>
           <div className="motto text-center">
-            <h1>Example page</h1>
-            <h3>Start designing your landing page here.</h3>
+            <h1>Welcome Back To The Show</h1>
+            <h3>We are Ron Eddings and Chris Cochran from the Hacker Valley Studio podcast. We explore the human element of cybersecurity programs and technology. Join us on our quest to find inspirational stories and knowledge to elevate ourselves and our communities.</h3>
             <br />
             <Button
               href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
@@ -64,10 +64,10 @@ function LandingPageHeader() {
               outline
             >
               <i className="fa fa-play" />
-              Watch video
+              Listen on Apple Music
             </Button>
             <Button className="btn-round" color="neutral" type="button" outline>
-              Download
+              Listen on Google Play
             </Button>
           </div>
         </Container>
