@@ -1,75 +1,65 @@
-/*!
-
-=========================================================
-* Paper Kit React - v1.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-kit-react
-
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-/*eslint-disable*/
 import React from "react";
 
 // reactstrap components
-import { Container } from "reactstrap";
+import { Button, Container } from "reactstrap";
 
 // core components
 
 function IndexHeader() {
+  let pageHeader = React.createRef();
+
+  React.useEffect(() => {
+    if (window.innerWidth < 991) {
+      const updateScroll = () => {
+        let windowScrollTop = window.pageYOffset / 3;
+        pageHeader.current.style.transform =
+          "translate3d(0," + windowScrollTop + "px,0)";
+      };
+      window.addEventListener("scroll", updateScroll);
+      return function cleanup() {
+        window.removeEventListener("scroll", updateScroll);
+      };
+    }
+  });
+
   return (
     <>
       <div
-        className="page-header section-dark"
         style={{
-          backgroundImage:
-            "url(" + require("assets/img/antoine-barres.jpg") + ")"
+          backgroundImage: "url(" + require("assets/img/background.jpg") + ")"
         }}
+        className="page-header"
+        data-parallax={true}
+        ref={pageHeader}
       >
         <div className="filter" />
-        <div className="content-center">
-          <Container>
-            <div className="title-brand">
-              <h1 className="presentation-title">Paper Kit React</h1>
-              <div className="fog-low">
-                <img alt="..." src={require("assets/img/fog-low.png")} />
-              </div>
-              <div className="fog-low right">
-                <img alt="..." src={require("assets/img/fog-low.png")} />
-              </div>
-            </div>
-            <h2 className="presentation-subtitle text-center">
-              Make your mark with a Free Bootstrap 4 (Reactstrap) UI Kit!
-            </h2>
-          </Container>
-        </div>
-        <div
-          className="moving-clouds"
-          style={{
-            backgroundImage: "url(" + require("assets/img/clouds.png") + ")"
-          }}
-        />
-        <h6 className="category category-absolute">
-          Designed and coded by{" "}
-          <a
-            href="https://www.creative-tim.com?ref=pkr-index-page"
-            target="_blank"
-          >
-            <img
-              alt="..."
-              className="creative-tim-logo"
-              src={require("assets/img/creative-tim-white-slim2.png")}
-            />
-          </a>
-        </h6>
+        <Container>
+          <div className="motto text-center">
+            <h1>Hacker Valley Studio</h1>
+            <h3>We are Ron Eddings and Chris Cochran from the Hacker Valley Studio podcast. We explore the human element of cybersecurity programs and technology. Join us on our quest to find inspirational stories and knowledge to elevate ourselves and our communities.</h3>
+            <br />
+            <Button
+              href="https://chartable.com/podcasts/secdevopsai/redirect?service=itunes"
+              className="btn-round mr-1"
+              color="neutral"
+              target="_blank"
+              outline
+            >
+              <i className="fa fa-apple" />
+              Listen on Apple Music
+            </Button>
+            <Button
+              href="https://chartable.com/podcasts/secdevopsai/redirect?service=google"
+              className="btn-round mr-1"
+              color="neutral"
+              target="_blank"
+              outline
+            >
+              <i className="fa fa-google" />
+              Listen on Google Play
+            </Button>
+          </div>
+        </Container>
       </div>
     </>
   );

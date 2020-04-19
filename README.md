@@ -118,7 +118,7 @@ paper-kit-react
     │   │   ├── LandingPageHeader.js
     │   │   └── ProfilePageHeader.js
     │   └── Navbars
-    │       ├── ExamplesNavbar.js
+    │       ├── HVSNavBar.js
     │       └── IndexNavbar.js
     └── views
         ├── Index.js

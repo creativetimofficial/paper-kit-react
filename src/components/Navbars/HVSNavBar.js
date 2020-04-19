@@ -32,7 +32,7 @@ import {
   Container
 } from "reactstrap";
 
-function ExamplesNavbar() {
+function HVSNavBar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
 
@@ -98,8 +98,10 @@ function ExamplesNavbar() {
         >
           <Nav navbar>
             <NavItem>
-              <NavLink to="/index" tag={Link}>
-                <i className="nc-icon nc-layout-11" /> Components
+              <NavLink 
+              href="https://www.patreon.com/hackervalleystudio"
+              target="_blank">
+                <i className="nc-icon nc-favourite-28" /> Support us on Patreon
               </NavLink>
             </NavItem>
             <NavItem>
@@ -124,34 +126,23 @@ function ExamplesNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.facebook.com/CreativeTim?ref=creativetim"
+                href="https://www.linkedin.com/company/hackervalleystudio"
                 target="_blank"
-                title="Like us on Facebook"
+                title="Follow us on LinkedIn"
               >
-                <i className="fa fa-facebook-square" />
-                <p className="d-lg-none">Facebook</p>
+                <i className="fa fa-linkedin" />
+                <p className="d-lg-none">LinkedIn</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+                href="https://www.instagram.com/hackervalleystudio"
                 target="_blank"
                 title="Follow us on Instagram"
               >
                 <i className="fa fa-instagram" />
                 <p className="d-lg-none">Instagram</p>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="https://www.github.com/CreativeTimOfficial?ref=creativetim"
-                target="_blank"
-                title="Star on GitHub"
-              >
-                <i className="fa fa-github" />
-                <p className="d-lg-none">GitHub</p>
               </NavLink>
             </NavItem>
           </Nav>
@@ -161,4 +152,4 @@ function ExamplesNavbar() {
   );
 }
 
-export default ExamplesNavbar;
+export default HVSNavBar;

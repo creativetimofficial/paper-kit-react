@@ -22,7 +22,7 @@ import React from "react";
 import { Button, Card, Form, Input, Container, Row, Col } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
+import HVSNavBar from "components/Navbars/HVSNavBar.js";
 
 function RegisterPage() {
   document.documentElement.classList.remove("nav-open");
@@ -34,7 +34,7 @@ function RegisterPage() {
   });
   return (
     <>
-      <ExamplesNavbar />
+      <HVSNavBar />
       <div
         className="page-header"
         style={{
