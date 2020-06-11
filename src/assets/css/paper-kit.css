@@ -1,11 +1,11 @@
 /*!
 
  =========================================================
- * Paper Kit React - v1.0.0 based on Paper Kit - v2.2.0
+ * Paper Kit React - v1.2.0 based on Paper Kit - v2.2.0
  =========================================================
 
  * Product Page: https://www.creative-tim.com/product/paper-kit-2
- * Copyright 2019 Creative Tim (http://www.creative-tim.com)
+ * Copyright 2020 Creative Tim (http://www.creative-tim.com)
 
  * Designed by www.invisionapp.com Coded by www.creative-tim.com
 
@@ -2349,8 +2349,8 @@ License - nucleoapp.com/license/
 -------------------------------- */
 @font-face {
   font-family: 'nucleo-icons';
-  src: url("../fonts/nucleo-icons.eot");
-  src: url("../fonts/nucleo-icons.eot") format("embedded-opentype"), url("../fonts/nucleo-icons.woff2") format("woff2"), url("../fonts/nucleo-icons.woff") format("woff"), url("../fonts/nucleo-icons.ttf") format("truetype");
+  src: url("~assets/fonts/nucleo-icons.eot");
+  src: url("~assets/fonts/nucleo-icons.eot") format("embedded-opentype"), url("~assets/fonts/nucleo-icons.woff2") format("woff2"), url("~assets/fonts/nucleo-icons.woff") format("woff"), url("~assets/fonts/nucleo-icons.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
