@@ -77,7 +77,7 @@ function SectionDownload() {
                 color="twitter-bg"
                 href="#pablo"
                 id="tooltip3373767"
-                onClick={e => e.preventDefault()}
+                onClick={(e) => e.preventDefault()}
               >
                 <i className="fa fa-twitter" /> Twitter
               </Button>
@@ -89,7 +89,7 @@ function SectionDownload() {
                 color="google-bg"
                 href="#pablo"
                 id="tooltip840791273"
-                onClick={e => e.preventDefault()}
+                onClick={(e) => e.preventDefault()}
               >
                 <i className="fa fa-google-plus" /> Google
               </Button>
@@ -101,7 +101,7 @@ function SectionDownload() {
                 color="facebook-bg"
                 href="#pablo"
                 id="tooltip68961360"
-                onClick={e => e.preventDefault()}
+                onClick={(e) => e.preventDefault()}
               >
                 <i className="fa fa-facebook-square" /> Facebook
               </Button>

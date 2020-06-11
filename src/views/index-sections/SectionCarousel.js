@@ -27,7 +27,7 @@ import {
   Carousel,
   CarouselItem,
   CarouselIndicators,
-  CarouselCaption
+  CarouselCaption,
 } from "reactstrap";
 
 // core components
@@ -36,18 +36,18 @@ const items = [
   {
     src: require("assets/img/soroush-karimi.jpg"),
     altText: "Somewhere",
-    caption: "Somewhere"
+    caption: "Somewhere",
   },
   {
     src: require("assets/img/federico-beccari.jpg"),
     altText: "Somewhere else",
-    caption: "Somewhere else"
+    caption: "Somewhere else",
   },
   {
     src: require("assets/img/joshua-stannard.jpg"),
     altText: "Here it is",
-    caption: "Here it is"
-  }
+    caption: "Here it is",
+  },
 ];
 
 function SectionCarousel() {
@@ -69,7 +69,7 @@ function SectionCarousel() {
     const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
     setActiveIndex(nextIndex);
   };
-  const goToIndex = newIndex => {
+  const goToIndex = (newIndex) => {
     if (animating) return;
     setActiveIndex(newIndex);
   };
@@ -90,7 +90,7 @@ function SectionCarousel() {
                     activeIndex={activeIndex}
                     onClickHandler={goToIndex}
                   />
-                  {items.map(item => {
+                  {items.map((item) => {
                     return (
                       <CarouselItem
                         onExiting={onExiting}
@@ -109,7 +109,7 @@ function SectionCarousel() {
                     className="left carousel-control carousel-control-prev"
                     data-slide="prev"
                     href="#pablo"
-                    onClick={e => {
+                    onClick={(e) => {
                       e.preventDefault();
                       previous();
                     }}
@@ -122,7 +122,7 @@ function SectionCarousel() {
                     className="right carousel-control carousel-control-next"
                     data-slide="next"
                     href="#pablo"
-                    onClick={e => {
+                    onClick={(e) => {
                       e.preventDefault();
                       next();
                     }}
