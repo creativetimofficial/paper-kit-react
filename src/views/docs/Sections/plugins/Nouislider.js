@@ -89,7 +89,7 @@ function Sliders() {
   return (
     <div>
       <h1 className="bd-title" id="content">
-        noUiSlider v13.1.5
+        noUiSlider v14.5.0
       </h1>
       <h2>Example</h2>
       <div className="bd-example">
