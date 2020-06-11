@@ -72,7 +72,7 @@ function Sliders() {
         start: [37.5],
         connect: [true, false],
         step: 0.5,
-        range: { min: 0, max: 100 }
+        range: { min: 0, max: 100 },
       });
     }
     if (
@@ -82,7 +82,7 @@ function Sliders() {
         start: [20, 80],
         connect: [false, true, false],
         step: 1,
-        range: { min: 0, max: 100 }
+        range: { min: 0, max: 100 },
       });
     }
   });

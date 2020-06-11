@@ -35,7 +35,7 @@ import {
   NavItem,
   NavLink,
   Nav,
-  Container
+  Container,
 } from "reactstrap";
 
 const code1 = `import React from "react";
@@ -992,7 +992,7 @@ function NavbarDocs() {
       <div className="bd-example" data-example-id="">
         <Navbar color="primary" expand="lg">
           <Container>
-            <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+            <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
               Navbar
             </NavbarBrand>
             <button
@@ -1009,17 +1009,17 @@ function NavbarDocs() {
             <UncontrolledCollapse navbar toggler="#navbarNav">
               <Nav navbar>
                 <NavItem className="active">
-                  <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     Home <span className="sr-only">(current)</span>
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     Features
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     Pricing
                   </NavLink>
                 </NavItem>
@@ -1027,7 +1027,7 @@ function NavbarDocs() {
                   <NavLink
                     className="disabled"
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     Disabled
                   </NavLink>
@@ -1051,7 +1051,7 @@ function NavbarDocs() {
       <div className="bd-example" data-example-id="">
         <Navbar color="primary" expand="lg">
           <Container>
-            <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+            <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
               Navbar
             </NavbarBrand>
             <button
@@ -1068,17 +1068,17 @@ function NavbarDocs() {
             <UncontrolledCollapse navbar toggler="#navbarNavDropdown">
               <Nav navbar>
                 <NavItem className="active">
-                  <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     Home <span className="sr-only">(current)</span>
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     Features
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     Pricing
                   </NavLink>
                 </NavItem>
@@ -1091,26 +1091,26 @@ function NavbarDocs() {
                     href="#pablo"
                     id="navbarDropdownMenuLink"
                     nav
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     Dropdown link
                   </DropdownToggle>
                   <DropdownMenu aria-labelledby="navbarDropdownMenuLink">
                     <DropdownItem
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       Action
                     </DropdownItem>
                     <DropdownItem
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       Another action
                     </DropdownItem>
                     <DropdownItem
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       Something else here
                     </DropdownItem>
@@ -1138,7 +1138,7 @@ function NavbarDocs() {
         <Navbar color="primary" expand="lg">
           <Container>
             <div className="navbar-translate">
-              <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
                 Primary color
               </NavbarBrand>
               <button
@@ -1158,19 +1158,19 @@ function NavbarDocs() {
             <UncontrolledCollapse navbar toggler="#example-navbar-primary">
               <Nav className="ml-auto" navbar>
                 <NavItem className="active">
-                  <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     <i className="nc-icon nc-sun-fog-29" />
                     <p>Discover</p>
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     <i className="nc-icon nc-single-02" />
                     <p>Profile</p>
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     <i className="nc-icon nc-settings" />
                     <p>Settings</p>
                   </NavLink>
@@ -1182,7 +1182,7 @@ function NavbarDocs() {
         <Navbar color="info" expand="lg">
           <Container>
             <div className="navbar-translate">
-              <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
                 Info color
               </NavbarBrand>
               <button
@@ -1202,19 +1202,19 @@ function NavbarDocs() {
             <UncontrolledCollapse navbar toggler="#example-navbar-info">
               <Nav className="ml-auto" navbar>
                 <NavItem className="active">
-                  <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     <i className="nc-icon nc-sun-fog-29" />
                     <p>Discover</p>
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     <i className="nc-icon nc-single-02" />
                     <p>Profile</p>
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     <i className="nc-icon nc-settings" />
                     <p>Settings</p>
                   </NavLink>
@@ -1226,7 +1226,7 @@ function NavbarDocs() {
         <Navbar color="success" expand="lg">
           <Container>
             <div className="navbar-translate">
-              <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
                 Success color
               </NavbarBrand>
               <button
@@ -1246,19 +1246,19 @@ function NavbarDocs() {
             <UncontrolledCollapse navbar toggler="#example-navbar-success">
               <Nav className="ml-auto" navbar>
                 <NavItem className="active">
-                  <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     <i className="nc-icon nc-sun-fog-29" />
                     <p>Discover</p>
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     <i className="nc-icon nc-single-02" />
                     <p>Profile</p>
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     <i className="nc-icon nc-settings" />
                     <p>Settings</p>
                   </NavLink>
@@ -1270,7 +1270,7 @@ function NavbarDocs() {
         <Navbar color="warning" expand="lg">
           <Container>
             <div className="navbar-translate">
-              <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
                 Warning color
               </NavbarBrand>
               <button
@@ -1290,19 +1290,19 @@ function NavbarDocs() {
             <UncontrolledCollapse navbar toggler="#example-navbar-warning">
               <Nav className="ml-auto" navbar>
                 <NavItem className="active">
-                  <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     <i className="nc-icon nc-sun-fog-29" />
                     <p>Discover</p>
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     <i className="nc-icon nc-single-02" />
                     <p>Profile</p>
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     <i className="nc-icon nc-settings" />
                     <p>Settings</p>
                   </NavLink>
@@ -1314,7 +1314,7 @@ function NavbarDocs() {
         <Navbar color="danger" expand="lg">
           <Container>
             <div className="navbar-translate">
-              <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
                 Danger color
               </NavbarBrand>
               <button
@@ -1334,19 +1334,19 @@ function NavbarDocs() {
             <UncontrolledCollapse navbar toggler="#example-navbar-danger">
               <Nav className="ml-auto" navbar>
                 <NavItem className="active">
-                  <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     <i className="nc-icon nc-sun-fog-29" />
                     <p>Discover</p>
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     <i className="nc-icon nc-single-02" />
                     <p>Profile</p>
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     <i className="nc-icon nc-settings" />
                     <p>Settings</p>
                   </NavLink>
@@ -1359,12 +1359,12 @@ function NavbarDocs() {
           className="navigation-example"
           style={{
             backgroundImage:
-              "url(" + require("assets/img/ilya-yakover.jpg") + ")"
+              "url(" + require("assets/img/ilya-yakover.jpg") + ")",
           }}
         >
           <Navbar className="navbar-transparent" expand="md">
             <Container>
-              <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
                 Transparent
               </NavbarBrand>
               <button
@@ -1383,7 +1383,7 @@ function NavbarDocs() {
               <UncontrolledCollapse navbar toggler="#navbar-transparent">
                 <Nav className="ml-auto" navbar>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       <i
                         aria-hidden={true}
                         className="fa fa-facebook-official"
@@ -1392,12 +1392,12 @@ function NavbarDocs() {
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       <i aria-hidden={true} className="fa fa-twitter" /> Twitter
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                    <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                       <i aria-hidden={true} className="fa fa-instagram" />{" "}
                       Instagram
                     </NavLink>
@@ -1424,7 +1424,7 @@ function NavbarDocs() {
       <div className="bd-example" data-example-id="">
         <Navbar className="navbar-light bg-primary" expand="lg">
           <Container>
-            <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+            <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
               Navbar
             </NavbarBrand>
           </Container>
@@ -1462,7 +1462,7 @@ function NavbarDocs() {
       <div className="bd-example" data-example-id="">
         <Navbar className="navbar-light bg-primary">
           <Container>
-            <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+            <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
               Default
             </NavbarBrand>
           </Container>
@@ -1474,7 +1474,7 @@ function NavbarDocs() {
       <div className="bd-example" data-example-id="">
         <Navbar className="fixed-top navbar-light bg-primary">
           <Container>
-            <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+            <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
               Fixed top
             </NavbarBrand>
           </Container>
@@ -1486,7 +1486,7 @@ function NavbarDocs() {
       <div className="bd-example" data-example-id="">
         <Navbar className="fixed-bottom navbar-light bg-primary">
           <Container>
-            <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+            <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
               Fixed bottom
             </NavbarBrand>
           </Container>
@@ -1498,7 +1498,7 @@ function NavbarDocs() {
       <div className="bd-example" data-example-id="">
         <Navbar className="sticky-top navbar-light bg-primary">
           <Container>
-            <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+            <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
               Sticky top
             </NavbarBrand>
           </Container>
@@ -1554,17 +1554,17 @@ function NavbarDocs() {
               <span className="navbar-toggler-bar bar3" />
             </button>
             <UncontrolledCollapse navbar toggler="#navbarTogglerDemo01">
-              <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
                 Hidden brand
               </NavbarBrand>
               <Nav className="mr-auto mt-2 mt-lg-0" navbar>
                 <NavItem className="active">
-                  <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     Home <span className="sr-only">(current)</span>
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     Link
                   </NavLink>
                 </NavItem>
@@ -1572,7 +1572,7 @@ function NavbarDocs() {
                   <NavLink
                     className="disabled"
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     Disabled
                   </NavLink>
@@ -1594,7 +1594,7 @@ function NavbarDocs() {
       <div className="bd-example" data-example-id="">
         <Navbar color="primary" expand="lg">
           <Container>
-            <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+            <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
               Navbar
             </NavbarBrand>
             <button
@@ -1613,12 +1613,12 @@ function NavbarDocs() {
             <UncontrolledCollapse navbar toggler="#navbarTogglerDemo02">
               <Nav className="mr-auto mt-2 mt-lg-0" navbar>
                 <NavItem className="active">
-                  <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     Home <span className="sr-only">(current)</span>
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     Link
                   </NavLink>
                 </NavItem>
@@ -1626,7 +1626,7 @@ function NavbarDocs() {
                   <NavLink
                     className="disabled"
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     Disabled
                   </NavLink>

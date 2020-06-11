@@ -57,24 +57,24 @@ const routes = [
       {
         path: "/documentation/introduction",
         component: Introduction,
-        name: "Introduction"
+        name: "Introduction",
       },
       {
         path: "/documentation/build-tools",
         component: BuildTools,
-        name: "BuildTools"
+        name: "BuildTools",
       },
       {
         path: "/documentation/license",
         component: License,
-        name: "License"
+        name: "License",
       },
       {
         path: "/documentation/file-structure",
         component: FileStructure,
-        name: "File Structure"
-      }
-    ]
+        name: "File Structure",
+      },
+    ],
   },
   {
     name: "Core Components",
@@ -83,24 +83,24 @@ const routes = [
       {
         path: "/documentation/footers",
         component: Footers,
-        name: "Footers"
+        name: "Footers",
       },
       {
         path: "/documentation/headers",
         component: Headers,
-        name: "Headers"
+        name: "Headers",
       },
       {
         path: "/documentation/navbars",
         component: Navbars,
-        name: "Navbars"
+        name: "Navbars",
       },
       {
         path: "/documentation/parallax",
         component: Parallax,
-        name: "Parallax"
-      }
-    ]
+        name: "Parallax",
+      },
+    ],
   },
   {
     name: "Components",
@@ -109,84 +109,84 @@ const routes = [
       {
         path: "/documentation/alerts",
         component: Alerts,
-        name: "Alerts"
+        name: "Alerts",
       },
       {
         path: "/documentation/badge",
         component: Badge,
-        name: "Badge"
+        name: "Badge",
       },
       {
         path: "/documentation/breadcrumb",
         component: Breadcrumb,
-        name: "Breadcrumb"
+        name: "Breadcrumb",
       },
       {
         path: "/documentation/buttons",
         component: Buttons,
-        name: "Buttons"
+        name: "Buttons",
       },
       {
         path: "/documentation/card",
         component: Card,
-        name: "Card"
+        name: "Card",
       },
       {
         path: "/documentation/carousel",
         component: Carousel,
-        name: "Carousel"
+        name: "Carousel",
       },
       {
         path: "/documentation/colors",
         component: Colors,
-        name: "Colors"
+        name: "Colors",
       },
       {
         path: "/documentation/dropdowns",
         component: Dropdowns,
-        name: "Dropdowns"
+        name: "Dropdowns",
       },
       {
         path: "/documentation/forms",
         component: Forms,
-        name: "Forms"
+        name: "Forms",
       },
       {
         path: "/documentation/Modal",
         component: Modal,
-        name: "Modal"
+        name: "Modal",
       },
       {
         path: "/documentation/navbar",
         component: Navbar,
-        name: "Navbar"
+        name: "Navbar",
       },
       {
         path: "/documentation/pagination",
         component: Pagination,
-        name: "Pagination"
+        name: "Pagination",
       },
       {
         path: "/documentation/popovers",
         component: Popovers,
-        name: "Popovers"
+        name: "Popovers",
       },
       {
         path: "/documentation/progress",
         component: Progress,
-        name: "Progress"
+        name: "Progress",
       },
       {
         path: "/documentation/tooltips",
         component: Tooltips,
-        name: "Tooltips"
+        name: "Tooltips",
       },
       {
         path: "/documentation/typography",
         component: Typography,
-        name: "Typography"
-      }
-    ]
+        name: "Typography",
+      },
+    ],
   },
   {
     name: "Plugins",
@@ -195,30 +195,30 @@ const routes = [
       {
         path: "/documentation/nouislider",
         component: Nouislider,
-        name: "Nouislider"
+        name: "Nouislider",
       },
       {
         path: "/documentation/nucleo-icons",
         component: NucleoIcons,
-        name: "Nucleo Icons"
+        name: "Nucleo Icons",
       },
       {
         path: "/documentation/react-bootstrap-switch",
         component: ReactBootstrapSwitch,
-        name: "React Bootstrap Switch"
+        name: "React Bootstrap Switch",
       },
       {
         path: "/documentation/react-datetime",
         component: ReactDatetime,
-        name: "React Datetime"
-      }
-    ]
+        name: "React Datetime",
+      },
+    ],
   },
   {
     redirect: true,
     path: "/documentation",
-    pathTo: "/documentation/introduction"
-  }
+    pathTo: "/documentation/introduction",
+  },
 ];
 
 export default routes;

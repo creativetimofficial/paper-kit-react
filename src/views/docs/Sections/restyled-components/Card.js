@@ -35,7 +35,7 @@ import {
   NavItem,
   NavLink,
   CardImgOverlay,
-  Button
+  Button,
 } from "reactstrap";
 
 const codeExample = `<Card style={{width: '20rem'}}>

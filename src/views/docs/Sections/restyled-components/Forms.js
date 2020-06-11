@@ -31,7 +31,7 @@ import {
   InputGroupText,
   Row,
   Col,
-  Button
+  Button,
 } from "reactstrap";
 
 const overviewExample = `import React from "react";

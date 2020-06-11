@@ -280,27 +280,42 @@ class PaginationDocs extends React.Component {
           <nav aria-label="Page navigation example">
             <Pagination>
               <PaginationItem>
-                <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                <PaginationLink
+                  href="#pablo"
+                  onClick={(e) => e.preventDefault()}
+                >
                   Previous
                 </PaginationLink>
               </PaginationItem>
               <PaginationItem>
-                <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                <PaginationLink
+                  href="#pablo"
+                  onClick={(e) => e.preventDefault()}
+                >
                   1
                 </PaginationLink>
               </PaginationItem>
               <PaginationItem>
-                <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                <PaginationLink
+                  href="#pablo"
+                  onClick={(e) => e.preventDefault()}
+                >
                   2
                 </PaginationLink>
               </PaginationItem>
               <PaginationItem>
-                <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                <PaginationLink
+                  href="#pablo"
+                  onClick={(e) => e.preventDefault()}
+                >
                   3
                 </PaginationLink>
               </PaginationItem>
               <PaginationItem>
-                <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                <PaginationLink
+                  href="#pablo"
+                  onClick={(e) => e.preventDefault()}
+                >
                   Next
                 </PaginationLink>
               </PaginationItem>
@@ -323,29 +338,41 @@ class PaginationDocs extends React.Component {
               <PaginationItem className="disabled">
                 <PaginationLink
                   href="#pablo"
-                  onClick={e => e.preventDefault()}
+                  onClick={(e) => e.preventDefault()}
                   tabindex="-1"
                 >
                   Previous
                 </PaginationLink>
               </PaginationItem>
               <PaginationItem>
-                <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                <PaginationLink
+                  href="#pablo"
+                  onClick={(e) => e.preventDefault()}
+                >
                   1
                 </PaginationLink>
               </PaginationItem>
               <PaginationItem className="active">
-                <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                <PaginationLink
+                  href="#pablo"
+                  onClick={(e) => e.preventDefault()}
+                >
                   2 <span className="sr-only">(current)</span>
                 </PaginationLink>
               </PaginationItem>
               <PaginationItem>
-                <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                <PaginationLink
+                  href="#pablo"
+                  onClick={(e) => e.preventDefault()}
+                >
                   3
                 </PaginationLink>
               </PaginationItem>
               <PaginationItem>
-                <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                <PaginationLink
+                  href="#pablo"
+                  onClick={(e) => e.preventDefault()}
+                >
                   Next
                 </PaginationLink>
               </PaginationItem>
@@ -369,22 +396,34 @@ class PaginationDocs extends React.Component {
                 <PaginationLink>Previous</PaginationLink>
               </PaginationItem>
               <PaginationItem>
-                <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                <PaginationLink
+                  href="#pablo"
+                  onClick={(e) => e.preventDefault()}
+                >
                   1
                 </PaginationLink>
               </PaginationItem>
               <PaginationItem className="active">
-                <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                <PaginationLink
+                  href="#pablo"
+                  onClick={(e) => e.preventDefault()}
+                >
                   2 <span className="sr-only">(current)</span>
                 </PaginationLink>
               </PaginationItem>
               <PaginationItem>
-                <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                <PaginationLink
+                  href="#pablo"
+                  onClick={(e) => e.preventDefault()}
+                >
                   3
                 </PaginationLink>
               </PaginationItem>
               <PaginationItem>
-                <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                <PaginationLink
+                  href="#pablo"
+                  onClick={(e) => e.preventDefault()}
+                >
                   Next
                 </PaginationLink>
               </PaginationItem>
@@ -408,29 +447,41 @@ class PaginationDocs extends React.Component {
               <PaginationItem className="disabled">
                 <PaginationLink
                   href="#pablo"
-                  onClick={e => e.preventDefault()}
+                  onClick={(e) => e.preventDefault()}
                   tabindex="-1"
                 >
                   Previous
                 </PaginationLink>
               </PaginationItem>
               <PaginationItem>
-                <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                <PaginationLink
+                  href="#pablo"
+                  onClick={(e) => e.preventDefault()}
+                >
                   1
                 </PaginationLink>
               </PaginationItem>
               <PaginationItem>
-                <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                <PaginationLink
+                  href="#pablo"
+                  onClick={(e) => e.preventDefault()}
+                >
                   2
                 </PaginationLink>
               </PaginationItem>
               <PaginationItem>
-                <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                <PaginationLink
+                  href="#pablo"
+                  onClick={(e) => e.preventDefault()}
+                >
                   3
                 </PaginationLink>
               </PaginationItem>
               <PaginationItem>
-                <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                <PaginationLink
+                  href="#pablo"
+                  onClick={(e) => e.preventDefault()}
+                >
                   Next
                 </PaginationLink>
               </PaginationItem>
@@ -449,29 +500,41 @@ class PaginationDocs extends React.Component {
               <PaginationItem className="disabled">
                 <PaginationLink
                   href="#pablo"
-                  onClick={e => e.preventDefault()}
+                  onClick={(e) => e.preventDefault()}
                   tabindex="-1"
                 >
                   Previous
                 </PaginationLink>
               </PaginationItem>
               <PaginationItem>
-                <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                <PaginationLink
+                  href="#pablo"
+                  onClick={(e) => e.preventDefault()}
+                >
                   1
                 </PaginationLink>
               </PaginationItem>
               <PaginationItem>
-                <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                <PaginationLink
+                  href="#pablo"
+                  onClick={(e) => e.preventDefault()}
+                >
                   2
                 </PaginationLink>
               </PaginationItem>
               <PaginationItem>
-                <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                <PaginationLink
+                  href="#pablo"
+                  onClick={(e) => e.preventDefault()}
+                >
                   3
                 </PaginationLink>
               </PaginationItem>
               <PaginationItem>
-                <PaginationLink href="#pablo" onClick={e => e.preventDefault()}>
+                <PaginationLink
+                  href="#pablo"
+                  onClick={(e) => e.preventDefault()}
+                >
                   Next
                 </PaginationLink>
               </PaginationItem>

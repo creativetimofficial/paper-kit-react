@@ -30,7 +30,7 @@ import {
   UncontrolledPopover,
   PopoverHeader,
   PopoverBody,
-  UncontrolledTooltip
+  UncontrolledTooltip,
 } from "reactstrap";
 
 const codeLiveDemo = `import React from "react";
@@ -750,7 +750,7 @@ function ModalDocs() {
         <div className="modal-footer no-border-footer">
           <span className="text-muted text-center">
             Looking{" "}
-            <a href="#pablo" onClick={e => e.preventDefault()}>
+            <a href="#pablo" onClick={(e) => e.preventDefault()}>
               create an account
             </a>
             ?

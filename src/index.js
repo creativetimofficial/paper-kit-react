@@ -23,8 +23,8 @@ import ReactPixel from "react-facebook-pixel";
 
 // styles
 import "assets/css/bootstrap.min.css";
-import "assets/scss/paper-kit.scss";
-import "assets/demo/demo.css";
+import "assets/scss/paper-kit.scss?v=1.2.0";
+import "assets/demo/demo.css?v=1.2.0";
 // pages
 import Index from "views/Index.js";
 import NucleoIcons from "views/NucleoIcons.js";
@@ -40,26 +40,26 @@ ReactPixel.fbq("track", "PageView");
 ReactDOM.render(
   <HashRouter>
     <Switch>
-      <Route path="/index" render={props => <Index {...props} />} />
+      <Route path="/index" render={(props) => <Index {...props} />} />
       <Route
         path="/nucleo-icons"
-        render={props => <NucleoIcons {...props} />}
+        render={(props) => <NucleoIcons {...props} />}
       />
       <Route
         path="/landing-page"
-        render={props => <LandingPage {...props} />}
+        render={(props) => <LandingPage {...props} />}
       />
       <Route
         path="/profile-page"
-        render={props => <ProfilePage {...props} />}
+        render={(props) => <ProfilePage {...props} />}
       />
       <Route
         path="/register-page"
-        render={props => <RegisterPage {...props} />}
+        render={(props) => <RegisterPage {...props} />}
       />
       <Route
         path="/documentation"
-        render={props => <Documentation {...props} />}
+        render={(props) => <Documentation {...props} />}
       />
       <Redirect to="/index" />
       <Redirect from="/" to="/index" />

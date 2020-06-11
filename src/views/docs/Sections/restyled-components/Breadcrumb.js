@@ -71,7 +71,7 @@ class Breadcrumbs extends React.Component {
           </Breadcrumb>
           <Breadcrumb>
             <BreadcrumbItem>
-              <a href="#/" onClick={e => e.preventDefault()}>
+              <a href="#/" onClick={(e) => e.preventDefault()}>
                 Home
               </a>
             </BreadcrumbItem>
@@ -79,12 +79,12 @@ class Breadcrumbs extends React.Component {
           </Breadcrumb>
           <Breadcrumb>
             <BreadcrumbItem>
-              <a href="#/" onClick={e => e.preventDefault()}>
+              <a href="#/" onClick={(e) => e.preventDefault()}>
                 Home
               </a>
             </BreadcrumbItem>
             <BreadcrumbItem>
-              <a href="#/" onClick={e => e.preventDefault()}>
+              <a href="#/" onClick={(e) => e.preventDefault()}>
                 Library
               </a>
             </BreadcrumbItem>
