@@ -1,23 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b2b96ade38d8117aca5ad0b83873f532",
+    "revision": "6fefdd605ca5c21f569b75cb01b74ab9",
     "url": "/paper-kit-react/index.html"
   },
   {
-    "revision": "206582502567b739652b",
-    "url": "/paper-kit-react/static/css/main.eb51c3bb.chunk.css"
+    "revision": "f432f0f2ec8046526e62",
+    "url": "/paper-kit-react/static/css/main.0e9c6490.chunk.css"
   },
   {
-    "revision": "6d83e9863f77b4a524da",
-    "url": "/paper-kit-react/static/js/2.acd0666b.chunk.js"
+    "revision": "66b01c27d7d09687d092",
+    "url": "/paper-kit-react/static/js/2.30207cfb.chunk.js"
   },
   {
-    "revision": "206582502567b739652b",
-    "url": "/paper-kit-react/static/js/main.3933f95b.chunk.js"
+    "revision": "ac4a31b929cb9380c4a242904540a469",
+    "url": "/paper-kit-react/static/js/2.30207cfb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b53975df7de33c05106c",
-    "url": "/paper-kit-react/static/js/runtime~main.3abb3f3a.js"
+    "revision": "f432f0f2ec8046526e62",
+    "url": "/paper-kit-react/static/js/main.6ad1dcf8.chunk.js"
+  },
+  {
+    "revision": "30f942bb7783c4b076a0017ec0876fab",
+    "url": "/paper-kit-react/static/js/main.6ad1dcf8.chunk.js.LICENSE.txt"
+  },
+  {
+    "revision": "b5282441e5da91961d27",
+    "url": "/paper-kit-react/static/js/runtime-main.7812059b.js"
   },
   {
     "revision": "dfbf459c7e39ae2e0077b8fa4dc04411",

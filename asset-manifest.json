@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/paper-kit-react/static/css/main.eb51c3bb.chunk.css",
-    "main.js": "/paper-kit-react/static/js/main.3933f95b.chunk.js",
-    "main.js.map": "/paper-kit-react/static/js/main.3933f95b.chunk.js.map",
-    "runtime~main.js": "/paper-kit-react/static/js/runtime~main.3abb3f3a.js",
-    "runtime~main.js.map": "/paper-kit-react/static/js/runtime~main.3abb3f3a.js.map",
-    "static/js/2.acd0666b.chunk.js": "/paper-kit-react/static/js/2.acd0666b.chunk.js",
-    "static/js/2.acd0666b.chunk.js.map": "/paper-kit-react/static/js/2.acd0666b.chunk.js.map",
+    "main.css": "/paper-kit-react/static/css/main.0e9c6490.chunk.css",
+    "main.js": "/paper-kit-react/static/js/main.6ad1dcf8.chunk.js",
+    "main.js.map": "/paper-kit-react/static/js/main.6ad1dcf8.chunk.js.map",
+    "runtime-main.js": "/paper-kit-react/static/js/runtime-main.7812059b.js",
+    "runtime-main.js.map": "/paper-kit-react/static/js/runtime-main.7812059b.js.map",
+    "static/js/2.30207cfb.chunk.js": "/paper-kit-react/static/js/2.30207cfb.chunk.js",
+    "static/js/2.30207cfb.chunk.js.map": "/paper-kit-react/static/js/2.30207cfb.chunk.js.map",
     "index.html": "/paper-kit-react/index.html",
-    "precache-manifest.64c62616b9905f0f62f9568bdfc8811c.js": "/paper-kit-react/precache-manifest.64c62616b9905f0f62f9568bdfc8811c.js",
+    "precache-manifest.684f052a894682b08e6c2856531e08c4.js": "/paper-kit-react/precache-manifest.684f052a894682b08e6c2856531e08c4.js",
     "service-worker.js": "/paper-kit-react/service-worker.js",
-    "static/css/main.eb51c3bb.chunk.css.map": "/paper-kit-react/static/css/main.eb51c3bb.chunk.css.map",
+    "static/css/main.0e9c6490.chunk.css.map": "/paper-kit-react/static/css/main.0e9c6490.chunk.css.map",
+    "static/js/2.30207cfb.chunk.js.LICENSE.txt": "/paper-kit-react/static/js/2.30207cfb.chunk.js.LICENSE.txt",
+    "static/js/main.6ad1dcf8.chunk.js.LICENSE.txt": "/paper-kit-react/static/js/main.6ad1dcf8.chunk.js.LICENSE.txt",
     "static/media/antoine-barres.jpg": "/paper-kit-react/static/media/antoine-barres.dfbf459c.jpg",
     "static/media/ayo-ogunseinde-2.jpg": "/paper-kit-react/static/media/ayo-ogunseinde-2.bfc688ca.jpg",
     "static/media/clem-onojeghuo-2.jpg": "/paper-kit-react/static/media/clem-onojeghuo-2.bb4b9ac9.jpg",
@@ -28,9 +30,15 @@
     "static/media/kaci-baum-2.jpg": "/paper-kit-react/static/media/kaci-baum-2.e06d84cb.jpg",
     "static/media/landing-page.png": "/paper-kit-react/static/media/landing-page.d65b6316.png",
     "static/media/login-image.jpg": "/paper-kit-react/static/media/login-image.be9fa468.jpg",
-    "static/media/paper-kit.scss": "/paper-kit-react/static/media/nucleo-icons.f32ed5ad.eot",
+    "static/media/paper-kit.scss?v=1.2.0": "/paper-kit-react/static/media/nucleo-icons.f32ed5ad.eot",
     "static/media/profile-page.png": "/paper-kit-react/static/media/profile-page.ed812899.png",
     "static/media/soroush-karimi.jpg": "/paper-kit-react/static/media/soroush-karimi.29df8117.jpg",
     "static/media/uriel-soberanes.jpg": "/paper-kit-react/static/media/uriel-soberanes.fe3a7838.jpg"
-  }
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7812059b.js",
+    "static/js/2.30207cfb.chunk.js",
+    "static/css/main.0e9c6490.chunk.css",
+    "static/js/main.6ad1dcf8.chunk.js"
+  ]
 }
