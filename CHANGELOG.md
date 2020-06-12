@@ -1,6 +1,6 @@
 # Change Log
 
-## [1.2.0] 2020-06-26
+## [1.2.0] 2020-06-12
 ### Bug fixing
 - https://github.com/creativetimofficial/paper-kit-react/issues/2 (changed the fonts import to `~assets/fonts` and also added assets path inside `jsconfig.json` file)
 - Other Paper React products issues solved here as well
