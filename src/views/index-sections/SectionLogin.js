@@ -1,12 +1,12 @@
 /*!
 
 =========================================================
-* Paper Kit React - v1.0.0
+* Paper Kit React - v1.2.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/paper-kit-react
 
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
@@ -29,7 +29,7 @@ import {
   InputGroup,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 // core components
@@ -40,7 +40,7 @@ function SectionLogin() {
       <div
         className="section section-image section-login"
         style={{
-          backgroundImage: "url(" + require("assets/img/login-image.jpg") + ")"
+          backgroundImage: "url(" + require("assets/img/login-image.jpg") + ")",
         }}
       >
         <Container>
@@ -53,7 +53,7 @@ function SectionLogin() {
                     className="btn-neutral btn-just-icon mt-0"
                     color="facebook"
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     <i className="fa fa-facebook-square" />
                   </Button>
@@ -61,7 +61,7 @@ function SectionLogin() {
                     className="btn-neutral btn-just-icon mt-0 ml-1"
                     color="google"
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     <i className="fa fa-google-plus" />
                   </Button>
@@ -69,7 +69,7 @@ function SectionLogin() {
                     className="btn-neutral btn-just-icon mt-0 ml-1"
                     color="twitter"
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     <i className="fa fa-twitter" />
                   </Button>
@@ -107,7 +107,7 @@ function SectionLogin() {
                     className="btn-link"
                     color="danger"
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     Forgot password?
                   </Button>

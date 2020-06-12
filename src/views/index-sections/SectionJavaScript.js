@@ -1,12 +1,12 @@
 /*!
 
 =========================================================
-* Paper Kit React - v1.0.0
+* Paper Kit React - v1.2.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/paper-kit-react
 
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
@@ -34,7 +34,7 @@ import {
   UncontrolledTooltip,
   PopoverBody,
   PopoverHeader,
-  UncontrolledPopover
+  UncontrolledPopover,
 } from "reactstrap";
 
 // core components
@@ -126,7 +126,7 @@ function SectionJavaScript() {
                 color="danger"
                 id="tooltip344834141"
                 outline
-                onClick={e => e.target.focus()}
+                onClick={(e) => e.target.focus()}
               >
                 On top
               </Button>
@@ -145,7 +145,7 @@ function SectionJavaScript() {
                 color="danger"
                 id="tooltip493417725"
                 outline
-                onClick={e => e.target.focus()}
+                onClick={(e) => e.target.focus()}
               >
                 On bottom
               </Button>
@@ -164,7 +164,7 @@ function SectionJavaScript() {
                 color="danger"
                 id="tooltip746845223"
                 outline
-                onClick={e => e.target.focus()}
+                onClick={(e) => e.target.focus()}
               >
                 On left
               </Button>
@@ -183,7 +183,7 @@ function SectionJavaScript() {
                 color="danger"
                 id="tooltip909471006"
                 outline
-                onClick={e => e.target.focus()}
+                onClick={(e) => e.target.focus()}
               >
                 On right
               </Button>
@@ -209,7 +209,7 @@ function SectionJavaScript() {
                     <InputGroup className="date" id="datetimepicker">
                       <ReactDatetime
                         inputProps={{
-                          placeholder: "Datetime Picker Here"
+                          placeholder: "Datetime Picker Here",
                         }}
                       />
                       <InputGroupAddon addonType="append">

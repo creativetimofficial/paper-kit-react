@@ -1,12 +1,12 @@
 /*!
 
 =========================================================
-* Paper Kit React - v1.0.0
+* Paper Kit React - v1.2.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/paper-kit-react
 
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
@@ -32,7 +32,7 @@ import {
   Nav,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 function SectionNavbars() {
@@ -47,7 +47,7 @@ function SectionNavbars() {
           <Row>
             <Col md="6">
               <Navbar className="bg-primary" expand="lg">
-                <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+                <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
                   Menu
                 </NavbarBrand>
                 <button
@@ -67,12 +67,18 @@ function SectionNavbars() {
                 <UncontrolledCollapse navbar toggler="#navbar-menu">
                   <Nav className="mr-auto" navbar>
                     <NavItem>
-                      <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                      <NavLink
+                        href="#pablo"
+                        onClick={(e) => e.preventDefault()}
+                      >
                         Link
                       </NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                      <NavLink
+                        href="#pablo"
+                        onClick={(e) => e.preventDefault()}
+                      >
                         Link
                       </NavLink>
                     </NavItem>
@@ -86,7 +92,7 @@ function SectionNavbars() {
                         href="#pablo"
                         id="dropdownMenuButton"
                         nav
-                        onClick={e => e.preventDefault()}
+                        onClick={(e) => e.preventDefault()}
                         role="button"
                       >
                         Dropdown
@@ -100,33 +106,33 @@ function SectionNavbars() {
                         </DropdownItem>
                         <DropdownItem
                           href="#pablo"
-                          onClick={e => e.preventDefault()}
+                          onClick={(e) => e.preventDefault()}
                         >
                           Action
                         </DropdownItem>
                         <DropdownItem
                           href="#pablo"
-                          onClick={e => e.preventDefault()}
+                          onClick={(e) => e.preventDefault()}
                         >
                           Another action
                         </DropdownItem>
                         <DropdownItem
                           href="#pablo"
-                          onClick={e => e.preventDefault()}
+                          onClick={(e) => e.preventDefault()}
                         >
                           Something else here
                         </DropdownItem>
                         <DropdownItem divider />
                         <DropdownItem
                           href="#pablo"
-                          onClick={e => e.preventDefault()}
+                          onClick={(e) => e.preventDefault()}
                         >
                           Separated link
                         </DropdownItem>
                         <DropdownItem divider />
                         <DropdownItem
                           href="#pablo"
-                          onClick={e => e.preventDefault()}
+                          onClick={(e) => e.preventDefault()}
                         >
                           Another separated link
                         </DropdownItem>
@@ -138,7 +144,7 @@ function SectionNavbars() {
             </Col>
             <Col md="6">
               <Navbar className="bg-danger" expand="lg">
-                <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+                <NavbarBrand href="#pablo" onClick={(e) => e.preventDefault()}>
                   Icons
                 </NavbarBrand>
                 <button
@@ -158,12 +164,18 @@ function SectionNavbars() {
                 <UncontrolledCollapse navbar toggler="#navbar-menu-icon">
                   <Nav className="ml-auto" navbar>
                     <NavItem className="active">
-                      <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                      <NavLink
+                        href="#pablo"
+                        onClick={(e) => e.preventDefault()}
+                      >
                         <i aria-hidden={true} className="nc-icon nc-email-85" />
                       </NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                      <NavLink
+                        href="#pablo"
+                        onClick={(e) => e.preventDefault()}
+                      >
                         <i
                           aria-hidden={true}
                           className="nc-icon nc-single-02"
@@ -179,7 +191,7 @@ function SectionNavbars() {
                         data-toggle="dropdown"
                         href="#pablo"
                         nav
-                        onClick={e => e.preventDefault()}
+                        onClick={(e) => e.preventDefault()}
                         role="button"
                       >
                         <i
@@ -193,20 +205,20 @@ function SectionNavbars() {
                         </DropdownItem>
                         <DropdownItem
                           href="#pablo"
-                          onClick={e => e.preventDefault()}
+                          onClick={(e) => e.preventDefault()}
                         >
                           Another action
                         </DropdownItem>
                         <DropdownItem
                           href="#pablo"
-                          onClick={e => e.preventDefault()}
+                          onClick={(e) => e.preventDefault()}
                         >
                           Something else here
                         </DropdownItem>
                         <DropdownItem divider />
                         <DropdownItem
                           href="#pablo"
-                          onClick={e => e.preventDefault()}
+                          onClick={(e) => e.preventDefault()}
                         >
                           Separated link
                         </DropdownItem>

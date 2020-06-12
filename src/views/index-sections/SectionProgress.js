@@ -1,12 +1,12 @@
 /*!
 
 =========================================================
-* Paper Kit React - v1.0.0
+* Paper Kit React - v1.2.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/paper-kit-react
 
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
@@ -31,14 +31,14 @@ import {
   TabPane,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 // core components
 
 function SectionProgress() {
   const [activeTab, setActiveTab] = React.useState("1");
-  const toggle = tab => {
+  const toggle = (tab) => {
     if (activeTab !== tab) {
       setActiveTab(tab);
     }
@@ -94,7 +94,7 @@ function SectionProgress() {
                     <PaginationLink
                       aria-label="Previous"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       <i aria-hidden={true} className="fa fa-angle-left" />
                       <span className="sr-only">Previous</span>
@@ -103,7 +103,7 @@ function SectionProgress() {
                   <PaginationItem>
                     <PaginationLink
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       1
                     </PaginationLink>
@@ -111,7 +111,7 @@ function SectionProgress() {
                   <PaginationItem>
                     <PaginationLink
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       2
                     </PaginationLink>
@@ -119,7 +119,7 @@ function SectionProgress() {
                   <PaginationItem>
                     <PaginationLink
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       3
                     </PaginationLink>
@@ -127,7 +127,7 @@ function SectionProgress() {
                   <PaginationItem>
                     <PaginationLink
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       4
                     </PaginationLink>
@@ -135,7 +135,7 @@ function SectionProgress() {
                   <PaginationItem>
                     <PaginationLink
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       5
                     </PaginationLink>
@@ -144,7 +144,7 @@ function SectionProgress() {
                     <PaginationLink
                       aria-label="Next"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       <i aria-hidden={true} className="fa fa-angle-right" />
                       <span className="sr-only">Next</span>
@@ -158,7 +158,7 @@ function SectionProgress() {
                   <PaginationItem>
                     <PaginationLink
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                       tabIndex="-1"
                     >
                       Previous
@@ -167,7 +167,7 @@ function SectionProgress() {
                   <PaginationItem>
                     <PaginationLink
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       1
                     </PaginationLink>
@@ -175,7 +175,7 @@ function SectionProgress() {
                   <PaginationItem>
                     <PaginationLink
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       2
                     </PaginationLink>
@@ -183,7 +183,7 @@ function SectionProgress() {
                   <PaginationItem className="active">
                     <PaginationLink
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       3 <span className="sr-only">(current)</span>
                     </PaginationLink>
@@ -191,7 +191,7 @@ function SectionProgress() {
                   <PaginationItem>
                     <PaginationLink
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       4
                     </PaginationLink>
@@ -199,7 +199,7 @@ function SectionProgress() {
                   <PaginationItem>
                     <PaginationLink
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       5
                     </PaginationLink>
@@ -207,7 +207,7 @@ function SectionProgress() {
                   <PaginationItem>
                     <PaginationLink
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       Next
                     </PaginationLink>
