@@ -491,10 +491,12 @@
         & .navbar-collapse{
             @include transform-translate-x(0px);
         }
-        & .wrapper{
-            left: 0;
-            @include transform-translate-x(-230px);
-        }
+//This block of code is affecting React-Bootstrap Switch component when viewing on a mobile size screen and operating the nav-menu
+        
+//         & .wrapper{
+//             left: 0;
+//             @include transform-translate-x(-230px);
+//         }
         & .navbar-translate{
             @include transform-translate-x(-230px);
         }
@@ -508,36 +510,37 @@
         margin-top: 30%;
       }
     }
+    
+//This block of code is affecting dropdown menus in an unpredictable way when viewing on mobile screen and operating the nav menu toggle
 
+//     .dropdown.show .dropdown-menu,
+//     .dropdown .dropdown-menu{
+//         border: 0;
+//         transition: none;
+//         -webkit-box-shadow: none;
+//         box-shadow: none;
+//         width: auto;
+//         height: auto;
 
-    .dropdown.show .dropdown-menu,
-    .dropdown .dropdown-menu{
-        border: 0;
-        transition: none;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-        width: auto;
-        height: auto;
+//         .dropdown-item:hover,
+//         .dropdown-item:focus{
+//             background-color: transparent;
+//             border-radius:0;
+//         }
 
-        .dropdown-item:hover,
-        .dropdown-item:focus{
-            background-color: transparent;
-            border-radius:0;
-        }
+//         .dropdown-item a{
 
-        .dropdown-item a{
+//             &:hover,
+//             &:focus{
+//                 color: $default-states-color;
+//             }
+//         }
 
-            &:hover,
-            &:focus{
-                color: $default-states-color;
-            }
-        }
-
-        &:before,
-        &:after{
-            display: none;
-        }
-    }
+//         &:before,
+//         &:after{
+//             display: none;
+//         }
+//     }
 
     .dropdown{
         .dropdown-menu{
