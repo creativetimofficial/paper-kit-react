@@ -38,7 +38,7 @@ function RegisterPage() {
       <div
         className="page-header"
         style={{
-          backgroundImage: "url(" + require("assets/img/login-image.jpg") + ")",
+          backgroundImage: "url(" + require("assets/img/login-image.jpg").default + ")",
         }}
       >
         <div className="filter" />
