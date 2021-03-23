@@ -1,12 +1,12 @@
 /*!
 
 =========================================================
-* Paper Kit React - v1.2.0
+* Paper Kit React - v1.3.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/paper-kit-react
 
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
 
 * Coded by Creative Tim
@@ -22,8 +22,8 @@ import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
 
 // styles
 import "assets/css/bootstrap.min.css";
-import "assets/scss/paper-kit.scss?v=1.2.0";
-import "assets/demo/demo.css?v=1.2.0";
+import "assets/scss/paper-kit.scss?v=1.3.0";
+import "assets/demo/demo.css?v=1.3.0";
 // pages
 import Index from "views/Index.js";
 import NucleoIcons from "views/NucleoIcons.js";
