@@ -147,9 +147,8 @@ function IndexNavbar() {
               <Button
                 className="btn-round"
                 color="danger"
-                href="#pablo"
+                href="https://www.creative-tim.com/product/paper-kit-pro-react?ref=pkr-index-navbar"
                 target="_blank"
-                disabled
               >
                 Upgrade to Pro
               </Button>
