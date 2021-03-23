@@ -162,7 +162,7 @@ function ExamplesNavbar() {
                 href="https://www.creative-tim.com/product/paper-kit-pro-react?ref=pkr-examples-navbar"
                 target="_blank"
               >
-                Upgrade to Pro
+                <i class="nc-icon nc-spaceship"></i> Upgrade to Pro
               </Button>
             </NavItem>
           </Nav>
