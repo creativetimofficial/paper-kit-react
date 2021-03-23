@@ -153,7 +153,9 @@ function SectionTypography() {
                     <img
                       alt="..."
                       className="img-circle img-no-padding img-responsive"
-                      src={require("assets/img/faces/joe-gardner-2.jpg").default}
+                      src={
+                        require("assets/img/faces/joe-gardner-2.jpg").default
+                      }
                     />
                   </div>
                   <p>Sonia Green</p>
