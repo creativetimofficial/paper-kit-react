@@ -160,7 +160,7 @@ function LandingPage() {
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
-                        src={require("assets/img/faces/clem-onojeghuo-3.jpg")}
+                        src={require("assets/img/faces/clem-onojeghuo-3.jpg").default}
                       />
                     </a>
                   </div>
@@ -211,7 +211,7 @@ function LandingPage() {
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
-                        src={require("assets/img/faces/joe-gardner-2.jpg")}
+                        src={require("assets/img/faces/joe-gardner-2.jpg").default}
                       />
                     </a>
                   </div>
@@ -263,7 +263,7 @@ function LandingPage() {
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
-                        src={require("assets/img/faces/erik-lucatero-2.jpg")}
+                        src={require("assets/img/faces/erik-lucatero-2.jpg").default}
                       />
                     </a>
                   </div>
