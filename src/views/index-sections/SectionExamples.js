@@ -34,7 +34,7 @@ function SectionExamples() {
                 <img
                   alt="..."
                   className="img-rounded img-responsive"
-                  src={require("assets/img/examples/landing-page.png")}
+                  src={require("assets/img/examples/landing-page.png").default}
                   style={{ width: "100%" }}
                 />
               </a>
@@ -52,7 +52,7 @@ function SectionExamples() {
                 <img
                   alt="..."
                   className="img-rounded img-responsive"
-                  src={require("assets/img/examples/profile-page.png")}
+                  src={require("assets/img/examples/profile-page.png").default}
                   style={{ width: "100%" }}
                 />
               </a>
