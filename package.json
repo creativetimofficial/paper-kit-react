@@ -41,9 +41,11 @@
     ]
   },
   "optionalDependencies": {
+    "jquery": "3.6.0",
     "typescript": "4.2.3"
   },
   "devDependencies": {
+    "bootstrap": "4.6.0",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.8"
   },
