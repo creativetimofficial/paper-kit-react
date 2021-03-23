@@ -1,5 +1,25 @@
 # Change Log
 
+## [1.3.0] 2021-xx-xx
+### Bug fixing
+
+### Major style changes
+
+### Deleted components
+
+### Added components
+
+### Deleted dependencies
+
+### Added dependencies
+
+### Updated dependencies
+```
+
+```
+### Warning
+_If needed_
+
 ## [1.2.0] 2020-06-12
 ### Bug fixing
 - https://github.com/creativetimofficial/paper-kit-react/issues/2 (changed the fonts import to `~assets/fonts` and also added assets path inside `jsconfig.json` file)
