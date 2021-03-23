@@ -2,23 +2,34 @@
 
 ## [1.3.0] 2021-xx-xx
 ### Bug fixing
-
+- Changed the way we import images
+  - Old way: `require("path/to/imgae")`
+  - New way: `require("path/to/imgae").default`
 ### Major style changes
-
 ### Deleted components
-
 ### Added components
-
 ### Deleted dependencies
-
+- `react-bootstrap-switch` (replaced by the simple Bootstrap Switch: https://reactstrap.github.io/components/form/#Custom-Inputs)
 ### Added dependencies
-
+- `bootstrap@4.6.0`
+- `jquery@3.6.0` (Only to stop warnings from Bootstrap)
 ### Updated dependencies
 ```
-
+moment            2.26.0   →   2.29.1
+node-sass         4.14.1   →    5.0.0
+nouislider        14.5.0   →   14.6.4
+react            16.13.1   →   17.0.2
+react-datetime    2.16.3   →    3.0.4
+react-dom        16.13.1   →   17.0.2
+react-scripts      3.4.1   →    4.0.3
+reactstrap         8.4.1   →    8.9.0
+typescript         3.9.5   →    4.2.3
 ```
 ### Warning
-_If needed_
+_When doing a clean install, you might have some warnings, those come from `node_modules` and do not affect the project in any way._
+_The following two error might occur while doing a clean install - They do not affect the product in any way:_
+_npm WARN react-datetime@3.0.4 requires a peer of react@^16.5.0 but none is installed. You must install peer dependencies yourself._
+_npm WARN @babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining@7.13.12 requires a peer of @babel/core@^7.13.0 but none is installed. You must install peer dependencies yourself._
 
 ## [1.2.0] 2020-06-12
 ### Bug fixing
