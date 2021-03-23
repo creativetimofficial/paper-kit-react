@@ -45,7 +45,7 @@ function SectionNavigation() {
             className="navigation-example"
             style={{
               backgroundImage:
-                "url(" + require("assets/img/ilya-yakover.jpg") + ")",
+                "url(" + require("assets/img/ilya-yakover.jpg").default + ")",
             }}
           >
             <Navbar className="bg-primary" expand="lg">
