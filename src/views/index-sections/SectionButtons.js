@@ -1,13 +1,13 @@
 /*!
 
 =========================================================
-* Paper Kit React - v1.2.0
+* Paper Kit React - v1.3.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/paper-kit-react
 
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/main/LICENSE.md)
 
 * Coded by Creative Tim
 
@@ -17,8 +17,6 @@
 
 */
 import React from "react";
-// react plugin used to create switch buttons
-import Switch from "react-bootstrap-switch";
 // plugin that creates slider
 import Slider from "nouislider";
 
@@ -34,6 +32,7 @@ import {
   Container,
   Row,
   Col,
+  CustomInput,
 } from "reactstrap";
 
 function SectionButtons() {
@@ -431,17 +430,20 @@ function SectionButtons() {
                 <h3>Toggle Buttons</h3>
               </div>
               <div id="switches">
-                <label>
-                  <Switch onColor="primary" offColor="primary" />
-                </label>
+                <CustomInput
+                  type="switch"
+                  id="exampleCustomSwitch1"
+                  name="customSwitch1"
+                  defaultChecked
+                  label="Default On"
+                />
                 <br />
-                <label>
-                  <Switch
-                    defaultValue={false}
-                    onColor="primary"
-                    offColor="primary"
-                  />
-                </label>
+                <CustomInput
+                  type="switch"
+                  id="exampleCustomSwitch2"
+                  name="customSwitch2"
+                  label="Default Off"
+                />
               </div>
             </Col>
             <Col lg="3" sm="6">

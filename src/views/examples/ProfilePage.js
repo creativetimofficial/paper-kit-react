@@ -1,13 +1,13 @@
 /*!
 
 =========================================================
-* Paper Kit React - v1.2.0
+* Paper Kit React - v1.3.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/paper-kit-react
 
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/main/LICENSE.md)
 
 * Coded by Creative Tim
 
@@ -66,7 +66,7 @@ function ProfilePage() {
               <img
                 alt="..."
                 className="img-circle img-no-padding img-responsive"
-                src={require("assets/img/faces/joe-gardner-2.jpg")}
+                src={require("assets/img/faces/joe-gardner-2.jpg").default}
               />
             </div>
             <div className="name">
@@ -129,7 +129,10 @@ function ProfilePage() {
                           <img
                             alt="..."
                             className="img-circle img-no-padding img-responsive"
-                            src={require("assets/img/faces/clem-onojeghuo-2.jpg")}
+                            src={
+                              require("assets/img/faces/clem-onojeghuo-2.jpg")
+                                .default
+                            }
                           />
                         </Col>
                         <Col className="ml-auto mr-auto" lg="7" md="4" xs="4">
@@ -159,7 +162,10 @@ function ProfilePage() {
                           <img
                             alt="..."
                             className="img-circle img-no-padding img-responsive"
-                            src={require("assets/img/faces/ayo-ogunseinde-2.jpg")}
+                            src={
+                              require("assets/img/faces/ayo-ogunseinde-2.jpg")
+                                .default
+                            }
                           />
                         </Col>
                         <Col lg="7" md="4" xs="4">
