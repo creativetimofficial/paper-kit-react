@@ -20,7 +20,7 @@
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
-import {Alert} from "reactstrap"
+import { Alert } from "reactstrap";
 // reactstrap components
 // import {
 // } from "reactstrap";
@@ -35,7 +35,12 @@ class Introduction extends React.Component {
         <p className="bd-lead">
           Paper Kit React is a freeby Bootstrap 4, React and Reactstrap UI Kit.
         </p>
-        <Alert color="info" className="rounded">NOTE! This project was developed using <code className="text-muted">create-react-app</code> and it only features Babel/JSX syntax inside JS files. At the moment we do not support TypeScript.</Alert>
+        <Alert color="info" className="rounded">
+          NOTE! This project was developed using{" "}
+          <code className="text-muted">create-react-app</code> and it only
+          features Babel/JSX syntax inside JS files. At the moment we do not
+          support TypeScript.
+        </Alert>
         <h2 id="local-development">Local Development</h2>
         <p>Follow the next steps to start using our product:</p>
         <ul>
@@ -102,7 +107,8 @@ class Introduction extends React.Component {
               language="jsx"
               style={prism}
             >{`Module not found`}</SyntaxHighlighter>
-          you need to add our <code>jsconfig.json</code> file to your root project.
+            you need to add our <code>jsconfig.json</code> file to your root
+            project.
           </li>
           <li>
             If you have an error containing{" "}
@@ -185,12 +191,15 @@ class Introduction extends React.Component {
           in this page to view it).
         </p>
         <h3 id="assets">Assets folder</h3>
-          <p>
-            In order to use this product in another project, you will need to add all of our <code>assets</code> inside your project.
-          </p>
-          <p>
-            Also, please note that in all of our React products, we make use of absolute imports, rather then relative ones. So, you might need to add in your root project the <code>jsconfig.json</code> file as well.
-          </p>
+        <p>
+          In order to use this product in another project, you will need to add
+          all of our <code>assets</code> inside your project.
+        </p>
+        <p>
+          Also, please note that in all of our React products, we make use of
+          absolute imports, rather then relative ones. So, you might need to add
+          in your root project the <code>jsconfig.json</code> file as well.
+        </p>
         <h3 id="css">CSS</h3>
         <p>
           Copy-paste the stylesheet into your{" "}
