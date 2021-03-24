@@ -99,7 +99,7 @@ class BuildTools extends React.Component {
                 </td>
                 <td className="text-left">
                   This will create a build directory with a production build of
-                  your app.
+                  your app. (NOTE!!! you will have to delete or configure to your specs the <code>homepage</code> from inside our <code>package.json</code> file)
                 </td>
                 <td className="text-right">
                   <a
