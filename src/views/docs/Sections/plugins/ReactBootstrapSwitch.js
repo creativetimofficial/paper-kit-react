@@ -18,10 +18,11 @@
 */
 /*eslint-disable*/
 import React from "react";
+import {Link} from "react-router-dom";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
 import Switch from "react-bootstrap-switch";
-import { Col, CardSubtitle } from "reactstrap";
+import { Col, CardSubtitle, Alert } from "reactstrap";
 
 const codeSwitchExample = `<Col xs={12} md={4}>
     <CardSubtitle>Default</CardSubtitle>
@@ -70,7 +71,7 @@ class Switches extends React.Component {
     return (
       <div>
         <h1 className="bd-title" id="content">
-          React Bootstrap Switch v15.5.3
+          React Bootstrap Switch v15.5.3 <span className="text-danger">DEPRECATED!</span>
         </h1>
         <p className="bd-lead">
           For this component, we've used{" "}
@@ -82,6 +83,7 @@ class Switches extends React.Component {
           </a>
           .
         </p>
+        <Alert color="danger">This plugin is deprecated, please check the <Link to="/documentation/forms" className="text-white font-weight-bold">Forms</Link> for the replacement.</Alert>
         <p>To use it, you'll need the following import:</p>
         <SyntaxHighlighter
           language="jsx"
