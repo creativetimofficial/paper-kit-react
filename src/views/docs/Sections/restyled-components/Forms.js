@@ -22,6 +22,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
 
 import {
+  Form,
   FormGroup,
   Label,
   Input,
@@ -32,6 +33,7 @@ import {
   Row,
   Col,
   Button,
+  CustomInput
 } from "reactstrap";
 
 const overviewExample = `import React from "react";
@@ -301,6 +303,27 @@ const Forms = () => {
 
 export default Forms;
 `;
+
+const defaultSwitchesExample = `import React from 'react';
+import { CustomInput, Form, FormGroup, Label } from 'reactstrap';
+
+const Example = (props) => {
+  return (
+    <Form>
+      <FormGroup>
+        <Label for="exampleCheckbox">Switches</Label>
+        <div>
+          <CustomInput type="switch" id="exampleCustomSwitch" name="customSwitch" label="Turn on this custom switch" />
+          <CustomInput type="switch" id="exampleCustomSwitch2" name="customSwitch" label="Or this one" />
+          <CustomInput type="switch" id="exampleCustomSwitch3" label="But not this disabled one" disabled />
+          <CustomInput type="switch" id="exampleCustomSwitch4" label="Can't click this label to turn on!" htmlFor="exampleCustomSwitch4_X" disabled />
+        </div>
+      </FormGroup>
+    </Form>
+  );
+}
+
+export default Example;`;
 
 const inlineChecksExample = `import React from "react";
 
@@ -720,7 +743,7 @@ const Forms = () => {
       <SyntaxHighlighter language="jsx" style={prism}>
         {faIconsExample}
       </SyntaxHighlighter>
-      <h2>Checkboxes and radios</h2>
+      <h2>Checkboxes, radios and switched</h2>
       <p>
         Default checkboxes and radios are improved upon with the help of{" "}
         <code className="highlighter-rouge">check</code>,{" "}
@@ -811,6 +834,22 @@ const Forms = () => {
       </div>
       <SyntaxHighlighter language="jsx" style={prism}>
         {defaultRadiosExample}
+      </SyntaxHighlighter>
+      <div className="bd-example">
+        <Form>
+          <FormGroup>
+            <Label for="exampleCheckbox">Switches</Label>
+            <div>
+              <CustomInput type="switch" id="exampleCustomSwitch" name="customSwitch" label="Turn on this custom switch" />
+              <CustomInput type="switch" id="exampleCustomSwitch2" name="customSwitch" label="Or this one" />
+              <CustomInput type="switch" id="exampleCustomSwitch3" label="But not this disabled one" disabled />
+              <CustomInput type="switch" id="exampleCustomSwitch4" label="Can't click this label to turn on!" htmlFor="exampleCustomSwitch4_X" disabled />
+            </div>
+          </FormGroup>
+        </Form>
+      </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {defaultSwitchesExample}
       </SyntaxHighlighter>
       <h3>Inline</h3>
       <p>
