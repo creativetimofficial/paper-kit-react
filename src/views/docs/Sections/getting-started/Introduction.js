@@ -20,6 +20,7 @@
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
+import {Alert} from "reactstrap"
 // reactstrap components
 // import {
 // } from "reactstrap";
@@ -34,36 +35,7 @@ class Introduction extends React.Component {
         <p className="bd-lead">
           Paper Kit React is a freeby Bootstrap 4, React and Reactstrap UI Kit.
         </p>
-        <h2 id="quick-start">Quick start</h2>
-        <p>
-          To start using the UI Kit you will need to import some files in your
-          current project or start from scratch using our template (scroll down
-          in this page to view it).
-        </p>
-        <h3 id="css">CSS</h3>
-        <p>
-          Copy-paste the stylesheet into your{" "}
-          <code className="highlighter-rouge">index.js</code> file before all
-          other stylesheets to load our CSS.
-        </p>
-        <SyntaxHighlighter language="jsx" style={prism}>
-          {`// styles\nimport "assets/css/bootstrap.min.css";\nimport "assets/css/paper-kit.css";\n// import "assets/css/paper-kit.min.css";\n// import "assets/css/paper-kit.css.map";\nimport "assets/demo/demo.css";`}
-        </SyntaxHighlighter>
-        <p>Or you can import our SCSS:</p>
-        <SyntaxHighlighter language="jsx" style={prism}>
-          {`// styles\nimport "assets/css/bootstrap.min.css";\nimport "assets/scss/paper-kit.scss";\nimport "assets/demo/demo.css";`}
-        </SyntaxHighlighter>
-        <h3 id="fonts-and-icons">Fonts and Icons</h3>
-        <p>
-          Copy-paste the stylesheet{" "}
-          <code className="highlighter-rouge">{`<link>`}</code> into your{" "}
-          <code className="highlighter-rouge">{`<head>`}</code> before all other
-          stylesheets to load the Fonts and Icons (inside your{" "}
-          <code className="highlighter-rouge">index.html</code> file).
-        </p>
-        <SyntaxHighlighter language="html" style={prism}>
-          {`<!--     Fonts and icons     -->\n<link\n  href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200"\n  rel="stylesheet"\n/>\n<link\n  href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"\n  rel="stylesheet"\n/>`}
-        </SyntaxHighlighter>
+        <Alert color="info" className="rounded">NOTE! This project was developed using <code className="text-muted">create-react-app</code> and it only features Babel/JSX syntax inside JS files. At the moment we do not support TypeScript.</Alert>
         <h2 id="local-development">Local Development</h2>
         <p>Follow the next steps to start using our product:</p>
         <ul>
@@ -130,25 +102,7 @@ class Introduction extends React.Component {
               language="jsx"
               style={prism}
             >{`Module not found`}</SyntaxHighlighter>
-            you need to do the following
-            <SyntaxHighlighter
-              language="jsx"
-              style={prism}
-            >{`npm install --g cross-env`}</SyntaxHighlighter>
-            then change the script, for example the start script from
-            <SyntaxHighlighter
-              language="jsx"
-              style={prism}
-            >{`"start": "react-scripts start",`}</SyntaxHighlighter>
-            to
-            <SyntaxHighlighter
-              language="jsx"
-              style={prism}
-            >{`"start": "NODE_PATH=./src react-scripts start",`}</SyntaxHighlighter>
-            <b>
-              The same should be done with any other script that has the above
-              error.
-            </b>
+          you need to add our <code>jsconfig.json</code> file to your root project.
           </li>
           <li>
             If you have an error containing{" "}
@@ -167,52 +121,6 @@ class Introduction extends React.Component {
             </a>
           </li>
           <li>
-            (Optional) You can create a new react application like this
-            <ul>
-              <li>
-                Run in terminal{" "}
-                <SyntaxHighlighter
-                  language="jsx"
-                  style={prism}
-                >{`npm install -g create-react-app`}</SyntaxHighlighter>
-              </li>
-              <li>Go to the folder where you want to create your app</li>
-              <li>
-                Run in terminal{" "}
-                <SyntaxHighlighter
-                  language="jsx"
-                  style={prism}
-                >{`create-react-app your-app-name`}</SyntaxHighlighter>
-              </li>
-              <li>
-                Navigate to{" "}
-                <code className="highlighter-rouge">your-app-name</code>
-              </li>
-              <li>
-                Run in terminal{" "}
-                <SyntaxHighlighter
-                  language="jsx"
-                  style={prism}
-                >{`npm start`}</SyntaxHighlighter>
-              </li>
-              <li>
-                And after this, you can copy and paste anything that you want
-                from our product (the most important is the{" "}
-                <code className="highlighter-rouge">src/assets</code> which has
-                all of our style, fonts and images).
-              </li>
-              <li>
-                More information →{" "}
-                <a
-                  href="https://github.com/facebookincubator/create-react-app?ref=creativetim"
-                  target="_blank"
-                >
-                  create-react-app
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li>
             Navigate to{" "}
             <a href="https://localhost:3000" target="_blank">
               https://localhost:3000
@@ -225,6 +133,15 @@ class Introduction extends React.Component {
               target="_blank"
             >
               react
+            </a>
+          </li>
+          <li>
+            More information →{" "}
+            <a
+              href="https://github.com/facebookincubator/create-react-app?ref=creativetim"
+              target="_blank"
+            >
+              create-react-app
             </a>
           </li>
         </ul>
@@ -261,6 +178,43 @@ class Introduction extends React.Component {
             </a>
           </li>
         </ul>
+        <h2 id="quick-start">Integrate in another projects</h2>
+        <p>
+          To start using the UI Kit you will need to import some files in your
+          current project or start from scratch using our template (scroll down
+          in this page to view it).
+        </p>
+        <h3 id="assets">Assets folder</h3>
+          <p>
+            In order to use this product in another project, you will need to add all of our <code>assets</code> inside your project.
+          </p>
+          <p>
+            Also, please note that in all of our React products, we make use of absolute imports, rather then relative ones. So, you might need to add in your root project the <code>jsconfig.json</code> file as well.
+          </p>
+        <h3 id="css">CSS</h3>
+        <p>
+          Copy-paste the stylesheet into your{" "}
+          <code className="highlighter-rouge">index.js</code> file before all
+          other stylesheets to load our CSS.
+        </p>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {`// styles\nimport "assets/css/bootstrap.min.css";\nimport "assets/css/paper-kit.css";\n// import "assets/css/paper-kit.min.css";\n// import "assets/css/paper-kit.css.map";\nimport "assets/demo/demo.css";`}
+        </SyntaxHighlighter>
+        <p>Or you can import our SCSS:</p>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {`// styles\nimport "assets/css/bootstrap.min.css";\nimport "assets/scss/paper-kit.scss";\nimport "assets/demo/demo.css";`}
+        </SyntaxHighlighter>
+        <h3 id="fonts-and-icons">Fonts and Icons</h3>
+        <p>
+          Copy-paste the stylesheet{" "}
+          <code className="highlighter-rouge">{`<link>`}</code> into your{" "}
+          <code className="highlighter-rouge">{`<head>`}</code> before all other
+          stylesheets to load the Fonts and Icons (inside your{" "}
+          <code className="highlighter-rouge">index.html</code> file).
+        </p>
+        <SyntaxHighlighter language="html" style={prism}>
+          {`<!--     Fonts and icons     -->\n<link\n  href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200"\n  rel="stylesheet"\n/>\n<link\n  href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"\n  rel="stylesheet"\n/>`}
+        </SyntaxHighlighter>
       </>
     );
   }
