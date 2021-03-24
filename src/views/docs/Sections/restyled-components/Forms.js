@@ -33,7 +33,7 @@ import {
   Row,
   Col,
   Button,
-  CustomInput
+  CustomInput,
 } from "reactstrap";
 
 const overviewExample = `import React from "react";
@@ -840,10 +840,31 @@ const Forms = () => {
           <FormGroup>
             <Label for="exampleCheckbox">Switches</Label>
             <div>
-              <CustomInput type="switch" id="exampleCustomSwitch" name="customSwitch" label="Turn on this custom switch" />
-              <CustomInput type="switch" id="exampleCustomSwitch2" name="customSwitch" label="Or this one" />
-              <CustomInput type="switch" id="exampleCustomSwitch3" label="But not this disabled one" disabled />
-              <CustomInput type="switch" id="exampleCustomSwitch4" label="Can't click this label to turn on!" htmlFor="exampleCustomSwitch4_X" disabled />
+              <CustomInput
+                type="switch"
+                id="exampleCustomSwitch"
+                name="customSwitch"
+                label="Turn on this custom switch"
+              />
+              <CustomInput
+                type="switch"
+                id="exampleCustomSwitch2"
+                name="customSwitch"
+                label="Or this one"
+              />
+              <CustomInput
+                type="switch"
+                id="exampleCustomSwitch3"
+                label="But not this disabled one"
+                disabled
+              />
+              <CustomInput
+                type="switch"
+                id="exampleCustomSwitch4"
+                label="Can't click this label to turn on!"
+                htmlFor="exampleCustomSwitch4_X"
+                disabled
+              />
             </div>
           </FormGroup>
         </Form>
