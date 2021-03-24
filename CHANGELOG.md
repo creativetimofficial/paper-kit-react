@@ -1,6 +1,6 @@
 # Change Log
 
-## [1.3.0] 2021-xx-xx
+## [1.3.0] 2021-03-24
 ### Bug fixing
 - Changed the way we import images
   - Old way: `require("path/to/imgae")`
