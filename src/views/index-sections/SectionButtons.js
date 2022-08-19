@@ -1,12 +1,12 @@
 /*!
 
 =========================================================
-* Paper Kit React - v1.3.0
+* Paper Kit React - v1.3.1
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/paper-kit-react
 
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/main/LICENSE.md)
 
 * Coded by Creative Tim
@@ -32,7 +32,7 @@ import {
   Container,
   Row,
   Col,
-  CustomInput,
+  CustomInput
 } from "reactstrap";
 
 function SectionButtons() {
@@ -46,7 +46,7 @@ function SectionButtons() {
         start: [37.5],
         connect: [true, false],
         step: 0.5,
-        range: { min: 0, max: 100 },
+        range: { min: 0, max: 100 }
       });
     }
     if (
@@ -56,7 +56,7 @@ function SectionButtons() {
         start: [20, 80],
         connect: [false, true, false],
         step: 1,
-        range: { min: 0, max: 100 },
+        range: { min: 0, max: 100 }
       });
     }
   });

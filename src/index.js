@@ -1,12 +1,12 @@
 /*!
 
 =========================================================
-* Paper Kit React - v1.3.0
+* Paper Kit React - v1.3.1
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/paper-kit-react
 
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/main/LICENSE.md)
 
 * Coded by Creative Tim
@@ -17,7 +17,7 @@
 
 */
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
 
 // styles
@@ -32,7 +32,9 @@ import ProfilePage from "views/examples/ProfilePage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
 // others
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(
   <BrowserRouter>
     <Switch>
       <Route path="/index" render={(props) => <Index {...props} />} />
@@ -54,6 +56,5 @@ ReactDOM.render(
       />
       <Redirect to="/index" />
     </Switch>
-  </BrowserRouter>,
-  document.getElementById("root")
+  </BrowserRouter>
 );
