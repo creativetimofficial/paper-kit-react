@@ -1,12 +1,12 @@
 /*!
 
 =========================================================
-* Paper Kit React - v1.3.0
+* Paper Kit React - v1.3.1
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/paper-kit-react
 
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/main/LICENSE.md)
 
 * Coded by Creative Tim
@@ -29,7 +29,7 @@ import {
   InputGroup,
   Container,
   Row,
-  Col,
+  Col
 } from "reactstrap";
 
 // core components
@@ -40,8 +40,7 @@ function SectionLogin() {
       <div
         className="section section-image section-login"
         style={{
-          backgroundImage:
-            "url(" + require("assets/img/login-image.jpg").default + ")",
+          backgroundImage: "url(" + require("assets/img/login-image.jpg") + ")"
         }}
       >
         <Container>
