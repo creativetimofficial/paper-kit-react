@@ -1,12 +1,12 @@
 /*!
 
 =========================================================
-* Paper Kit React - v1.3.0
+* Paper Kit React - v1.3.1
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/paper-kit-react
 
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/main/LICENSE.md)
 
 * Coded by Creative Tim
@@ -27,27 +27,27 @@ import {
   Carousel,
   CarouselItem,
   CarouselIndicators,
-  CarouselCaption,
+  CarouselCaption
 } from "reactstrap";
 
 // core components
 
 const items = [
   {
-    src: require("assets/img/soroush-karimi.jpg").default,
+    src: require("assets/img/soroush-karimi.jpg"),
     altText: "Somewhere",
-    caption: "Somewhere",
+    caption: "Somewhere"
   },
   {
-    src: require("assets/img/federico-beccari.jpg").default,
+    src: require("assets/img/federico-beccari.jpg"),
     altText: "Somewhere else",
-    caption: "Somewhere else",
+    caption: "Somewhere else"
   },
   {
-    src: require("assets/img/joshua-stannard.jpg").default,
+    src: require("assets/img/joshua-stannard.jpg"),
     altText: "Here it is",
-    caption: "Here it is",
-  },
+    caption: "Here it is"
+  }
 ];
 
 function SectionCarousel() {
