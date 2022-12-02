@@ -32,8 +32,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/index" render={(props) => <Index {...props} />} />
-      <Redirect to="/index" />
+      <Route path="/" render={(props) => <Index {...props} />} />
+      <Redirect to="/" />
     </Switch>
   </BrowserRouter>
 );
