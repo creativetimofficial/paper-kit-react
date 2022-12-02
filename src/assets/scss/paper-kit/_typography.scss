@@ -69,6 +69,10 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 }
 .description{
     color: $dark-gray;
+    padding-bottom: 1rem;
+}
+.skill{
+    font-size: 1.5em;
 }
 blockquote small{
     font-style: normal;
@@ -131,4 +135,11 @@ blockquote small{
 }
 .title.text-center{
     margin-bottom: 50px;
+}
+.icon {
+    padding-right: 0.3rem;
+}
+.row {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }

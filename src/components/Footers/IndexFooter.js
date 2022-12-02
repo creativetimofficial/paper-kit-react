@@ -16,24 +16,27 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
+/*eslint-disable*/
 import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
 
-// styles
-import "bootstrap/scss/bootstrap.scss";
-import "assets/scss/paper-kit.scss?v=1.3.0";
-import "assets/demo/demo.css?v=1.3.0";
-// pages
-import Index from "views/Index.js";
+// reactstrap components
+import { Row, Container } from "reactstrap";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+function IndexFooter() {
+  return (
+    <footer className="footer section-dark">
+      <Container>
+        <Row>
+          <div className="credits ml-auto">
+            <span className="copyright">
+              © 2022 - Template developed by {" "}
+              <a rel="noreferrer" href="https://www.creative-tim.com?ref=pkr-footer" target="_blank">Creative Tim</a>
+            </span>
+          </div>
+        </Row>
+      </Container>
+    </footer>
+  );
+}
 
-root.render(
-  <BrowserRouter>
-    <Switch>
-      <Route path="/index" render={(props) => <Index {...props} />} />
-      <Redirect to="/index" />
-    </Switch>
-  </BrowserRouter>
-);
+export default IndexFooter;

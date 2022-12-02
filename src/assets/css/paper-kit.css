@@ -6351,6 +6351,7 @@ License - nucleoapp.com/license/
 .title-brand {
   max-width: 730px;
   margin: 0 auto;
+  padding: 3rem;
   position: relative;
   text-align: center;
   color: #ffffff;
@@ -6636,9 +6637,6 @@ License - nucleoapp.com/license/
   }
   .navbar-transparent {
     background-color: rgba(0, 0, 0, 0.45);
-  }
-  .register .page-header {
-    max-height: fit-content;
   }
   .form-group.has-danger {
     margin-bottom: 30px;
