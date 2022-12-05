@@ -74,7 +74,7 @@ function SectionMiniProject({ title, description, source, live, techs, items }) 
                     <br /><br />
                     <Button
                         className="btn-round"
-                        color="danger"
+                        color="success"
                         href={source}
                         target="_blank"
                     >
@@ -84,7 +84,7 @@ function SectionMiniProject({ title, description, source, live, techs, items }) 
                     {live ?
                         <Button
                             className="btn-round ml-2"
-                            color="danger"
+                            color="success"
                             href={live}
                             outline
                             target="_blank"
@@ -94,7 +94,7 @@ function SectionMiniProject({ title, description, source, live, techs, items }) 
                         :
                         <Button
                             className="btn-round ml-2"
-                            color="danger"
+                            color="success"
                             type="button"
                             outline
                             onClick={toggleModal}
