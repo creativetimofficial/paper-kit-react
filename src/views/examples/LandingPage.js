@@ -1,21 +1,3 @@
-/*!
-
-=========================================================
-* Paper Kit React - v1.3.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-kit-react
-
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 
 // reactstrap components
@@ -32,7 +14,7 @@ import {
   InputGroup,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 // core components
@@ -152,7 +134,7 @@ function LandingPage() {
         </div>
         <div className="section section-dark text-center">
           <Container>
-            <h2 className="title">Let's talk about us</h2>
+            <h2 className="title">Get to know us</h2>
             <Row>
               <Col md="4">
                 <Card className="card-profile card-plain">
@@ -160,15 +142,15 @@ function LandingPage() {
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
-                        src={require("assets/img/faces/clem-onojeghuo-3.jpg")}
+                        src={require("assets/img/faces/108029724.jpeg")}
                       />
                     </a>
                   </div>
                   <CardBody>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
-                        <CardTitle tag="h4">Henry Ford</CardTitle>
-                        <h6 className="card-category">Product Manager</h6>
+                        <CardTitle tag="h4">Salah Mohammad</CardTitle>
+                        <h6 className="card-category">Web Developer</h6>
                       </div>
                     </a>
                     <p className="card-description text-center">
@@ -189,10 +171,9 @@ function LandingPage() {
                     <Button
                       className="btn-just-icon btn-neutral ml-1"
                       color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://github.com/mohasal0101"
                     >
-                      <i className="fa fa-google-plus" />
+                      <i className="fa fa-github" />
                     </Button>
                     <Button
                       className="btn-just-icon btn-neutral ml-1"
@@ -211,22 +192,22 @@ function LandingPage() {
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
-                        src={require("assets/img/faces/joe-gardner-2.jpg")}
+                        src={require("assets/img/faces/107918360.jpeg")}
                       />
                     </a>
                   </div>
                   <CardBody>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
-                        <CardTitle tag="h4">Sophie West</CardTitle>
-                        <h6 className="card-category">Designer</h6>
+                        <CardTitle tag="h4">Fatima Khwaileh</CardTitle>
+                        <h6 className="card-category">Web Developer</h6>
                       </div>
                     </a>
                     <p className="card-description text-center">
                       A group becomes a team when each member is sure enough of
-                      himself and his contribution to praise the skill of the
-                      others. No one can whistle a symphony. It takes an
-                      orchestra to play it.
+                      himself or herself and his contribution to praise the
+                      skill of the others. No one can whistle a symphony. It
+                      takes an orchestra to play it.
                     </p>
                   </CardBody>
                   <CardFooter className="text-center">
@@ -241,10 +222,58 @@ function LandingPage() {
                     <Button
                       className="btn-just-icon btn-neutral ml-1"
                       color="link"
+                      href="https://github.com/KhwailehFatima"
+                    >
+                      <i className="fa fa-github" />
+                    </Button>
+                    <Button
+                      className="btn-just-icon btn-neutral ml-1"
+                      color="link"
                       href="#pablo"
                       onClick={(e) => e.preventDefault()}
                     >
-                      <i className="fa fa-google-plus" />
+                      <i className="fa fa-linkedin" />
+                    </Button>
+                  </CardFooter>
+                </Card>
+                <Card className="card-profile card-plain">
+                  <div className="card-avatar">
+                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                      <img
+                        alt="..."
+                        src={require("assets/img/faces/67606888.jpeg")}
+                      />
+                    </a>
+                  </div>
+                  <CardBody>
+                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                      <div className="author">
+                        <CardTitle tag="h4">Ahmad Al-Awalmeh</CardTitle>
+                        <h6 className="card-category">Web Developer</h6>
+                      </div>
+                    </a>
+                    <p className="card-description text-center">
+                    Teamwork is working together with people to achieve a certain goal. 
+                    Teamwork is the basic need for an organization to function. 
+                    
+
+                    </p>
+                  </CardBody>
+                  <CardFooter className="text-center">
+                    <Button
+                      className="btn-just-icon btn-neutral"
+                      color="link"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fa fa-twitter" />
+                    </Button>
+                    <Button
+                      className="btn-just-icon btn-neutral ml-1"
+                      color="link"
+                      href="https://github.com/AhmedAwamleh"
+                    >
+                      <i className="fa fa-github" />
                     </Button>
                     <Button
                       className="btn-just-icon btn-neutral ml-1"
@@ -263,14 +292,14 @@ function LandingPage() {
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <img
                         alt="..."
-                        src={require("assets/img/faces/erik-lucatero-2.jpg")}
+                        src={require("assets/img/faces/60787778.jpeg")}
                       />
                     </a>
                   </div>
                   <CardBody>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
-                        <CardTitle tag="h4">Robert Orben</CardTitle>
+                        <CardTitle tag="h4">Zaid Al-shibi</CardTitle>
                         <h6 className="card-category">Developer</h6>
                       </div>
                     </a>
@@ -293,10 +322,9 @@ function LandingPage() {
                     <Button
                       className="btn-just-icon btn-neutral ml-1"
                       color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      href="https://github.com/zaidalshibi"
                     >
-                      <i className="fa fa-google-plus" />
+                      <i className="fa fa-github" />
                     </Button>
                     <Button
                       className="btn-just-icon btn-neutral ml-1"

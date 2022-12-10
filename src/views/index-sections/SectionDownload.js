@@ -28,45 +28,8 @@ function SectionDownload() {
     <>
       <div className="section">
         <Container className="text-center">
-          <Row>
-            <Col className="ml-auto mr-auto text-center" md="8">
-              <h2 className="title">Do you like what you see?</h2>
-              <p className="description">
-                Cause if you do, it can be yours for Free. Hit the button below
-                and download it. Start a new project or give an old Bootstrap 4
-                project a new look.
-              </p>
-            </Col>
-            <Col className="ml-auto mr-auto download-area" md="5">
-              <Button
-                className="btn-round"
-                color="danger"
-                href="http://www.creative-tim.com/product/paper-kit-react?ref=pkr-index-page"
-                target="_blank"
-              >
-                Download free React
-              </Button>
-            </Col>
-          </Row>
-          <Row className="text-center upgrade-pro">
-            <Col className="ml-auto mr-auto" md="8">
-              <h2 className="title">Want more?</h2>
-              <p className="description">
-                We're going to launch{" "}
-                <a className="text-danger" href="#pablo" disabled>
-                  Paper Kit PRO React in a few weeks
-                </a>
-                . It will have a huge number of components, sections and example
-                pages.
-              </p>
-            </Col>
-            <Col className="ml-auto mr-auto" sm="5">
-              <Button className="btn-round" color="info" href="#pablo" disabled>
-                <i aria-hidden={true} className="nc-icon nc-spaceship" />{" "}
-                Upgrade to PRO
-              </Button>
-            </Col>
-          </Row>
+          
+          
           <Row className="justify-content-md-center sharing-area text-center">
             <Col className="text-center" lg="8" md="12">
               <h3>Thank you for supporting us!</h3>
@@ -111,7 +74,7 @@ function SectionDownload() {
               <Button
                 className="sharrre btn-round ml-2"
                 color="github-bg"
-                href="https://github.com/creativetimofficial/paper-kit-react?ref=creativetim"
+                href="https://github.com/swapy-organization"
                 target="_blank"
                 id="tooltip864353654"
               >

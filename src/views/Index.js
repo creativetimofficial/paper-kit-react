@@ -26,8 +26,6 @@ import IndexHeader from "components/Headers/IndexHeader.js";
 import DemoFooter from "components/Footers/DemoFooter.js";
 
 // index sections
-import SectionButtons from "views/index-sections/SectionButtons.js";
-import SectionNavbars from "views/index-sections/SectionNavbars.js";
 import SectionNavigation from "views/index-sections/SectionNavigation.js";
 import SectionProgress from "views/index-sections/SectionProgress.js";
 import SectionNotifications from "views/index-sections/SectionNotifications.js";
@@ -53,18 +51,11 @@ function Index() {
       <IndexNavbar />
       <IndexHeader />
       <div className="main">
-        <SectionButtons />
-        <SectionNavbars />
-        <SectionNavigation />
-        <SectionProgress />
-        <SectionNotifications />
-        <SectionTypography />
-        <SectionJavaScript />
-        <SectionCarousel />
+        
         <SectionNucleoIcons />
-        <SectionDark />
-        <SectionLogin />
         <SectionExamples />
+        <SectionCarousel />
+        <SectionDark />
         <SectionDownload />
         <DemoFooter />
       </div>

@@ -30,6 +30,7 @@ import {
   Nav,
   Container
 } from "reactstrap";
+import Signup from "../Signup"
 
 function IndexNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
@@ -68,10 +69,9 @@ function IndexNavbar() {
           <NavbarBrand
             data-placement="bottom"
             href="/index"
-            target="_blank"
-            title="Coded by Creative Tim"
+            title="Coded by Swapy"
           >
-            Paper Kit React
+            Swapy Trading Website
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
@@ -94,7 +94,7 @@ function IndexNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://twitter.com/CreativeTim?ref=creativetim"
+                href="https://twitter.com/"
                 target="_blank"
                 title="Follow us on Twitter"
               >
@@ -105,7 +105,7 @@ function IndexNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.facebook.com/CreativeTim?ref=creativetim"
+                href="https://www.facebook.com/"
                 target="_blank"
                 title="Like us on Facebook"
               >
@@ -116,7 +116,7 @@ function IndexNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+                href="https://www.instagram.com/"
                 target="_blank"
                 title="Follow us on Instagram"
               >
@@ -127,7 +127,7 @@ function IndexNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.github.com/CreativeTimOfficial/paper-kit-react?ref=creativetim"
+                href="https://github.com/swapy-organization/swapy-frontend"
                 target="_blank"
                 title="Star on GitHub"
               >
@@ -135,22 +135,27 @@ function IndexNavbar() {
                 <p className="d-lg-none">GitHub</p>
               </NavLink>
             </NavItem>
+
             <NavItem>
-              <NavLink
-                href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-index-navbar"
-                target="_blank"
+              <Button
+                className="btn-round"
+                color="info"
+                //redirect to login page
+                href="/Signin"
               >
-                <i className="nc-icon nc-book-bookmark" /> Documentation
-              </NavLink>
+                <i className="nc-icon nc-spaceship"></i> Login
+              </Button>
             </NavItem>
+
+            
             <NavItem>
               <Button
                 className="btn-round"
                 color="danger"
-                href="https://www.creative-tim.com/product/paper-kit-pro-react?ref=pkr-index-navbar"
-                target="_blank"
+                //redirect to signup page
+                href="/signup"
               >
-                <i className="nc-icon nc-spaceship"></i> Upgrade to Pro
+                <i className="nc-icon nc-spaceship"></i> Register here
               </Button>
             </NavItem>
           </Nav>

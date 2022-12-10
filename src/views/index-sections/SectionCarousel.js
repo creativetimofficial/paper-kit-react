@@ -34,19 +34,19 @@ import {
 
 const items = [
   {
-    src: require("assets/img/soroush-karimi.jpg"),
-    altText: "Somewhere",
-    caption: "Somewhere"
+    src: require("assets/img/car.jpeg"),
+    altText: "Modified car",
+    caption: "Modified car"
   },
   {
-    src: require("assets/img/federico-beccari.jpg"),
-    altText: "Somewhere else",
-    caption: "Somewhere else"
+    src: require("assets/img/grand piano.jpg"),
+    altText: "Grand piano",
+    caption: "Grand piano"
   },
   {
-    src: require("assets/img/joshua-stannard.jpg"),
-    altText: "Here it is",
-    caption: "Here it is"
+    src: require("assets/img/setup.jpg"),
+    altText: "PC setup for you",
+    caption: "PC setup for you"
   }
 ];
 

@@ -74,11 +74,10 @@ function ExamplesNavbar() {
           <NavbarBrand
             data-placement="bottom"
             to="/index"
-            target="_blank"
             title="Coded by Creative Tim"
             tag={Link}
           >
-            Paper Kit 2
+            Swapy Trading Website
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
@@ -98,23 +97,12 @@ function ExamplesNavbar() {
           isOpen={navbarCollapse}
         >
           <Nav navbar>
-            <NavItem>
-              <NavLink to="/index" tag={Link}>
-                <i className="nc-icon nc-layout-11" /> Components
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-examples-navbar"
-                target="_blank"
-              >
-                <i className="nc-icon nc-book-bookmark" /> Documentation
-              </NavLink>
-            </NavItem>
+           
+            
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://twitter.com/CreativeTim?ref=creativetim"
+                href="https://twitter.com/"
                 target="_blank"
                 title="Follow us on Twitter"
               >
@@ -125,7 +113,7 @@ function ExamplesNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.facebook.com/CreativeTim?ref=creativetim"
+                href="https://www.facebook.com/"
                 target="_blank"
                 title="Like us on Facebook"
               >
@@ -136,7 +124,7 @@ function ExamplesNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+                href="https://www.instagram.com/"
                 target="_blank"
                 title="Follow us on Instagram"
               >
@@ -147,7 +135,7 @@ function ExamplesNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.github.com/CreativeTimOfficial?ref=creativetim"
+                href="https://github.com/swapy-organization"
                 target="_blank"
                 title="Star on GitHub"
               >
@@ -159,10 +147,10 @@ function ExamplesNavbar() {
               <Button
                 className="btn-round"
                 color="danger"
-                href="https://www.creative-tim.com/product/paper-kit-pro-react?ref=pkr-examples-navbar"
+                href="/register-page"
                 target="_blank"
               >
-                <i className="nc-icon nc-spaceship"></i> Upgrade to Pro
+                <i className="nc-icon nc-spaceship"></i> Register here
               </Button>
             </NavItem>
           </Nav>
