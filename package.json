@@ -4,10 +4,11 @@
   "dependencies": {
     "@chakra-ui/icons": "^2.0.13",
     "@chakra-ui/react": "^2.4.3",
+    "@emotion/react": "^11.10.5",
     "classnames": "2.3.1",
     "moment": "2.29.4",
     "nouislider": "14.5.0",
-    "react": ">=16.0.0",
+    "react": "^18.2.0",
     "react-datetime": "3.1.1",
     "react-dom": ">=16.0.0",
     "react-icons": "^4.7.1",
@@ -50,7 +51,6 @@
     "gulp-append-prepend": "1.0.9"
   },
   "peerDependencies": {
-    "react": ">=16.0.0",
     "react-dom": ">=16.0.0"
   },
   "description": "Paper Kit React is a free Bootstrap 4, React, React Hooks and Reactstrap UI Kit with pale colors, beautiful typography and thoughtful drawings. We've created it having paper and drawings in mind.",

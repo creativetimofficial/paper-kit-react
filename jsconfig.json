@@ -1,3 +1,7 @@
+
+// This file is required for VSCode to resolve the paths in the project
+
+
 {
   "compilerOptions": {
     "baseUrl": "src",
