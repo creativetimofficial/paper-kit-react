@@ -312,7 +312,7 @@ function LandingPage() {
             </Row>
           </Container>
         </div> */}
-        <div className="section landing-section">
+        <div className="section landing-section" style={{backgroundColor: "#282828"}}>
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
