@@ -91,7 +91,7 @@ function LandingPage() {
                       think of implementing.
                     </p>
                     <Button className="btn-link" color="info" href="#pablo">
-                      See more
+                      Ver más
                     </Button>
                   </div>
                 </div>
@@ -108,7 +108,7 @@ function LandingPage() {
                       remarkably power efficient.
                     </p>
                     <Button className="btn-link" color="info" href="#pablo">
-                      See more
+                      Ver más
                     </Button>
                   </div>
                 </div>
@@ -125,7 +125,7 @@ function LandingPage() {
                       paper pastels.
                     </p>
                     <Button className="btn-link" color="info" href="#pablo">
-                      See more
+                      Ver más
                     </Button>
                   </div>
                 </div>
@@ -142,7 +142,7 @@ function LandingPage() {
                       directly from our sellers.
                     </p>
                     <Button className="btn-link" color="info" href="#pablo">
-                      See more
+                      Ver más
                     </Button>
                   </div>
                 </div>
