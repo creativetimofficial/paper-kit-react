@@ -1,22 +1,4 @@
-/*!
-
-=========================================================
-* Paper Kit React - v1.3.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-kit-react
-
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 // nodejs library that concatenates strings
 import classnames from "classnames";
@@ -29,20 +11,20 @@ import {
   NavItem,
   NavLink,
   Nav,
-  Container,
+  /*  Container, */
   Button
 } from "reactstrap";
 
 function ExamplesNavbar() {
-  const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
-  const [navbarCollapse, setNavbarCollapse] = React.useState(false);
+  const [navbarColor, setNavbarColor] = useState("navbar-transparent");
+  const [navbarCollapse, setNavbarCollapse] = useState(false);
 
   const toggleNavbarCollapse = () => {
     setNavbarCollapse(!navbarCollapse);
     document.documentElement.classList.toggle("nav-open");
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     const updateNavbarColor = () => {
       if (
         document.documentElement.scrollTop > 299 ||
@@ -63,13 +45,14 @@ function ExamplesNavbar() {
       window.removeEventListener("scroll", updateNavbarColor);
     };
   });
+
   return (
     <Navbar
       className={classnames("fixed-top", navbarColor)}
       color-on-scroll="300"
       expand="lg"
     >
-      <section style={{display: "flex", flexDirection:"row"}}>
+      <section style={{ display: "flex", flexDirection: "row", width:"100%" }}>
         <div className="navbar-translate">
           <NavbarBrand
             data-placement="bottom"
@@ -78,7 +61,7 @@ function ExamplesNavbar() {
             title="Coded by Creative Tim"
             tag={Link}
           >
-            Paper Kit 2
+            Prepaid_Standard
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
@@ -93,14 +76,13 @@ function ExamplesNavbar() {
           </button>
         </div>
         <Collapse
-          className="justify-content-end"
           navbar
-          isOpen={navbarCollapse}
+          isOpen={navbarCollapse} style={{justifyContent:"center",marginRight: "19pc"}}
         >
-          <Nav navbar>
+          <Nav navbar >
             <NavItem>
               <NavLink to="/index" tag={Link}>
-                 Quienes somos
+                Quienes somos
               </NavLink>
             </NavItem>
             <NavItem>
@@ -116,7 +98,7 @@ function ExamplesNavbar() {
                 href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-examples-navbar"
                 target="_blank"
               >
-                 Cartilla
+                Cartilla
               </NavLink>
             </NavItem>
             <NavItem>
@@ -124,7 +106,7 @@ function ExamplesNavbar() {
                 href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-examples-navbar"
                 target="_blank"
               >
-                 Centros de atención
+                Centros de atención
               </NavLink>
             </NavItem>
             <NavItem>
@@ -132,7 +114,7 @@ function ExamplesNavbar() {
                 href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-examples-navbar"
                 target="_blank"
               >
-                 Turnos
+                Turnos
               </NavLink>
             </NavItem>
             <NavItem>
@@ -140,7 +122,7 @@ function ExamplesNavbar() {
                 href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-examples-navbar"
                 target="_blank"
               >
-                 Corporativo
+                Corporativo
               </NavLink>
             </NavItem>
             <NavItem>
@@ -148,7 +130,7 @@ function ExamplesNavbar() {
                 href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-examples-navbar"
                 target="_blank"
               >
-                 Contacto
+                Contacto
               </NavLink>
             </NavItem>
             <NavItem>
@@ -158,7 +140,7 @@ function ExamplesNavbar() {
                 href="https://www.creative-tim.com/product/paper-kit-pro-react?ref=pkr-examples-navbar"
                 target="_blank"
               >
-                <i className="nc-icon nc-spaceship"></i> Mi cuenta
+                 Mi cuenta
               </Button>
             </NavItem>
             <NavItem>
@@ -168,7 +150,7 @@ function ExamplesNavbar() {
                 href="https://www.creative-tim.com/product/paper-kit-pro-react?ref=pkr-examples-navbar"
                 target="_blank"
               >
-                <i className="nc-icon nc-spaceship"></i> Contrat
+                 Contratá
               </Button>
             </NavItem>
           </Nav>
