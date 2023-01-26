@@ -61,6 +61,50 @@ function LandingPageHeader() {
           </div>
         </Container>
       </div>
+      {/* 2 */}
+      <div
+        style={{
+          backgroundImage: "url(" + require("assets/img/Mujer1.jfif") + ")", minHeight: "53vh"
+        }}
+        className="page-header"
+        data-parallax={true}
+        ref={pageHeader}
+      >
+        <div className="filter" />
+        <Container>
+          <div className="motto text-center">
+            <i className="nc-badge" />
+            <h1>Tu cuenta Online</h1>
+            <h3>Gestioná tus trámites y accedé a la información que necesitás en cualquier momento, desde cualquier lugar.</h3>
+            <br />
+            <Button className="btn-round" color="neutral" type="button" outline>
+              Conocer más
+            </Button>
+          </div>
+        </Container>
+      </div>
+      {/* 3 */}
+      <div
+        style={{
+          backgroundImage: "url(" + require("assets/img/Mujer2.jfif") + ")", minHeight: "53vh"
+        }}
+        className="page-header"
+        data-parallax={true}
+        ref={pageHeader}
+      >
+        <div className="filter" />
+        <Container>
+          <div className="motto text-center">
+            <i className="nc-favourite-28" />
+            <h1>Prepaid Corporativo</h1>
+            <h3>Gestioná tus trámites y accedé a la información de tu plan</h3>
+            <br />
+            <Button className="btn-round" color="neutral" type="button" outline>
+              Conocer más
+            </Button>
+          </div>
+        </Container>
+      </div>
     </>
   );
 }

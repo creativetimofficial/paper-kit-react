@@ -57,8 +57,8 @@ function LandingPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
-                <h2 className="title">Let's talk product</h2>
-                <h5 className="description">
+                <h2 className="title">Información útil</h2>
+                {/* <h5 className="description">
                   This is the paragraph where you can write more details about
                   your product. Keep you user engaged by providing meaningful
                   information. Remember that by this time, the user is curious,
@@ -73,7 +73,7 @@ function LandingPage() {
                   onClick={(e) => e.preventDefault()}
                 >
                   See Details
-                </Button>
+                </Button> */}
               </Col>
             </Row>
             <br />
@@ -85,7 +85,7 @@ function LandingPage() {
                     <i className="nc-icon nc-album-2" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Beautiful Gallery</h4>
+                    <h4 className="info-title">Asistencia al viajero</h4>
                     <p className="description">
                       Spend your time generating new ideas. You don't have to
                       think of implementing.
@@ -102,7 +102,7 @@ function LandingPage() {
                     <i className="nc-icon nc-bulb-63" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">New Ideas</h4>
+                    <h4 className="info-title">Información administrativa</h4>
                     <p>
                       Larger, yet dramatically thinner. More powerful, but
                       remarkably power efficient.
@@ -119,7 +119,7 @@ function LandingPage() {
                     <i className="nc-icon nc-chart-bar-32" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Statistics</h4>
+                    <h4 className="info-title">Preguntas frecuentes</h4>
                     <p>
                       Choose from a veriety of many colors resembling sugar
                       paper pastels.
@@ -136,7 +136,7 @@ function LandingPage() {
                     <i className="nc-icon nc-sun-fog-29" />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Delightful design</h4>
+                    <h4 className="info-title">Reglamento general</h4>
                     <p>
                       Find unique and handmade delightful designs related items
                       directly from our sellers.
@@ -150,7 +150,7 @@ function LandingPage() {
             </Row>
           </Container>
         </div>
-        <div className="section section-dark text-center">
+        {/* <div className="section section-dark text-center">
           <Container>
             <h2 className="title">Let's talk about us</h2>
             <Row>
@@ -311,23 +311,23 @@ function LandingPage() {
               </Col>
             </Row>
           </Container>
-        </div>
+        </div> */}
         <div className="section landing-section">
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
-                <h2 className="text-center">Keep in touch?</h2>
+                <h2 className="text-center">Contactanos</h2>
                 <Form className="contact-form">
                   <Row>
                     <Col md="6">
-                      <label>Name</label>
+                      <label>Nombre</label>
                       <InputGroup>
                         <InputGroupAddon addonType="prepend">
                           <InputGroupText>
                             <i className="nc-icon nc-single-02" />
                           </InputGroupText>
                         </InputGroupAddon>
-                        <Input placeholder="Name" type="text" />
+                        <Input placeholder="Nombre" type="text" />
                       </InputGroup>
                     </Col>
                     <Col md="6">
@@ -342,16 +342,16 @@ function LandingPage() {
                       </InputGroup>
                     </Col>
                   </Row>
-                  <label>Message</label>
+                  <label>Mensaje</label>
                   <Input
-                    placeholder="Tell us your thoughts and feelings..."
+                    placeholder="Comentarios..."
                     type="textarea"
                     rows="4"
                   />
                   <Row>
                     <Col className="ml-auto mr-auto" md="4">
                       <Button className="btn-fill" color="danger" size="lg">
-                        Send Message
+                        Enviar mensaje
                       </Button>
                     </Col>
                   </Row>
