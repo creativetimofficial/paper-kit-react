@@ -69,7 +69,7 @@ function ExamplesNavbar() {
       color-on-scroll="300"
       expand="lg"
     >
-      <Container>
+      <section style={{display: "flex", flexDirection:"row"}}>
         <div className="navbar-translate">
           <NavbarBrand
             data-placement="bottom"
@@ -100,7 +100,7 @@ function ExamplesNavbar() {
           <Nav navbar>
             <NavItem>
               <NavLink to="/index" tag={Link}>
-                <i className="nc-icon nc-layout-11" /> Components
+                 Quienes somos
               </NavLink>
             </NavItem>
             <NavItem>
@@ -108,51 +108,47 @@ function ExamplesNavbar() {
                 href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-examples-navbar"
                 target="_blank"
               >
-                <i className="nc-icon nc-book-bookmark" /> Documentation
+                Planes
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
-                data-placement="bottom"
-                href="https://twitter.com/CreativeTim?ref=creativetim"
+                href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-examples-navbar"
                 target="_blank"
-                title="Follow us on Twitter"
               >
-                <i className="fa fa-twitter" />
-                <p className="d-lg-none">Twitter</p>
+                 Cartilla
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
-                data-placement="bottom"
-                href="https://www.facebook.com/CreativeTim?ref=creativetim"
+                href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-examples-navbar"
                 target="_blank"
-                title="Like us on Facebook"
               >
-                <i className="fa fa-facebook-square" />
-                <p className="d-lg-none">Facebook</p>
+                 Centros de atención
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
-                data-placement="bottom"
-                href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+                href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-examples-navbar"
                 target="_blank"
-                title="Follow us on Instagram"
               >
-                <i className="fa fa-instagram" />
-                <p className="d-lg-none">Instagram</p>
+                 Turnos
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
-                data-placement="bottom"
-                href="https://www.github.com/CreativeTimOfficial?ref=creativetim"
+                href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-examples-navbar"
                 target="_blank"
-                title="Star on GitHub"
               >
-                <i className="fa fa-github" />
-                <p className="d-lg-none">GitHub</p>
+                 Corporativo
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-examples-navbar"
+                target="_blank"
+              >
+                 Contacto
               </NavLink>
             </NavItem>
             <NavItem>
@@ -162,12 +158,22 @@ function ExamplesNavbar() {
                 href="https://www.creative-tim.com/product/paper-kit-pro-react?ref=pkr-examples-navbar"
                 target="_blank"
               >
-                <i className="nc-icon nc-spaceship"></i> Upgrade to Pro
+                <i className="nc-icon nc-spaceship"></i> Mi cuenta
+              </Button>
+            </NavItem>
+            <NavItem>
+              <Button
+                className="btn-round"
+                color="danger"
+                href="https://www.creative-tim.com/product/paper-kit-pro-react?ref=pkr-examples-navbar"
+                target="_blank"
+              >
+                <i className="nc-icon nc-spaceship"></i> Contrat
               </Button>
             </NavItem>
           </Nav>
         </Collapse>
-      </Container>
+      </section>
     </Navbar>
   );
 }
