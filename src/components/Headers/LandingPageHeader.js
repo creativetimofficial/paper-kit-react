@@ -44,7 +44,7 @@ function LandingPageHeader() {
     <>
       <div
         style={{
-          backgroundImage: "url(" + require("assets/img/daniel-olahh.jpg") + ")"
+          backgroundImage: "url(" + require("assets/img/Feliz-3.jpg") + ")"
         }}
         className="page-header"
         data-parallax={true}
@@ -53,21 +53,10 @@ function LandingPageHeader() {
         <div className="filter" />
         <Container>
           <div className="motto text-center">
-            <h1>Example page</h1>
-            <h3>Start designing your landing page here.</h3>
+            <h1>Ahora podés contratar tu plan de salud desde nuestra web.</h1>
             <br />
-            <Button
-              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-              className="btn-round mr-1"
-              color="neutral"
-              target="_blank"
-              outline
-            >
-              <i className="fa fa-play" />
-              Watch video
-            </Button>
             <Button className="btn-round" color="neutral" type="button" outline>
-              Download
+              Mi plan de salud
             </Button>
           </div>
         </Container>
