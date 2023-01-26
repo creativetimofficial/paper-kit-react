@@ -11,7 +11,6 @@ import {
   NavItem,
   NavLink,
   Nav,
-  /*  Container, */
   Button
 } from "reactstrap";
 
@@ -77,7 +76,7 @@ function ExamplesNavbar() {
         </div>
         <Collapse
           navbar
-          isOpen={navbarCollapse} style={{justifyContent:"center",marginRight: "19pc"}}
+          isOpen={navbarCollapse} style={{justifyContent:"center", marginRight: "19pc"}}
         >
           <Nav navbar >
             <NavItem>
