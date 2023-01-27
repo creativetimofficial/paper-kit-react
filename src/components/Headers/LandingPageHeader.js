@@ -19,7 +19,7 @@
 import React from "react";
 
 // reactstrap components
-import { Button, Container } from "reactstrap";
+import { Button, Card, Col, Container, Row } from "reactstrap";
 
 // core components
 
@@ -61,6 +61,33 @@ function LandingPageHeader() {
           </div>
         </Container>
       </div>
+      {/* separador */}
+      <div className="main">
+        <div className="text-center" style={{ marginBottom: "-106px"}}>
+          <Container>
+            <Row>
+              <Col md="4" style={{bottom:"121px"}}>
+                <Card style={{paddingTop:"52px", paddingBottom:"52px"}}>
+                <i className="nc-icon nc-single-copy-04" style={{fontSize:"7vh"}}/>
+                  <h3>Cartilla online</h3>
+                </Card>
+              </Col>
+              <Col md="4" style={{bottom:"121px"}}>
+                <Card style={{paddingTop:"52px", paddingBottom:"52px"}}>
+                  <i className="nc-icon nc-shop" style={{fontSize:"7vh"}}/>
+                  <h3>Centros de antención</h3>
+                </Card>
+              </Col>
+              <Col md="4" style={{bottom:"121px"}}>
+                <Card style={{paddingTop:"52px", paddingBottom:"52px"}}>
+                  <i className="nc-icon nc-credit-card" style={{fontSize:"7vh"}}/>
+                  <h3>Planes para vos</h3>
+                </Card>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      </div>
       {/* 2 */}
       <div
         style={{
@@ -73,7 +100,7 @@ function LandingPageHeader() {
         <div className="filter" />
         <Container>
           <div className="motto text-center">
-            <i className="nc-badge" />
+            <i className="nc-icon nc-badge" />
             <h1>Tu cuenta Online</h1>
             <h3>Gestioná tus trámites y accedé a la información que necesitás en cualquier momento, desde cualquier lugar.</h3>
             <br />
@@ -95,7 +122,7 @@ function LandingPageHeader() {
         <div className="filter" />
         <Container>
           <div className="motto text-center">
-            <i className="nc-favourite-28" />
+            <i className="nc-icon nc-favourite-28" />
             <h1>Prepaid Corporativo</h1>
             <h3>Gestioná tus trámites y accedé a la información de tu plan</h3>
             <br />

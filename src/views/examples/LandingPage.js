@@ -21,10 +21,10 @@ import React from "react";
 // reactstrap components
 import {
   Button,
-  Card,
-  CardBody,
-  CardFooter,
-  CardTitle,
+  // Card,
+  // CardBody,
+  // CardFooter,
+  // CardTitle,
   Form,
   Input,
   InputGroupAddon,
