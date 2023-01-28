@@ -1,22 +1,6 @@
-/*!
-
-=========================================================
-* Paper Kit React - v1.3.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-kit-react
-
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
+
+import "./LandingPageHeader.css";
 
 // reactstrap components
 import { Button, Card, Col, Container, Row } from "reactstrap";
@@ -63,24 +47,24 @@ function LandingPageHeader() {
       </div>
       {/* separador */}
       <div className="main">
-        <div className="text-center" style={{ marginBottom: "-106px"}}>
+        <div className="text-center separador-cards">
           <Container>
             <Row>
-              <Col md="4" style={{bottom:"121px"}}>
-                <Card style={{paddingTop:"52px", paddingBottom:"52px"}}>
-                <i className="nc-icon nc-single-copy-04" style={{fontSize:"7vh"}}/>
+              <Col md="4" className="height-cards">
+                <Card className="custom-card" style={{paddingTop:"52px", paddingBottom:"52px"}}>
+                <i className="nc-icon nc-single-copy-04 custom-card-icon"/>
                   <h3>Cartilla online</h3>
                 </Card>
               </Col>
-              <Col md="4" style={{bottom:"121px"}}>
-                <Card style={{paddingTop:"52px", paddingBottom:"52px"}}>
-                  <i className="nc-icon nc-shop" style={{fontSize:"7vh"}}/>
+              <Col md="4" className="height-cards">
+                <Card className="custom-card">
+                  <i className="nc-icon nc-shop custom-card-icon"/>
                   <h3>Centros de antención</h3>
                 </Card>
               </Col>
-              <Col md="4" style={{bottom:"121px"}}>
-                <Card style={{paddingTop:"52px", paddingBottom:"52px"}}>
-                  <i className="nc-icon nc-credit-card" style={{fontSize:"7vh"}}/>
+              <Col md="4" className="height-cards">
+                <Card className="custom-card">
+                  <i className="nc-icon nc-credit-card custom-card-icon"/>
                   <h3>Planes para vos</h3>
                 </Card>
               </Col>
@@ -100,7 +84,7 @@ function LandingPageHeader() {
         <div className="filter" />
         <Container>
           <div className="motto text-center">
-            <i className="nc-icon nc-badge" />
+            <i className="nc-icon nc-badge custom-card-icon"/>
             <h1>Tu cuenta Online</h1>
             <h3>Gestioná tus trámites y accedé a la información que necesitás en cualquier momento, desde cualquier lugar.</h3>
             <br />
@@ -122,7 +106,7 @@ function LandingPageHeader() {
         <div className="filter" />
         <Container>
           <div className="motto text-center">
-            <i className="nc-icon nc-favourite-28" />
+            <i className="nc-icon nc-favourite-28 custom-card-icon"/>
             <h1>Prepaid Corporativo</h1>
             <h3>Gestioná tus trámites y accedé a la información de tu plan</h3>
             <br />
