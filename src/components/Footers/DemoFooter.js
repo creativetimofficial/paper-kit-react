@@ -28,11 +28,11 @@ function DemoFooter() {
   return (
     <footer className="footer footer-black footer-white">
       <Container>
-        <Row className="mb-4">
-          <Col>
+        <Row className="mb-4 justify-content-between">
+          <Col md={2} sm={12}>
             <img src={""} alt="logo prepaid" />
           </Col>
-          <Col >
+          <Col sm={12} md={2}>
             <h3 className="mb-3" ><b>Quienes somos</b></h3>
             <a href="#"><b>Nosotros</b></a>
             <br />
@@ -44,7 +44,7 @@ function DemoFooter() {
             <br />
             <a href="#"><b>Trabajá con nosotros</b></a>
           </Col>
-          <Col >
+          <Col sm={12} md={2}>
             <h3 className="mb-3"><b>Planes</b></h3>
             <a href="#"><b>Cartillas</b></a>
             <br />
@@ -52,7 +52,7 @@ function DemoFooter() {
             <br />
             <a href="#"><b>Tu cuenta online</b></a>
           </Col>
-          <Col >
+          <Col sm={12} md={2}>
             <h3 className="mb-3"><b>Información util</b></h3>
             <a href="#"><b>Emergencias</b></a>
             <br />
@@ -68,7 +68,7 @@ function DemoFooter() {
             <br />
             <a href="#"><b>Tramite de arrepentimiento</b></a>
           </Col>
-          <Col className="flex flex-col">
+          <Col className="flex flex-col" sm={12} md={2}>
             <h3><b>Novedades</b></h3>
             <h3><b>Contacto</b></h3>
             <h3><FaLinkedinIn className="redes"  /><FaInstagram className="redes" /><FaFacebookF className="redes" /><FaTwitter className="redes" /></h3>
