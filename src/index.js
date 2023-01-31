@@ -37,15 +37,15 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/index" render={(props) => <Index {...props} />} />
+      <Route path="" render={(props) => <LandingPage {...props} />} />
       <Route
         path="/nucleo-icons"
         render={(props) => <NucleoIcons {...props} />}
       />
-      <Route
+      {/* <Route
         path="/landing-page"
         render={(props) => <LandingPage {...props} />}
-      />
+      /> */}
       <Route
         path="/profile-page"
         render={(props) => <ProfilePage {...props} />}
