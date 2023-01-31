@@ -18,7 +18,7 @@ import {
 
 // core components
 import Navbar from "componentes/Navbar/Navbar.js";
-import ProfilePageHeader from "components/Headers/ProfilePageHeader.js";
+import ProfilePageHeader from "componentes/Header/ProfilePageHeader.js";
 import Footer from "componentes/Footer/Footer.js";
 
 function ProfilePage() {

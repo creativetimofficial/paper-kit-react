@@ -15,7 +15,7 @@ import {
 
 // core components
 import Navbar from "componentes/Navbar/Navbar.js";
-import LandingPageHeader from "components/Headers/LandingPageHeader.js";
+import LandingPageHeader from "componentes/Header/LandingPageHeader.js";
 import Footer from "componentes/Footer/Footer.js";
 
 function LandingPage() {
