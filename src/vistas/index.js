@@ -3,7 +3,7 @@ import React from "react";
 // reactstrap components
 
 // core components
-import IndexNavbar from "components/Navbars/IndexNavbar.js";
+import Navbar from "componentes/Navbar/Navbar.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
 import Footer from "componentes/Footer/Footer.js";
 
@@ -32,7 +32,7 @@ function Index() {
   });
   return (
     <>
-      <IndexNavbar />
+      <Navbar />
       <IndexHeader />
       <div className="main">
         <SectionButtons />
