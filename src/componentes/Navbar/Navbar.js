@@ -113,13 +113,6 @@ function NavBar() {
             </NavItem>
             <NavItem>
               <NavLink
-                href={""}
-              >
-                Corporativo
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
                 href="/contacto"
               >
                 Contacto

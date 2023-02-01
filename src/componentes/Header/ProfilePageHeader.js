@@ -4,7 +4,7 @@ import React from "react";
 
 // core components
 
-const ProfilePageHeader = (prop) =>{
+const ProfilePageHeader = (prop) => {
   let pageHeader = React.createRef();
   const img = prop?.imagen
   const alturaBanner = prop?.alturaBanner
@@ -31,13 +31,13 @@ const ProfilePageHeader = (prop) =>{
         className="page-header page-header-xs"
         style={{
           backgroundImage:
-            "url(" + require(`../../assets/img/${img}`) + ")", backgroundPositionY: `${alturaBanner && alturaBanner.toString()}`, minHeight: `${minHeight ? minHeight.toString(): "40vh"}`
+            "url(" + require(`../../assets/img/${img}`) + ")", backgroundPositionY: `${alturaBanner && alturaBanner.toString()}`, minHeight: `${minHeight ? minHeight.toString() : "40vh"}`
         }}
         data-parallax={true}
         ref={pageHeader}
       >
         <div className="filter" />
-        <h2 style={{color:"white", zIndex:"10"}}>{nombreComponente}</h2>
+        <h2 style={{ color: "white", zIndex: "10" }}>{nombreComponente}</h2>
       </div>
     </>
   );
