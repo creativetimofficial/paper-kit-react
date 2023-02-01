@@ -85,7 +85,7 @@ function NavBar() {
             </NavItem>
             <NavItem>
               <NavLink
-                href={""}
+                href={"/planes"}
               >
                 Planes
               </NavLink>
