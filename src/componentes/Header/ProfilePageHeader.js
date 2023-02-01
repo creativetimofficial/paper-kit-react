@@ -4,8 +4,9 @@ import React from "react";
 
 // core components
 
-function ProfilePageHeader() {
+const ProfilePageHeader = (prop) =>{
   let pageHeader = React.createRef();
+  const img = prop && prop.imagen
 
   React.useEffect(() => {
     if (window.innerWidth < 991) {
@@ -26,7 +27,7 @@ function ProfilePageHeader() {
       <div
         style={{
           backgroundImage:
-            "url(" + require("assets/img/fabio-mangione.jpg") + ")"
+            "url(" + require(`../../assets/img/${img}`) + ")", backgroundPositionY: "-143px"
         }}
         className="page-header page-header-xs"
         data-parallax={true}

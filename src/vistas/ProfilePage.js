@@ -20,6 +20,7 @@ import {
 import Navbar from "componentes/Navbar/Navbar.js";
 import ProfilePageHeader from "componentes/Header/ProfilePageHeader.js";
 import Footer from "componentes/Footer/Footer.js";
+// import img from "../assets/img/fabio-mangione.jpg"
 
 function ProfilePage() {
   const [activeTab, setActiveTab] = React.useState("1");
@@ -40,7 +41,7 @@ function ProfilePage() {
   return (
     <>
       <Navbar />
-      <ProfilePageHeader />
+      <ProfilePageHeader imagen={"fabio-mangione.jpg"}/>
       <div className="section profile-content">
         <Container>
           <div className="owner">
