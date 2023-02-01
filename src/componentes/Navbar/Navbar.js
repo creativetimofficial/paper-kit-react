@@ -78,76 +78,66 @@ function NavBar() {
           navbar
           isOpen={navbarCollapse}
         >
-          <Container className="float-left">
-
-            <Nav navbar >
-              <NavItem>
-                <NavLink to="/quienes-somos" tag={Link}>
-                  Quienes somos
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href={"/planes"}
-                >
-                  Planes
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href={""}
-                >
-                  Cartilla
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href={""}
-                >
-                  Centros de atención
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href={""}
-                >
-                  Turnos
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href={""}
-                >
-                  Corporativo
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href="/contacto"
-                >
-                  Contacto
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <Button
-                  className="btn-round"
-                  color="danger"
-                  href="/register-page"
-                >
-                  Mi Cuenta
-                </Button>
-              </NavItem>
-              <NavItem>
-                <Button
-                  className="btn-round"
-                  color="danger"
-                  href={""}
-                >
-                  Contratá
-                </Button>
-              </NavItem>
-            </Nav>
-          </Container>
+          <Nav navbar >
+            <NavItem>
+              <NavLink to="/quienes-somos" tag={Link}>
+                Quienes somos
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                href={"/planes"}
+              >
+                Planes
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                href={""}
+              >
+                Cartilla
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                href={""}
+              >
+                Centros de atención
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                href={""}
+              >
+                Turnos
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                href="/contacto"
+              >
+                Contacto
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <Button
+                className="btn-round"
+                color="danger"
+                href="/register-page"
+              >
+                Mi Cuenta
+              </Button>
+            </NavItem>
+            <NavItem>
+              <Button
+                className="btn-round"
+                color="danger"
+                href={""}
+              >
+                Contratá
+              </Button>
+            </NavItem>
+          </Nav>
         </Collapse>
       </section>
     </Navbar>

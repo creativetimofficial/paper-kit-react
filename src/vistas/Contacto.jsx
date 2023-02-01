@@ -32,7 +32,7 @@ function Contacto() {
     return (
         <>
             <Navbar />
-            <ProfilePageHeader imagen={"Contacto.jpg"} minHeight={"50vh"}/>
+            <ProfilePageHeader imagen={"Contacto.jpg"} minHeight={"50vh"} componente={"Contacto"}/>
             <Container>
                 <Row>
                     <Col md="6">
