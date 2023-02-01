@@ -18,52 +18,50 @@ const Planes = () => {
                 </div>
                 <Container>
 
-                    <Row className="w-100">
-                        <Col>
+                    <Row className="w-100 m-auto">
+                        <Col md={3}>
                             <img src={require("assets/img/plan1.png")} alt="imagen de plan" className="img-fluid" style={{ marginTop: "-40px" }} />
                             <h2>Plan Cerca</h2>
                             <h5>Un plan práctico y accesible que te acerca a lo que necesitas.</h5>
                             <p>
                                 Una opción simple, ágil y nativamente digital, que cuenta con una cartilla de prestadores seleccionada por proximidad e incluye un set de servicios digitales como credencial digital, e-doc, app, cartilla online y Ava, tu asistente virtual.
                             </p>
+                            <Row className="my-5">
+                                <Button className="my-4">Saber Más</Button>
+                            </Row>
                         </Col>
-                        <Col>
+                        <Col md={3}>
                             <img src={require("assets/img/plan2.png")} alt="imagen de plan" className="img-fluid" style={{ marginTop: "-40px" }} />
                             <h2>Plan Cerca</h2>
                             <h5>Un plan práctico y accesible que te acerca a lo que necesitas.</h5>
                             <p>
                                 Nuestro Plan Integral cuenta con una amplia cartilla de prestadores de alcance nacional y una importante combinación de coberturas a precios accesibles, a través de la aplicación de copagos.
                             </p>
+                            <Row className="my-5">
+                                <Button className="my-4">Saber Más</Button>
+                            </Row>
                         </Col>
-                        <Col>
+                        <Col md={3}>
                             <img src={require("assets/img/plan3.png")} alt="imagen de plan" className="img-fluid" style={{ marginTop: "-40px" }} />
                             <h2>Plan Cerca</h2>
                             <h5>Un plan práctico y accesible que te acerca a lo que necesitas.</h5>
                             <p>
                                 Amplia cartilla de prestadores, internación en habitación individual con baño privado, importante descuento en farmacias adheridas, servicio de emergencias y urgencias sin cargo, y consultas a domicilio con accesibles copagos.
                             </p>
+                            <Row className="my-5">
+                                <Button className="my-4">Saber Más</Button>
+                            </Row>
                         </Col>
-                        <Col>
+                        <Col md={3}>
                             <img src={require("assets/img/plan4.png")} alt="imagen de plan" className="img-fluid" style={{ marginTop: "-40px" }} />
                             <h2>Plan Cerca</h2>
                             <h5>Un plan práctico y accesible que te acerca a lo que necesitas.</h5>
                             <p>
                                 Agilidad y máxima calidad de servicios con detalles de confort. Amplia cartilla de prestadores y centros médicos de prestigio, internación en suite y consultas a domicilio y servicio de emergencias y urgencias sin cargo.
                             </p>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col>
-                            <Button className="my-4">Saber Más</Button>
-                        </Col>
-                        <Col>
-                            <Button className="my-4">Saber Más</Button>
-                        </Col>
-                        <Col>
-                            <Button className="my-4">Saber Más</Button>
-                        </Col>
-                        <Col>
-                            <Button className="my-4">Saber Más</Button>
+                            <Row className="my-5">
+                                <Button className="my-4">Saber Más</Button>
+                            </Row>
                         </Col>
                     </Row>
                     <Row className="w-100 mt-5">
@@ -79,11 +77,11 @@ const Planes = () => {
                         </Col>
                     </Row>
                     <Row className=" mb-5 ">
-                        <Col md={6}>
-                            <img src={require("assets/img/consultorioPaciente.jpg")} alt="tarjetas de planes" style={{ minHeight: "200px", height: "300px", width: "inherit" }} />
+                        <Col className="mb-2" md={6}>
+                            <img src={require("assets/img/consultorioPaciente.jpg")} alt="tarjetas de planes" style={{ minHeight: "200px", height: "230px", width: "inherit" }} />
                         </Col>
-                        <Col md={6}>
-                            <img src={require("assets/img/consultorioVacio.jpg")} alt="tarjetas de planes" style={{ minHeight: "200px", height: "300px", width: "inherit" }} />
+                        <Col className="mb-2" md={6}>
+                            <img src={require("assets/img/consultorioVacio.jpg")} alt="tarjetas de planes" style={{ minHeight: "200px", height: "230px", width: "inherit" }} />
                         </Col>
                     </Row>
                 </Container>
