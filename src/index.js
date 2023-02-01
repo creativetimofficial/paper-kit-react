@@ -29,6 +29,10 @@ import NucleoIcons from "vistas/NucleoIcons.js";
 import LandingPage from "vistas/LandingPage.js";
 import ProfilePage from "vistas/ProfilePage.js";
 import RegisterPage from "vistas/RegisterPage.js";
+import QuienesSomos from "vistas/Quienes-somos";
+import Contacto from "vistas/Contacto";
+import Planes from "vistas/Planes/Planes";
+
 
 
 // others
