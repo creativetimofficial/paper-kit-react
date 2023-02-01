@@ -49,7 +49,7 @@ function QuienesSomos() {
                     </Col>
                 </Row>
             </Container>
-            <Row style={{ backgroundColor: "rgb(241, 241, 241)" }}  className="mb-5">
+            <Row style={{ backgroundColor: "rgb(241, 241, 241)" }}  className="mb-5 w-100 m-auto">
                 <Col md="6">
                     <img className="img-fluid" src="https://th.bing.com/th/id/R.620ceb9b8d8f51e2972a06a220ea044f?rik=vCG6%2bczMe3xumw&riu=http%3a%2f%2fwww.usat.edu.pe%2fweb%2fwp-content%2fuploads%2f2020%2f09%2fFamilia.jpg&ehk=DRYbvSqxyT8evVDzsmX%2fQYtNp3qcd719m7MGMpPCPJQ%3d&risl=&pid=ImgRaw&r=0" alt="prueba" />
                 </Col>

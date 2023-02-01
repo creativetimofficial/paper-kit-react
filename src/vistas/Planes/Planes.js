@@ -3,7 +3,8 @@ import NavBar from "componentes/Navbar/Navbar";
 import "./Planes.css"
 import { Button, Col, Container, Row } from "reactstrap";
 import ProfilePageHeader from "componentes/Header/ProfilePageHeader";
-
+import { BiNotepad } from "react-icons/bi"
+import { FaRegHospital } from "react-icons/fa"
 const Planes = () => {
     return (
         <>
@@ -96,10 +97,10 @@ const Planes = () => {
                     </Row>
                     <Row className=" mb-5 ">
                         <Col className="mb-2" md={6}>
-                            <img src={require("assets/img/consultorioPaciente.jpg")} alt="tarjetas de planes" style={{ minHeight: "200px", height: "230px", width: "inherit" }} />
+                            <span className="iconoPlan"><FaRegHospital /></span><span className="letraPlan"><h5>Cartilla online</h5></span><img src={require("assets/img/consultorioPaciente.jpg")} alt="tarjetas de planes" style={{ minHeight: "200px", height: "230px", width: "inherit" }} />
                         </Col>
                         <Col className="mb-2" md={6}>
-                            <img src={require("assets/img/consultorioVacio.jpg")} alt="tarjetas de planes" style={{ minHeight: "200px", height: "230px", width: "inherit" }} />
+                            <span className="iconoPlan"><BiNotepad /></span><span className="letraPlan"><h5>Centros de atención</h5></span><img src={require("assets/img/consultorioVacio.jpg")} alt="tarjetas de planes" style={{ minHeight: "200px", height: "230px", width: "inherit" }} />
                         </Col>
                     </Row>
                 </Container>
