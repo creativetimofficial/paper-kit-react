@@ -29,7 +29,7 @@ import NucleoIcons from "vistas/NucleoIcons.js";
 import LandingPage from "vistas/LandingPage.js";
 import ProfilePage from "vistas/ProfilePage.js";
 import RegisterPage from "vistas/RegisterPage.js";
-import Planes from "vistas/Planes/Planes";
+
 
 // others
 
@@ -43,10 +43,14 @@ root.render(
         path="/nucleo-icons"
         render={(props) => <NucleoIcons {...props} />}
       />
-      {/* <Route
-        path="/testing"
-        render={(props) => <Index {...props} />}
-      /> */}
+      <Route
+        path="/quienes-somos"
+        render={(props) => <QuienesSomos {...props} />}
+      />
+      <Route
+        path="/contacto"
+        render={(props) => <Contacto {...props} />}
+      />
       <Route
         path="/profile-page"
         render={(props) => <ProfilePage {...props} />}

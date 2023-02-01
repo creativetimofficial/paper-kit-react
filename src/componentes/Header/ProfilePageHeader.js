@@ -4,8 +4,11 @@ import React from "react";
 
 // core components
 
-function ProfilePageHeader() {
+const ProfilePageHeader = (prop) =>{
   let pageHeader = React.createRef();
+  const img = prop?.imagen
+  const alturaBanner = prop?.alturaBanner
+  const minHeight = prop?.minHeight
 
   React.useEffect(() => {
     if (window.innerWidth < 991) {
@@ -24,11 +27,11 @@ function ProfilePageHeader() {
   return (
     <>
       <div
+        className="page-header page-header-xs"
         style={{
           backgroundImage:
-            "url(" + require("assets/img/fabio-mangione.jpg") + ")"
+            "url(" + require(`../../assets/img/${img}`) + ")", backgroundPositionY: `${alturaBanner && alturaBanner.toString()}`, minHeight: `${minHeight ? minHeight.toString(): "40vh"}`
         }}
-        className="page-header page-header-xs"
         data-parallax={true}
         ref={pageHeader}
       >

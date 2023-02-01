@@ -79,7 +79,7 @@ function NavBar() {
         >
           <Nav navbar >
             <NavItem>
-              <NavLink to="/index" tag={Link}>
+              <NavLink to="/quienes-somos" tag={Link}>
                 Quienes somos
               </NavLink>
             </NavItem>
