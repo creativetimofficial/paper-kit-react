@@ -2,15 +2,6 @@ import React from "react";
 
 // reactstrap components
 import {
-    Button,
-    Label,
-    FormGroup,
-    Input,
-    NavItem,
-    NavLink,
-    Nav,
-    TabContent,
-    TabPane,
     Container,
     Row,
     Col
@@ -41,7 +32,7 @@ function QuienesSomos() {
     return (
         <>
             <Navbar />
-            <ProfilePageHeader imagen={"family.jpeg"} />
+            <ProfilePageHeader imagen={"family.jpeg"} alturaBanner={"-143px"}/>
             <Container>
                 <Row>
                     <Col md="6">

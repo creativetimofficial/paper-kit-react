@@ -30,6 +30,7 @@ import LandingPage from "vistas/LandingPage.js";
 import ProfilePage from "vistas/ProfilePage.js";
 import RegisterPage from "vistas/RegisterPage.js";
 import QuienesSomos from "vistas/Quienes-somos";
+import Contacto from "vistas/Contacto";
 
 // others
 
@@ -44,8 +45,12 @@ root.render(
         render={(props) => <NucleoIcons {...props} />}
       />
       <Route
-        path="/testing"
+        path="/quienes-somos"
         render={(props) => <QuienesSomos {...props} />}
+      />
+      <Route
+        path="/contacto"
+        render={(props) => <Contacto {...props} />}
       />
       <Route
         path="/profile-page"

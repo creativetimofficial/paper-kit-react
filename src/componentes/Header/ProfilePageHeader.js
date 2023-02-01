@@ -6,7 +6,9 @@ import React from "react";
 
 const ProfilePageHeader = (prop) =>{
   let pageHeader = React.createRef();
-  const img = prop && prop.imagen
+  const img = prop?.imagen
+  const alturaBanner = prop?.alturaBanner
+  const minHeight = prop?.minHeight
 
   React.useEffect(() => {
     if (window.innerWidth < 991) {
@@ -25,11 +27,11 @@ const ProfilePageHeader = (prop) =>{
   return (
     <>
       <div
+        className="page-header page-header-xs"
         style={{
           backgroundImage:
-            "url(" + require(`../../assets/img/${img}`) + ")", backgroundPositionY: "-143px"
+            "url(" + require(`../../assets/img/${img}`) + ")", backgroundPositionY: `${alturaBanner && alturaBanner.toString()}`, minHeight: `${minHeight ? minHeight.toString(): "40vh"}`
         }}
-        className="page-header page-header-xs"
         data-parallax={true}
         ref={pageHeader}
       >
