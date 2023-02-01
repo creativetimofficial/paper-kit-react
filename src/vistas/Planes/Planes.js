@@ -9,11 +9,11 @@ const Planes = () => {
         <>
             <NavBar />
             <main id="planes">
-                <ProfilePageHeader imagen={"Contacto.jpg"} minHeight={"50vh"} />
+                <ProfilePageHeader imagen={"familiaPlanes.jpeg"} minHeight={"50vh"} />
                 <Container>
 
                     <Row className="w-100 m-auto">
-                        <Col md={3} className="mb-5">
+                        <Col md={3} className="mb-5 planes" >
                             <img src={require("assets/img/plan1.png")} alt="imagen de plan" className="img-fluid" style={{ marginTop: "-40px" }} />
                             <h2>Plan Cerca</h2>
                             <h5>Un plan práctico y accesible que te acerca a lo que necesitas.</h5>
@@ -30,7 +30,7 @@ const Planes = () => {
                                 </Button>
                             </Row>
                         </Col>
-                        <Col md={3} className="mb-5">
+                        <Col md={3} className="mb-5 planes">
                             <img src={require("assets/img/plan2.png")} alt="imagen de plan" className="img-fluid" style={{ marginTop: "-40px" }} />
                             <h2>Plan Cerca</h2>
                             <h5>Un plan práctico y accesible que te acerca a lo que necesitas.</h5>
@@ -47,7 +47,7 @@ const Planes = () => {
                                 </Button>
                             </Row>
                         </Col>
-                        <Col md={3} className="mb-5">
+                        <Col md={3} className="mb-5 planes">
                             <img src={require("assets/img/plan3.png")} alt="imagen de plan" className="img-fluid" style={{ marginTop: "-40px" }} />
                             <h2>Plan Cerca</h2>
                             <h5>Un plan práctico y accesible que te acerca a lo que necesitas.</h5>
@@ -64,7 +64,7 @@ const Planes = () => {
                                 </Button>
                             </Row>
                         </Col>
-                        <Col md={3} className="mb-5">
+                        <Col md={3} className="mb-5 planes">
                             <img src={require("assets/img/plan4.png")} alt="imagen de plan" className="img-fluid" style={{ marginTop: "-40px" }} />
                             <h2>Plan Cerca</h2>
                             <h5>Un plan práctico y accesible que te acerca a lo que necesitas.</h5>
