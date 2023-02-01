@@ -5567,9 +5567,9 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   min-height: 65vh !important;
   max-height: 700px;
 }
-.page-header.page-header-xs {
+/* .page-header.page-header-xs {
   min-height: 40vh !important;
-}
+} */
 .page-header.section-dark .content-center,
 .page-header.section-dark .category-absolute {
   z-index: 1;

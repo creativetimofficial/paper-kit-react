@@ -1,21 +1,3 @@
-/*!
-
-=========================================================
-* Paper Kit React - v1.3.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-kit-react
-
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 
 // reactstrap components
@@ -35,9 +17,10 @@ import {
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
-import ProfilePageHeader from "components/Headers/ProfilePageHeader.js";
-import DemoFooter from "components/Footers/DemoFooter.js";
+import Navbar from "componentes/Navbar/Navbar.js";
+import ProfilePageHeader from "componentes/Header/ProfilePageHeader.js";
+import Footer from "componentes/Footer/Footer.js";
+// import img from "../assets/img/fabio-mangione.jpg"
 
 function ProfilePage() {
   const [activeTab, setActiveTab] = React.useState("1");
@@ -57,8 +40,8 @@ function ProfilePage() {
   });
   return (
     <>
-      <ExamplesNavbar />
-      <ProfilePageHeader />
+      <Navbar />
+      <ProfilePageHeader imagen={"fabio-mangione.jpg"}/>
       <div className="section profile-content">
         <Container>
           <div className="owner">
@@ -191,7 +174,7 @@ function ProfilePage() {
           </TabContent>
         </Container>
       </div>
-      <DemoFooter />
+      <Footer />
     </>
   );
 }
