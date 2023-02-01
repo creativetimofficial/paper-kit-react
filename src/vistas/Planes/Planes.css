@@ -11,3 +11,6 @@
 #planes p{
     font-size: 14px;
 }
+#planes .planes{
+    z-index: 199;
+}
