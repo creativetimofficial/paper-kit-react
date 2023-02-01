@@ -120,7 +120,7 @@ function NavBar() {
             </NavItem>
             <NavItem>
               <NavLink
-                href={""}
+                href="/contacto"
               >
                 Contacto
               </NavLink>

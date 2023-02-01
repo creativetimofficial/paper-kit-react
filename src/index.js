@@ -33,8 +33,6 @@ import QuienesSomos from "vistas/Quienes-somos";
 import Contacto from "vistas/Contacto";
 import Planes from "vistas/Planes/Planes";
 
-
-
 // others
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
