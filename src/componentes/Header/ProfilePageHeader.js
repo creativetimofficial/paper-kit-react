@@ -9,6 +9,7 @@ const ProfilePageHeader = (prop) =>{
   const img = prop?.imagen
   const alturaBanner = prop?.alturaBanner
   const minHeight = prop?.minHeight
+  const nombreComponente = prop?.componente
 
   React.useEffect(() => {
     if (window.innerWidth < 991) {
@@ -36,6 +37,7 @@ const ProfilePageHeader = (prop) =>{
         ref={pageHeader}
       >
         <div className="filter" />
+        <h2 style={{color:"white", zIndex:"10"}}>{nombreComponente}</h2>
       </div>
     </>
   );
