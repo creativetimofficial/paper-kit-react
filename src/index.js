@@ -29,8 +29,7 @@ import NucleoIcons from "vistas/NucleoIcons.js";
 import LandingPage from "vistas/LandingPage.js";
 import ProfilePage from "vistas/ProfilePage.js";
 import RegisterPage from "vistas/RegisterPage.js";
-import QuienesSomos from "vistas/Quienes-somos";
-import Contacto from "vistas/Contacto";
+
 
 // others
 
@@ -59,6 +58,10 @@ root.render(
       <Route
         path="/register-page"
         render={(props) => <RegisterPage {...props} />}
+      />
+      <Route
+        path="/planes"
+        render={(props) => <Planes {...props} />}
       />
       <Redirect to="/index" />
     </Switch>
