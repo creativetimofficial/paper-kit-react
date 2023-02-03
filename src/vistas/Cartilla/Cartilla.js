@@ -9,7 +9,7 @@ const Cartilla = () => {
     return (
         <>
             <NavBar />
-            <ProfilePageHeader imagen={"family.jpeg"} alturaBanner={"50vh"} nombreComponente={"AAAAAAAAAAAAAAA"} />
+            <ProfilePageHeader imagen={"family.jpeg"} alturaBanner={"50vh"} componente={"Cartilla online"} />
             <Container>
                 <Row className="w-100 my-4">
                     <input type="checkbox" id="switch" onClick={() => setToggle(!toggle)} /><label className="inputToggle" texto={toggle ? "Buscar por localidad" : "Buscar por dirección"} for="switch"><span style={{ position: "inherit", textAlign: "left" }}>Buscar por localidad</span><span style={{ position: "inherit", textAlign: "right", float: "right" }}>Buscar por dirección</span></label>
