@@ -134,7 +134,7 @@ function NavBar() {
                 <Button
                   className="btn-round"
                   color="danger"
-                  href={""}
+                  href="/contrata"
                 >
                   Contratá
                 </Button>

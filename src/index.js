@@ -32,7 +32,7 @@ import RegisterPage from "vistas/RegisterPage.js";
 import QuienesSomos from "vistas/Quienes-somos";
 import Contacto from "vistas/Contacto";
 import Planes from "vistas/Planes/Planes";
-import Cartilla from "vistas/Cartilla/Cartilla";
+
 
 // others
 
@@ -53,6 +53,10 @@ root.render(
       <Route
         path="/contacto"
         render={(props) => <Contacto {...props} />}
+      />
+      <Route
+        path="/contrata"
+        render={(props) => <Contrata {...props} />}
       />
       <Route
         path="/profile-page"

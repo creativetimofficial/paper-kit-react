@@ -1,16 +1,41 @@
-#planes h2{
+#planes h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
     color: #b7d673;
 }
-#planes h5{
+
+#planes h5 {
     font-size: 1rem;
     margin-bottom: 1.3rem;
     color: #b7d673;
 }
-#planes p{
+
+#planes p {
     font-size: 14px;
 }
-#planes .planes{
+
+#planes .planes {
     z-index: 199;
+}
+
+#planes .iconoPlan {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 44%;
+    font-size: 60px;
+    color: white;
+}
+
+#planes .letraPlan {
+    position: absolute;
+    margin-top: 140px;
+    width: 100%;
+    margin-left: 35%;
+}
+#planes  h5{
+
+    position: absolute;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
 }
