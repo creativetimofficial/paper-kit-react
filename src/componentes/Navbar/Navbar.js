@@ -95,7 +95,7 @@ function NavBar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href={""}
+                  href={"/cartilla"}
                 >
                   Cartilla
                 </NavLink>
