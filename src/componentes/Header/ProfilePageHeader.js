@@ -37,7 +37,7 @@ const ProfilePageHeader = (prop) => {
         ref={pageHeader}
       >
         <div className="filter" />
-        <h2 style={{ color: "white", zIndex: "10" }}>{nombreComponente}</h2>
+        <h2 style={{ color: "white", zIndex: "100", height:"-150px" }}>{nombreComponente}</h2>
       </div>
     </>
   );

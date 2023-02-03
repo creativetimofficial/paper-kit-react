@@ -5,9 +5,11 @@
 }
 
 #planes h5 {
-    font-size: 1rem;
     margin-bottom: 1.3rem;
     color: #b7d673;
+    font-size: 18px;
+    font-weight: 700;
+    font-weight: 500;
 }
 
 #planes p {
@@ -32,10 +34,20 @@
     width: 100%;
     margin-left: 35%;
 }
-#planes  h5{
 
-    position: absolute;
+#planes #cardConIconos h5 {
     font-size: 20px;
-    font-weight: 700;
+    color: white;
+    position: absolute;
+    font-weight: 550;
+}
+
+#planes .cardCartilla{
+    transition: 0.5s ease;
+}
+#planes .cardCartilla:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.1);
     color: white;
 }

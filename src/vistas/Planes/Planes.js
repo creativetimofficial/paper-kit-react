@@ -95,11 +95,11 @@ const Planes = () => {
                             <img src={require("assets/img/planes.png")} alt="tarjetas de planes" className="img-fluid" />
                         </Col>
                     </Row>
-                    <Row className=" mb-5 ">
-                        <Col className="mb-2" md={6}>
+                    <Row className=" mb-5 " id="cardConIconos">
+                        <Col className="mb-2 cardCartilla" md={6}>
                             <span className="iconoPlan"><FaRegHospital /></span><span className="letraPlan"><h5>Cartilla online</h5></span><img src={require("assets/img/consultorioPaciente.jpg")} alt="tarjetas de planes" style={{ minHeight: "200px", height: "230px", width: "inherit" }} />
                         </Col>
-                        <Col className="mb-2" md={6}>
+                        <Col className="mb-2 cardCartilla" md={6}>
                             <span className="iconoPlan"><BiNotepad /></span><span className="letraPlan"><h5>Centros de atención</h5></span><img src={require("assets/img/consultorioVacio.jpg")} alt="tarjetas de planes" style={{ minHeight: "200px", height: "230px", width: "inherit" }} />
                         </Col>
                     </Row>
