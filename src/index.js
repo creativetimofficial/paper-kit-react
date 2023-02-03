@@ -32,6 +32,7 @@ import RegisterPage from "vistas/RegisterPage.js";
 import QuienesSomos from "vistas/Quienes-somos";
 import Contacto from "vistas/Contacto";
 import Planes from "vistas/Planes/Planes";
+import Cartilla from "vistas/Cartilla/Cartilla";
 
 // others
 
@@ -64,6 +65,10 @@ root.render(
       <Route
         path="/planes"
         render={(props) => <Planes {...props} />}
+      />
+      <Route
+        path="/cartilla"
+        render={(props) => <Cartilla {...props} />}
       />
       <Redirect to="/index" />
     </Switch>
