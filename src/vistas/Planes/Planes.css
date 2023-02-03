@@ -31,20 +31,20 @@
 #planes .letraPlan {
     position: absolute;
     margin-top: 140px;
-    width: 100%;
-    margin-left: 35%;
+    padding-left: 33%;
 }
 
 #planes #cardConIconos h5 {
     font-size: 20px;
     color: white;
-    position: absolute;
+    position: initial;
     font-weight: 550;
 }
 
-#planes .cardCartilla{
+#planes .cardCartilla {
     transition: 0.5s ease;
 }
+
 #planes .cardCartilla:hover {
     cursor: pointer;
     -webkit-transform: scale(1.5);
