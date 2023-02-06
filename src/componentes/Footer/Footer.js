@@ -10,7 +10,7 @@ function Footer() {
     <footer className="footer footer-black footer-white">
       <Container>
         <Row className="mb-4 justify-content-between">
-          <Col md={3} sm={12}>
+          <Col md={3} sm={12} className="mt-4">
             <img src={require("assets/img/logo-avalian-nav.png")} alt="logo prepaid" />
           </Col>
           <Col sm={12} md={2}>
