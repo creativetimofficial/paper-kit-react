@@ -32,8 +32,9 @@ import RegisterPage from "vistas/RegisterPage.js";
 import QuienesSomos from "vistas/Quienes-somos";
 import Contacto from "vistas/Contacto";
 import Planes from "vistas/Planes/Planes";
-import { Contrata } from "vistas/Contrata";
+import { Contrata } from "vistas/Contrata/Contrata";
 import Cartilla from "vistas/Cartilla/Cartilla";
+import {Cotiza} from "vistas/Contrata/Cotiza";
 // others
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -57,6 +58,10 @@ root.render(
       <Route
         path="/contrata"
         render={(props) => <Contrata {...props} />}
+      />
+      <Route
+        path="/cotiza"
+        render={(props) => <Cotiza {...props} />}
       />
       <Route
         path="/profile-page"
