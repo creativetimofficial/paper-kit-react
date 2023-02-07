@@ -1,0 +1,53 @@
+#planes h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #b7d673;
+}
+
+#planes h5 {
+    margin-bottom: 1.3rem;
+    color: #b7d673;
+    font-size: 18px;
+    font-weight: 700;
+    font-weight: 500;
+}
+
+#planes p {
+    font-size: 14px;
+}
+
+#planes .planes {
+    z-index: 199;
+}
+
+#planes .iconoPlan {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 44%;
+    font-size: 60px;
+    color: white;
+}
+
+#planes .letraPlan {
+    position: absolute;
+    margin-top: 140px;
+    padding-left: 33%;
+}
+
+#planes #cardConIconos h5 {
+    font-size: 20px;
+    color: white;
+    position: initial;
+    font-weight: 550;
+}
+
+#planes .cardCartilla {
+    transition: 0.5s ease;
+}
+
+#planes .cardCartilla:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.1);
+    color: white;
+}

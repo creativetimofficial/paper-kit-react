@@ -1,0 +1,34 @@
+[
+    {
+        "id":1,
+        "img":"assets/img/plan1.png",
+        "imgBackground":"assets/img/plan1.png",
+        "name":"Plan Cerca",
+        "description": "Una opción simple, ágil y nativamente digital, que cuenta con una cartilla de prestadores seleccionada por proximidad e incluye un set de servicios digitales para facilitar tus gestiones.",
+        "benefits": ["Acceso a los Centros Médicos de máxima calidad", "Credencial Digital", "e-Doc Avalian, servicio de Telemedicina0", "App Avalian", "Ava, asistente virtual", "Incluye sistema de copagos"]
+    },
+    {
+        "id":2,
+        "img":"assets/img/plan2.png",
+        "imgBackground":"assets/img/plan1.png",
+        "name":"Plan Integral",
+        "description": "Nuestro Plan Integral cuenta con una amplia cartilla de prestadores de alcance nacional y una importante combinación de coberturas a precios accesibles, a través de la aplicación de copagos.",
+        "benefits": ["Ideal para quienes buscan tener el servicio esperado a un costo accesible, con una cuota mensual fija, variable sólo en caso de acceso a prácticas ambulatorias.", "Opción de planes con habitación individual en internación.", "La mejor relación costo-beneficio, con la calidad en los prestadores y la calidez en la atención.", "Servicios de Urgencias y Emergencias, las 24 hs.", "Asistencia al viajero en Argentina y países limítrofes."]
+    },
+    {
+        "id":3,
+        "img":"assets/img/plan3.png",
+        "imgBackground":"assets/img/plan1.png",
+        "name":"Plan Superior",
+        "description": "El Plan Superior cuenta con todos los servicios esperados, adaptándose de la manera más adecuada a tus necesidades.",
+        "benefits": ["Amplia nómina de prestadores en todo el país.", "Habitación individual en internación.", "Acceso a los servicios sin costos adicionales.", "Mayor cobertura en programa de anticoncepción.", "Servicios de Urgencias y Emergencias, las 24 hs.", "Médico a domicilio.", "Asistencia internacional al viajero."]
+    },
+    {
+        "id":4,
+        "img":"assets/img/plan4.png",
+        "imgBackground":"assets/img/plan1.png",
+        "name":"Plan Selecta",
+        "description": "Los Planes Selecta representan la máxima calidad de servicios, de manera ágil y con detalles de confort.",
+        "benefits": ["Máxima calidad prestacional con destacados centros médicos.", "Internación en habitación individual o suite.", "Acceso a cirugías estéticas.", "Cobertura de ortodoncia e implantes.", "Los mayores porcentajes de descuento en medicamentos.", "Consultas médicas a domicilio, sin cargo.", "Servicio de Urgencias y Emergencias, las 24 hs.", "Asistencia internacional al viajero extendida."]
+    }
+]

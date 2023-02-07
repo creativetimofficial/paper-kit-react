@@ -1,0 +1,13 @@
+.separador-cards{
+    margin-bottom: -106px !important;
+}
+.height-cards{
+    bottom:121px;
+}
+.custom-card{
+    padding-top:52px;
+    padding-bottom:52px;
+}
+.custom-card-icon{
+    font-size: 7vh;
+}

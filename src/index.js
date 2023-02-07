@@ -25,11 +25,16 @@ import "bootstrap/scss/bootstrap.scss";
 import "assets/scss/paper-kit.scss?v=1.3.0";
 import "assets/demo/demo.css?v=1.3.0";
 // pages
-import Index from "views/Index.js";
-import NucleoIcons from "views/NucleoIcons.js";
-import LandingPage from "views/examples/LandingPage.js";
-import ProfilePage from "views/examples/ProfilePage.js";
-import RegisterPage from "views/examples/RegisterPage.js";
+import NucleoIcons from "vistas/NucleoIcons.js";
+import LandingPage from "vistas/LandingPage.js";
+import ProfilePage from "vistas/ProfilePage.js";
+import RegisterPage from "vistas/RegisterPage.js";
+import QuienesSomos from "vistas/Quienes-somos";
+import Contacto from "vistas/Contacto";
+import Planes from "vistas/Planes/Planes";
+import { Contrata } from "vistas/Contrata/Contrata";
+import Cartilla from "vistas/Cartilla/Cartilla";
+import {Cotiza} from "vistas/Contrata/Cotiza";
 // others
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -37,14 +42,26 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/index" render={(props) => <Index {...props} />} />
+      <Route path="/index" render={(props) => <LandingPage {...props} />} />
       <Route
         path="/nucleo-icons"
         render={(props) => <NucleoIcons {...props} />}
       />
       <Route
-        path="/landing-page"
-        render={(props) => <LandingPage {...props} />}
+        path="/quienes-somos"
+        render={(props) => <QuienesSomos {...props} />}
+      />
+      <Route
+        path="/contacto"
+        render={(props) => <Contacto {...props} />}
+      />
+      <Route
+        path="/contrata"
+        render={(props) => <Contrata {...props} />}
+      />
+      <Route
+        path="/cotiza"
+        render={(props) => <Cotiza {...props} />}
       />
       <Route
         path="/profile-page"
@@ -53,6 +70,15 @@ root.render(
       <Route
         path="/register-page"
         render={(props) => <RegisterPage {...props} />}
+      />
+      <Route
+        path="/planes"
+        render={(props) => <Planes {...props} />}>
+          
+      </Route>
+      <Route
+        path="/cartilla"
+        render={(props) => <Cartilla {...props} />}
       />
       <Redirect to="/index" />
     </Switch>
