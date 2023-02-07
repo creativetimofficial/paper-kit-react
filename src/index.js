@@ -73,8 +73,9 @@ root.render(
       />
       <Route
         path="/planes"
-        render={(props) => <Planes {...props} />}
-      />
+        render={(props) => <Planes {...props} />}>
+          
+      </Route>
       <Route
         path="/cartilla"
         render={(props) => <Cartilla {...props} />}

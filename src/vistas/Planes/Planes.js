@@ -1,10 +1,11 @@
 import Footer from "componentes/Footer/Footer";
 import NavBar from "componentes/Navbar/Navbar";
 import "./Planes.css"
-import { Button, Col, Container, Row } from "reactstrap";
+import { Button, Col, Container, NavItem, Row } from "reactstrap";
 import ProfilePageHeader from "componentes/Header/ProfilePageHeader";
 import { BiNotepad } from "react-icons/bi"
 import { FaRegHospital } from "react-icons/fa"
+import { Link, NavLink } from "react-router-dom";
 const Planes = () => {
     return (
         <>
@@ -97,10 +98,10 @@ const Planes = () => {
                     </Row>
                     <Row className=" mb-5" id="cardConIconos">
                         <Col className="mb-2 cardCartilla" md={6} sm={6}>
-                            <span className="iconoPlan"><FaRegHospital /></span><div className="letraPlan"><h5>Cartilla online</h5></div><img src={require("assets/img/consultorioPaciente.jpg")} alt="tarjetas de planes" style={{ minHeight: "200px", height: "230px", width: "inherit" }} />
+                            <Link to="/cartilla" className="w-100"><span className="iconoPlan"><FaRegHospital /></span><div className="letraPlan"><h5>Cartilla online</h5></div><img src={require("assets/img/consultorioPaciente.jpg")} alt="tarjetas de planes" style={{ minHeight: "200px", height: "230px", width: "inherit" }} /></Link>
                         </Col>
                         <Col className="mb-2 cardCartilla" md={6} sm={6}>
-                            <span className="iconoPlan"><BiNotepad /></span><span className="letraPlan"><h5>Centros de atención</h5></span><img src={require("assets/img/consultorioVacio.jpg")} alt="tarjetas de planes" style={{ minHeight: "200px", height: "230px", width: "inherit" }} />
+                            <Link to="/centros" className="w-100"><span className="iconoPlan"><BiNotepad /></span><span className="letraPlan"><h5>Centros de atención</h5></span><img src={require("assets/img/consultorioVacio.jpg")} alt="tarjetas de planes" style={{ minHeight: "200px", height: "230px", width: "inherit" }} /></Link>
                         </Col>
                     </Row>
                 </Container>
