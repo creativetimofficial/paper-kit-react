@@ -83,7 +83,7 @@ function SectionButtons() {
                   Round
                 </Button>
                 <Button className="btn-round ml-1" color="info" type="button">
-                  <i className="fa fa-heart mr-1" />
+                  <i classNa  me="fa fa-heart mr-1" />
                   With Icon
                 </Button>
                 <Button

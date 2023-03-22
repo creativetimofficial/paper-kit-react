@@ -94,7 +94,7 @@ function IndexNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://twitter.com/CreativeTim?ref=creativetim"
+                href={"/"}
                 target="_blank"
                 title="Follow us on Twitter"
               >
@@ -147,10 +147,10 @@ function IndexNavbar() {
               <Button
                 className="btn-round"
                 color="danger"
-                href="https://www.creative-tim.com/product/paper-kit-pro-react?ref=pkr-index-navbar"
+                href={"/donation-page"}
                 target="_blank"
               >
-                <i className="nc-icon nc-favourite-28"></i> <i> </i> Make a donate 
+                Donate <i className="nc-icon nc-favourite-28"></i> 
               </Button>
             </NavItem>
           </Nav>
