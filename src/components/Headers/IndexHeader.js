@@ -24,7 +24,7 @@ import { Container } from "reactstrap";
 
 // core components
 
-function IndexHeader() {
+function IndexHeader({title, tagline}) {
   return (
     <>
       <div
@@ -38,7 +38,7 @@ function IndexHeader() {
         <div className="content-center">
           <Container>
             <div className="title-brand">
-              <h1 className="presentation-title">Wally Carlson</h1>
+              <h1 className="presentation-title">{title}</h1>
               <div className="fog-low">
                 <img alt="..." src={require("assets/img/fog-low.png")} />
               </div>
@@ -47,7 +47,7 @@ function IndexHeader() {
               </div>
             </div>
             <h2 className="presentation-subtitle text-center">
-              Make your mark with a Free Bootstrap 4 (Reactstrap) UI Kit!
+              {tagline}
             </h2>
           </Container>
         </div>
