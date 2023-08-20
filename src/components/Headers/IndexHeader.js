@@ -38,7 +38,7 @@ function IndexHeader() {
         <div className="content-center">
           <Container>
             <div className="title-brand">
-              <h1 className="presentation-title">Paper Kit React</h1>
+              <h1 className="presentation-title">Wally Carlson</h1>
               <div className="fog-low">
                 <img alt="..." src={require("assets/img/fog-low.png")} />
               </div>
