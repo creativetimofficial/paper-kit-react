@@ -144,7 +144,7 @@ function IndexNavbar() {
                 href="https://www.youtube.com/@theghettogospelteam"
                 target="_blank"
               >
-                <i className="nc-icon nc-spaceship"></i> Get To Know My Best Friend
+                <i className="nc-icon nc-spaceship"></i> Do You Know The King
               </Button>
             </NavItem>
           </Nav>

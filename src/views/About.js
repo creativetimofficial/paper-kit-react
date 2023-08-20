@@ -16,7 +16,7 @@ function About() {
   return (
     <>
     <IndexNavbar />
-    <IndexHeader />
+    <IndexHeader title="About Me" tagline="" />
     <div className='main'>
       <h1>Hey This Is Bro Wally</h1>
     </div>
