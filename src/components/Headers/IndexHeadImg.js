@@ -28,20 +28,20 @@ import backgroundVideo from '../../assets/img/newvidample.mp4'
 
 // core components
 
-function IndexHeader({title, tagline, media}) {
+function IndexHeader({title, tagline}) {
   return (
     <>
       <div
         className="page-header section-dark"
-        // style={{
-        //   backgroundImage:
-        //     "url(" + require("assets/img/antoine-barres.jpg") + ")",
-        // }}
+        style={{
+          backgroundImage:
+            "url(" + require("assets/img/bible-img-modified.jpg") + ")",
+        }}
       >
         
-        <video className="videoBack" autoPlay loop muted>
+        {/* <video className="videoBack" autoPlay loop muted>
           <source src={backgroundVideo} type='video/mp4' />
-      </video>
+      </video> */}
         <div className="filter" />
         <div className="content-center">
           <Container>

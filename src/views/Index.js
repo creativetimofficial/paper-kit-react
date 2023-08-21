@@ -65,7 +65,7 @@ function Index() {
         <SectionDark />
         <SectionLogin />
         <SectionExamples /> */}
-        <SectionDownload />
+        <SectionDownload title='The KING is Coming Soon' description='Behold, I stand at the door, and knock: if any man hear my voice, and open the door, I will come in to him, and will sup with him, and he with me.' cite='Revelation 3:20' />
         <DemoFooter />
       </div>
     </>

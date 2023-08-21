@@ -26,10 +26,10 @@ import { Row, Container } from "reactstrap";
 
 function DemoFooter() {
   return (
-    <footer className="footer footer-black footer-white">
+    <footer className="footer footer-black footer-white bg-black text-white">
       <Container>
         <Row>
-          <nav className="footer-nav">
+          <nav className="footer-nav ">
             {/* <ul>
               <li>
                 <a
@@ -60,7 +60,7 @@ function DemoFooter() {
           <div className="credits ml-auto">
             <span className="copyright">
               © {new Date().getFullYear()}, made with{" "}
-              <i className="fa fa-heart heart" /> by A Servant Of Christ
+              <i className="fa fa-heart heart" /> by a servant of Christ
             </span>
           </div>
         </Row>

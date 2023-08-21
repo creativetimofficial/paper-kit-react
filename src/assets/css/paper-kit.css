@@ -5251,6 +5251,10 @@ License - nucleoapp.com/license/
   width: 100%;
 }
 
+.black {
+  background-color: #000000;
+}
+
 .modal-footer .divider {
   background-color: #dddddd;
   display: inline-block;

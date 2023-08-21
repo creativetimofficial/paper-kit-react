@@ -23,18 +23,18 @@ import { Button, Container, Row, Col, UncontrolledTooltip } from "reactstrap";
 
 // core components
 
-function SectionDownload() {
+function SectionDownload({title, description, cite}) {
   return (
     <>
-      <div className="section">
+      <div className="section bg-black text-white">
         <Container className="text-center">
           <Row>
             <Col className="ml-auto mr-auto text-center" md="8">
-              <h2 className="title">The KING is Coming Soon</h2>
+              <h2 className="title">{title}</h2>
               <p className="description">
-              Behold, I stand at the door, and knock: if any man hear my voice, and open the door, I will come in to him, and will sup with him, and he with me.
+              {description}
               </p>
-              <cite title="source Title">Revelation 3:20</cite>
+              <cite title="source Title">{cite}</cite>
             </Col>
             <Col className="ml-auto mr-auto download-area" md="5">
               <Button

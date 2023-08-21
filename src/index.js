@@ -23,6 +23,7 @@ import { BrowserRouter, Route, Navigate, Routes } from "react-router-dom";
 // styles
 import "bootstrap/scss/bootstrap.scss";
 import "assets/scss/paper-kit.scss?v=1.3.0";
+import "assets/css/paper-kit.min.css"
 import "assets/demo/demo.css?v=1.3.0";
 // pages
 import Index from "views/Index.js";

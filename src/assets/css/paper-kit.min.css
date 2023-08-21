@@ -2942,6 +2942,11 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 .bg-warning {
   background-color: #fcd27b !important;
 }
+
+.bg-black {
+  background-color: #000000 !important;
+}
+
 .bg-danger {
   background-color: #f7765f !important;
 }
