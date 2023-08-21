@@ -22,6 +22,10 @@ import React from "react";
 // reactstrap components
 import { Container } from "reactstrap";
 
+import './IndexHeader.css'
+
+import backgroundVideo from '../../assets/img/newvidample.mp4'
+
 // core components
 
 function IndexHeader({title, tagline}) {
@@ -29,21 +33,24 @@ function IndexHeader({title, tagline}) {
     <>
       <div
         className="page-header section-dark"
-        style={{
-          backgroundImage:
-            "url(" + require("assets/img/antoine-barres.jpg") + ")",
-        }}
+        // style={{
+        //   backgroundImage:
+        //     "url(" + require("assets/img/antoine-barres.jpg") + ")",
+        // }}
       >
+        <video className="videoBack" autoPlay loop muted>
+          <source src={backgroundVideo} type='video/mp4' />
+      </video>
         <div className="filter" />
         <div className="content-center">
           <Container>
             <div className="title-brand">
               <h1 className="presentation-title">{title}</h1>
               <div className="fog-low">
-                <img alt="..." src={require("assets/img/fog-low.png")} />
+                {/* <img alt="..." src={require("assets/img/fog-low.png")} /> */}
               </div>
               <div className="fog-low right">
-                <img alt="..." src={require("assets/img/fog-low.png")} />
+                {/* <img alt="..." src={require("assets/img/fog-low.png")} /> */}
               </div>
             </div>
             <h2 className="presentation-subtitle text-center">

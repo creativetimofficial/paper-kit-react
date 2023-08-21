@@ -1,6 +1,7 @@
 import IndexHeader from 'components/Headers/IndexHeader';
 import IndexNavbar from 'components/Navbars/IndexNavbar';
 import React from 'react'
+import SectionTypography from './index-sections/SectionTypography';
 
 function About() {
 
@@ -18,7 +19,9 @@ function About() {
     <IndexNavbar />
     <IndexHeader title="About Me" tagline="" />
     <div className='main'>
-      <h1>Hey This Is Bro Wally</h1>
+      {/* <h1>Hey This Is Bro Wally</h1>
+       */}
+       <SectionTypography />
     </div>
     
     </>

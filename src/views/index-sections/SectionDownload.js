@@ -30,25 +30,24 @@ function SectionDownload() {
         <Container className="text-center">
           <Row>
             <Col className="ml-auto mr-auto text-center" md="8">
-              <h2 className="title">Do you like what you see?</h2>
+              <h2 className="title">The KING is Coming Soon</h2>
               <p className="description">
-                Cause if you do, it can be yours for Free. Hit the button below
-                and download it. Start a new project or give an old Bootstrap 4
-                project a new look.
+              Behold, I stand at the door, and knock: if any man hear my voice, and open the door, I will come in to him, and will sup with him, and he with me.
               </p>
+              <cite title="source Title">Revelation 3:20</cite>
             </Col>
             <Col className="ml-auto mr-auto download-area" md="5">
               <Button
                 className="btn-round"
                 color="danger"
-                href="http://www.creative-tim.com/product/paper-kit-react?ref=pkr-index-page"
+                href="https://revelationsofjesuschrist.com/contact-2/"
                 target="_blank"
               >
-                Download free React
+                Join the FIGHT
               </Button>
             </Col>
           </Row>
-          <Row className="text-center upgrade-pro">
+          {/* <Row className="text-center upgrade-pro">
             <Col className="ml-auto mr-auto" md="8">
               <h2 className="title">Want more?</h2>
               <p className="description">
@@ -66,10 +65,10 @@ function SectionDownload() {
                 Upgrade to PRO
               </Button>
             </Col>
-          </Row>
+          </Row> */}
           <Row className="justify-content-md-center sharing-area text-center">
             <Col className="text-center" lg="8" md="12">
-              <h3>Thank you for supporting us!</h3>
+              <h3>Follow Us As We Follow Christ!</h3>
             </Col>
             <Col className="text-center" lg="8" md="12">
               <Button
@@ -87,14 +86,14 @@ function SectionDownload() {
               <Button
                 className="linkedin-sharrre btn-round  ml-2"
                 color="google-bg"
-                href="#pablo"
+                href="https://www.youtube.com/@theghettogospelteam"
                 id="tooltip840791273"
                 onClick={(e) => e.preventDefault()}
               >
-                <i className="fa fa-google-plus" /> Google
+                <i className="fa fa-youtube" /> Youtube
               </Button>
-              <UncontrolledTooltip delay={0} target="tooltip840791273">
-                Share!
+              <UncontrolledTooltip delay={4} target="tooltip840791273">
+                Watch!
               </UncontrolledTooltip>
               <Button
                 className="facebook-sharrre btn-round ml-2"
@@ -108,18 +107,7 @@ function SectionDownload() {
               <UncontrolledTooltip delay={0} target="tooltip68961360">
                 Share!
               </UncontrolledTooltip>
-              <Button
-                className="sharrre btn-round ml-2"
-                color="github-bg"
-                href="https://github.com/creativetimofficial/paper-kit-react?ref=creativetim"
-                target="_blank"
-                id="tooltip864353654"
-              >
-                <i className="fa fa-github" /> Star
-              </Button>
-              <UncontrolledTooltip delay={0} target="tooltip864353654">
-                Star on Github
-              </UncontrolledTooltip>
+             
             </Col>
           </Row>
         </Container>

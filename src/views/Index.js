@@ -64,9 +64,9 @@ function Index() {
         <SectionNucleoIcons />
         <SectionDark />
         <SectionLogin />
-        <SectionExamples />
+        <SectionExamples /> */}
         <SectionDownload />
-        <DemoFooter /> */}
+        <DemoFooter />
       </div>
     </>
   );
