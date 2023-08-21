@@ -57,7 +57,7 @@ function IndexHeader({title, tagline}) {
             backgroundImage: "url(" + require("assets/img/clouds.png") + ")",
           }}
         />
-        <h6 className="category category-absolute">
+        {/* <h6 className="category category-absolute">
           Designed and coded by{" "}
           <a
             href="https://www.creative-tim.com?ref=pkr-index-page"
@@ -69,7 +69,7 @@ function IndexHeader({title, tagline}) {
               src={require("assets/img/creative-tim-white-slim2.png")}
             />
           </a>
-        </h6>
+        </h6> */}
       </div>
     </>
   );

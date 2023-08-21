@@ -53,7 +53,7 @@ function Index() {
       <IndexNavbar />
       <IndexHeader title="Wally Carlson" tagline="Jesus Christ is LORD" />
       <div className="main">
-        <SectionButtons />
+        {/* <SectionButtons />
         <SectionNavbars />
         <SectionNavigation />
         <SectionProgress />
@@ -66,7 +66,7 @@ function Index() {
         <SectionLogin />
         <SectionExamples />
         <SectionDownload />
-        <DemoFooter />
+        <DemoFooter /> */}
       </div>
     </>
   );
