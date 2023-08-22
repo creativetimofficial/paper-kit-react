@@ -16,7 +16,10 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React, { useEffect, useState } from "react";
+
+// import 'animate.css-react'
+// import Animate from 'animate.css-react'
 
 // reactstrap components
 
@@ -48,28 +51,55 @@ function Index() {
       document.body.classList.remove("index");
     };
   });
-  return (
-    <>
-      <IndexNavbar />
-      <IndexHeader title="Wally Carlson" tagline="Jesus Christ is LORD" />
-      <div className="main">
-        {/* <SectionButtons />
-        <SectionNavbars />
-        <SectionNavigation />
-        <SectionProgress />
-        <SectionNotifications />
-        <SectionTypography />
-        <SectionJavaScript />
-        <SectionCarousel />
-        <SectionNucleoIcons />
-        <SectionDark />
-        <SectionLogin />
-        <SectionExamples /> */}
-        <SectionDownload title='The KING is Coming Soon' description='Behold, I stand at the door, and knock: if any man hear my voice, and open the door, I will come in to him, and will sup with him, and he with me.' cite='Revelation 3:20' />
-        <DemoFooter />
-      </div>
-    </>
-  );
+
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    const onPageLoad = () => {
+      setLoading(true)
+    }
+    if (document.readyState === 'complete') {
+      onPageLoad();
+    } else {
+      window.addEventListener('load', onPageLoad)
+    }
+  
+    return () => {
+      window.addEventListener('load', onPageLoad)
+    }
+  }, [])
+  
+  if (loading) {
+    return (
+    
+      <>
+      
+        <IndexNavbar />
+        <IndexHeader title="Wally Carlson" tagline="Jesus Christ is LORD" />
+        <div className="main">
+          {/* <SectionButtons />
+          <SectionNavbars />
+          <SectionNavigation />
+          <SectionProgress />
+          <SectionNotifications />
+          <SectionTypography />
+          <SectionJavaScript />
+          <SectionCarousel />
+          <SectionNucleoIcons />
+          <SectionDark />
+          <SectionLogin />
+          <SectionExamples /> */}
+          <SectionDownload title='The KING is Coming Soon' description='Behold, I stand at the door, and knock: if any man hear my voice, and open the door, I will come in to him, and will sup with him, and he with me.' cite='Revelation 3:20' />
+          <DemoFooter />
+        </div>
+      </>
+    );
+  } else {
+    return <div></div>
+  }
+  
+
+  
 }
 
 export default Index;

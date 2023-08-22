@@ -88,7 +88,8 @@ function SectionDownload({title, description, cite}) {
                 color="google-bg"
                 href="https://www.youtube.com/@theghettogospelteam"
                 id="tooltip840791273"
-                onClick={(e) => e.preventDefault()}
+                target="_blank"
+                // onClick={(e) => e.preventDefault()}
               >
                 <i className="fa fa-youtube" /> Youtube
               </Button>
