@@ -30,7 +30,7 @@ function LandingPageHeader() {
     if (window.innerWidth < 991) {
       const updateScroll = () => {
         let windowScrollTop = window.pageYOffset / 3;
-        pageHeader.current.style.transform =
+        (pageHeader.current as HTMLElement).style.transform =
           "translate3d(0," + windowScrollTop + "px,0)";
       };
       window.addEventListener("scroll", updateScroll);
@@ -45,12 +45,12 @@ function LandingPageHeader() {
       <div
         style={{
           backgroundColor: 'black',
-          // backgroundImage:
-          //   "url(" + require("assets/img/fabio-mangione.jpg") + ")",
+          backgroundImage:
+            "url(" + require("assets/img/login-image.jpg") + ")",
         }}
         className="page-header"
         data-parallax={true}
-        ref={pageHeader}
+        ref={pageHeader as any}
       >
         <div className="filter" />
         <Container>
