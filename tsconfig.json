@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "target": "esnext" /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018' or 'ESNEXT'. */,
+        "module": "commonjs" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */,
+        "lib": [
+            "esnext",
+            "dom"
+        ],
+        "jsx": "react",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "baseUrl": "src",
+        "paths": {
+            "@/*": ["./*"],
+            "*": ["src/*"],
+            "views": ["src/views/*"],
+            "components": ["src/components/*"],
+            "assets": [
+                "src/assets"
+            ]
+        },
+    },
+    "include": ["./src/**"],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+}

@@ -68,7 +68,8 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     text-transform: uppercase;
 }
 .description{
-    color: $dark-gray;
+    color: #393939;
+    text-align: justify;
 }
 blockquote small{
     font-style: normal;

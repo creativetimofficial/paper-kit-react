@@ -24,6 +24,7 @@
 		"../scss/paper-kit/_badges.scss",
 		"../scss/paper-kit/_pagination.scss",
 		"../scss/paper-kit/_typography.scss",
+		"../scss/paper-kit/_home.scss",
 		"../scss/paper-kit/_misc.scss",
 		"../scss/paper-kit/_labels.scss",
 		"../scss/paper-kit/_nucleo-icons.scss",

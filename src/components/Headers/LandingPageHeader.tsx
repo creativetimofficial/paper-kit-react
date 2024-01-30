@@ -44,8 +44,9 @@ function LandingPageHeader() {
     <>
       <div
         style={{
-          backgroundImage:
-            "url(" + require("assets/img/daniel-olahh.jpg") + ")",
+          backgroundColor: 'black',
+          // backgroundImage:
+          //   "url(" + require("assets/img/fabio-mangione.jpg") + ")",
         }}
         className="page-header"
         data-parallax={true}
@@ -54,21 +55,27 @@ function LandingPageHeader() {
         <div className="filter" />
         <Container>
           <div className="motto text-center">
-            <h1>Example page</h1>
-            <h3>Start designing your landing page here.</h3>
+
+              <h1>Desenvolva, colabore e cresça junto</h1>
+              <h3>Nosso propósito está focado em criar uma experiência simplificada
+                para testar, impulsionar, alavancar e escalar novos negócios digitais.
+                Em minutos preparar uma loja diversificada em diferentes marketplaces
+                você escolhe o Nicho de mercado, ou área que deseja atuar.
+                E nós cuidamos da parte chata desse processo.
+              </h3>
+
             <br />
             <Button
-              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              href="#comofunciona"
               className="btn-round mr-1"
               color="neutral"
-              target="_blank"
               outline
             >
               <i className="fa fa-play" />
-              Watch video
+              Veja com funciona
             </Button>
             <Button className="btn-round" color="neutral" type="button" outline>
-              Download
+              Colabore
             </Button>
           </div>
         </Container>

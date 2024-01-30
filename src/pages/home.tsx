@@ -36,11 +36,11 @@ import {
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
-import LandingPageHeader from "components/Headers/LandingPageHeader.js";
-import DemoFooter from "components/Footers/DemoFooter.js";
+import ExamplesNavbar from "../components/Navbars/ExamplesNavbar";
+import LandingPageHeader from "../components/Headers/LandingPageHeader";
+import DemoFooter from "../components/Footers/DemoFooter";
 
-function LandingPage() {
+function Home() {
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
     document.body.classList.add("profile-page");
@@ -48,31 +48,71 @@ function LandingPage() {
       document.body.classList.remove("profile-page");
     };
   });
+
+  const showMore = () => {
+    console.log('show more ', document.getElementsByClassName('hidden'));
+
+    document.getElementsByClassName('hidden')[0].classList.remove(this);
+  }
   return (
     <>
       <ExamplesNavbar />
       <LandingPageHeader />
-      <div className="main">
+      <div  id="comofunciona" className="main">
         <div className="section text-center">
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
-                <h2 className="title">Let's talk product</h2>
+                <h2 className="title">Descubra o funcionamento da Rede Systentando:</h2>
                 <h5 className="description">
-                  This is the paragraph where you can write more details about
-                  your product. Keep you user engaged by providing meaningful
-                  information. Remember that by this time, the user is curious,
-                  otherwise he wouldn't scroll to get here. Add a button if you
-                  want the user to see more.
+                  Você provavelmente já ouviu falar sobre a importância de ter um negócio online,
+                  talvez esteja buscando uma renda extra ou até mesmo uma renda principal,
+                  mas talvez não saiba por onde começar. Certo?
+
+
+                  <ul>
+                    <li>Afinal, como criar um negócio online do zero?</li>
+                    <li>Por onde você deve começar?</li>
+                    <li>Como fazer isso de forma rápida e simples?</li>
+                    <li>Com pouquíssimo investimento?</li>
+                    <li>Sem precisar ter experiência com vendas ou marketing digital?</li>
+                    <li>Sem precisar as vezes nem ter um produto?</li>
+                  </ul>
+
                 </h5>
+                <h5 className="description">
+                  Em nossa plataforma proporcionamos um sistema construtivo com passo a passo, um guia
+                  detalhado e recomendações para aplicar nossa estratégia, que impulsionam a criação de
+                  novos negócios e reduz os riscos associadas ao início da jornada empreendedora.
+                </h5>
+                <h5 className="description">
+                  A partir de uma análise de dados, a inteligência artificial busca identificar padrões de comportamento
+                  e tendências de consumo, dos clientes de cada membro depois de um período de amadurecimento do negócio.
+                  ela conhece melhor o seu mercado e o seu público-alvo, e você possa contar com informações
+                  para tomar decisões mais assertivas e estratégicas a sua realidade.
+                </h5>
+                <h5 className="description hidden" >
+                  Depois reorganizar estes dados cruciais para embasar decisões estratégicas, validar produtos em potencial
+                  ou mesmo classificar fornecedores conforme a satisfação dos próprios empreendedores.
+
+                  Por que isso é relevante?
+                  Esses dados não apenas impulsionam a criação de novos negócios,
+                  reduzindo as incertezas associadas ao início sem experiência, mas também tornam o modelo
+                  mais resiliente a cada reaplicação. Queremos ser a força propulsora para empreendedores iniciantes,
+                  seja no universo digital ou para aqueles que desejam oferecer produtos em lojas de bairro de pequeno porte.
+                  Ao se juntar a nós, você terá acesso a um guia especializado, potencializando suas decisões com informações
+                  valiosas para reorganizar e escalar a performance de lucros, vendas e faturamento em diferentes nichos de mercado.
+                  Vamos transformar ideias em resultados tangíveis juntos!
+                </h5>
+
                 <br />
                 <Button
                   className="btn-round"
                   color="info"
                   href="#pablo"
-                  onClick={(e) => e.preventDefault()}
+                  onClick={(e) => {e.preventDefault(); showMore()}}
                 >
-                  See Details
+                  Veja os detalhes
                 </Button>
               </Col>
             </Row>
@@ -366,4 +406,4 @@ function LandingPage() {
   );
 }
 
-export default LandingPage;
+export default Home;
