@@ -81,9 +81,11 @@ function Home() {
 
                 </h5>
                 <h5 className="description">
-                  Em nossa plataforma proporcionamos um sistema construtivo com passo a passo, um guia
-                  detalhado e recomendações para aplicar nossa estratégia, que impulsionam a criação de
-                  novos negócios e reduz os riscos associadas ao início da jornada empreendedora.
+                  Em nossa plataforma proporcionamos um sistema construtivo com passo a passo,
+                  que guiará você em todo o processo com recomendações para aplicar nossa estratégia,
+                  que impulsionam a criação de um novo negócio digital, tentando reduz os riscos e incertezas
+                  desse momeento inicial, isso associada a uma jornada simplificada,
+                  que torna o modelo mais resiliente a cada reaplicação.
                 </h5>
                 <h5 className="description">
                   A partir de uma análise de dados, a inteligência artificial busca identificar padrões de comportamento

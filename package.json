@@ -2,6 +2,7 @@
   "name": "paper-kit-react",
   "version": "1.3.2",
   "scripts": {
+    "deploy": "npm ci && npm run build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "transform": "tsc init",
@@ -35,6 +36,7 @@
     "class-variance-authority": "^0.7.0",
     "classnames": "2.3.2",
     "clsx": "^2.1.0",
+    "firebase": "^10.7.2",
     "lucide-react": "^0.317.0",
     "moment": "2.29.4",
     "nouislider": "15.4.0",

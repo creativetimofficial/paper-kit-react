@@ -16,34 +16,35 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Route, Navigate, Routes } from "react-router-dom";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Route, Navigate, Routes } from 'react-router-dom';
 
 // styles
-import "bootstrap/scss/bootstrap.scss";
-import "assets/scss/paper-kit.scss?v=1.3.0";
-import "assets/demo/demo.css?v=1.3.0";
+import 'bootstrap/scss/bootstrap.scss';
+import 'assets/scss/paper-kit.scss?v=1.3.0';
+import 'assets/demo/demo.css?v=1.3.0';
 // pages
-import Index from "views/Index";
-import NucleoIcons from "views/NucleoIcons";
-import LandingPage from "views/examples/LandingPage";
-import ProfilePage from "views/examples/ProfilePage";
-import RegisterPage from "views/examples/RegisterPage";
+import NucleoIcons from 'views/NucleoIcons';
+import LandingPage from 'views/examples/LandingPage';
+import ProfilePage from 'views/examples/ProfilePage';
+import RegisterPage from 'views/examples/RegisterPage';
 import Home from './pages/home';
 // others
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+import './components/firebase/firebase.utils';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/index" element={<Home />} />
-      <Route path="/nucleo-icons" element={<NucleoIcons />} />
-      <Route path="/landing-page" element={<LandingPage />} />
-      <Route path="/profile-page" element={<ProfilePage />} />
-      <Route path="/register-page" element={<RegisterPage />} />
-      <Route path="*" element={<Navigate to="/index" replace />} />
+      <Route path='/index' element={<Home />} />
+      <Route path='/nucleo-icons' element={<NucleoIcons />} />
+      <Route path='/landing-page' element={<LandingPage />} />
+      <Route path='/profile-page' element={<ProfilePage />} />
+      <Route path='/register-page' element={<RegisterPage />} />
+      <Route path='*' element={<Navigate to='/index' replace />} />
     </Routes>
   </BrowserRouter>
 );
