@@ -2,12 +2,13 @@
   "name": "paper-kit-react",
   "version": "1.3.2",
   "dependencies": {
+    "ajv": "^8.17.1",
     "classnames": "2.3.2",
     "moment": "2.29.4",
     "nouislider": "15.4.0",
-    "react": "18.2.0",
+    "react": ">=16.0.0",
     "react-datetime": "3.2.0",
-    "react-dom": "18.2.0",
+    "react-dom": ">=16.0.0",
     "react-router-dom": "6.11.1",
     "react-scripts": "5.0.1",
     "reactstrap": "8.10.0",
@@ -15,7 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env PUBLIC_URL=/ react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
@@ -41,7 +42,8 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
-    "bootstrap": "4.6.2"
+    "bootstrap": "4.6.2",
+    "cross-env": "^7.0.3"
   },
   "peerDependencies": {
     "react": ">=16.0.0",
