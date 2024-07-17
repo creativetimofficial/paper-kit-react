@@ -62,7 +62,6 @@ Once you download the archive, you will be able find a tutorial page inside it e
 4.  You will find all the branding colors inside `src/assets/scss/paper-kit/_variables.scss`. You can change them with a `HEX` value or with other predefined variables.
 5.  Run in terminal `npm start`.
 
-
 ## Deploy
 
 :rocket: You can deploy your own version of the template to Genezio with one click:
